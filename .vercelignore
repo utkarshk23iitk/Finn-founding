@@ -1,0 +1,5 @@
+# Only the static app is uploaded. Anchored with "/" so a pattern can't hide web/data.
+/*
+!/web
+!/vercel.json
+!/package.json

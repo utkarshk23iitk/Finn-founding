@@ -43,6 +43,8 @@ test("leadership filings become one line each", () => {
     "Noel N. Tata retires as Chairman and Director");
   assert.equal(T.shortPeopleLine("Resignation of Mr. Mohit Malhotra as Global Chief Executive Officer and Whole-time Director, from the Company"),
     "Mohit Malhotra resigns as Global CEO and whole-time director");
+  assert.equal(T.shortPeopleLine("Retirement of Mr. Mukundan Menon C. P. Managing Director of the Company w.e.f. 24th May, 2027"),
+    "Mukundan Menon C. P. retires as MD");
   assert.equal(T.shortPeopleLine("Initiation of Forensic Audit"), "Initiation of Forensic Audit");
 });
 

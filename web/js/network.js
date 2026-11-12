@@ -267,7 +267,7 @@ export function whoKnows(orgKey, network, R, kind = null) {
     const consider = (cand) => {
       if (SENIOR.test(cand.stint.role)) cand.score += 0.08;
       if (kind) {
-        if (wanted.has(cand.stint.function)) { cand.score += 0.15; cand.text += ` · ${FUNCTION_LABEL[cand.stint.function]}`; }
+        if (wanted.has(cand.stint.function)) cand.score += 0.15;
         else cand.score *= 0.75;
       }
       if (!best || cand.score > best.score) best = cand;

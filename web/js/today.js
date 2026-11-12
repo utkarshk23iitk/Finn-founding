@@ -98,6 +98,9 @@ const ROLE_SHORT = [[/chief executive officer(?: \(ceo\))?/i, "CEO"], [/chief fi
   [/whole[- ]?time director/i, "whole-time director"], [/key managerial personnel/i, "KMP"],
   [/senior management personnel/i, "senior manager"]];
 export function shortPeopleLine(h) {
+  // Some filings drop the "as": "Retirement of Mr. Mukundan Menon C. P. Managing Director of the Company w.e.f. ..."
+  const noAs = h.match(/^(retirement|resignation|cessation) of (?:(?:mr|ms|mrs|dr)\.?\s+)?(.+?),?\s+((?:managing director|whole[- ]?time director|chief [a-z]+ officer|chairman|ceo|cfo)\b.*?)(?: of the (?:company|bank)\b.*| w\.?e\.?f\b.*)?$/i);
+  if (noAs && !/\bas\b/i.test(noAs[2])) h = `${noAs[1]} of ${noAs[2]} as ${noAs[3]}`;
   const m = h.match(/^(appointment|re-?appointment|retirement|resignation|cessation) of (?:(?:mr|ms|mrs|dr)\.?\s+)?(.+?) as (?:an? |the )?(.+?)(?:,? (?:of|from) the (?:company|bank)\b.*|,? (?:w\.?e\.?f|with effect)\b.*|,? and (?:his|her|their|the)\b.*)?$/i);
   if (!m) return h;
   let role = m[3].replace(/\s+/g, " ");

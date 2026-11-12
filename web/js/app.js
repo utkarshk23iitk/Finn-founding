@@ -59,18 +59,19 @@ function render() {
     <header class="top" id="top">
       <div class="brandrow">
         <span class="brand">FINN</span>
-        <span class="asof">Filings and prices as of ${esc(when(t.asOf))}</span>
+        <span class="asof">As of ${esc(when(t.asOf))}</span>
         <button class="iconbtn" data-act="settings" aria-label="Alert rules">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h7M12 4h2M2 12h3M8 12h6"/><circle cx="10.5" cy="4" r="1.6"/><circle cx="6.5" cy="12" r="1.6"/></svg>
           Rules
         </button>
       </div>
       <nav class="windows" aria-label="Time window">
-        ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === t.window.key}">Last ${esc(w.label)}</button>`).join("")}
+        ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === t.window.key}" aria-label="Last ${esc(w.label)}">${esc(w.label[0].toUpperCase() + w.label.slice(1))}</button>`).join("")}
       </nav>
     </header>
     <p class="lede">${lede}</p>
-    <p class="sub">${t.glance.length} worth a glance · ${t.routineCount} routine filings folded${t.cleared.length ? ` · ${t.cleared.length} done` : ""}</p>
+    <p class="sub">${[t.glance.length && `${t.glance.length} worth a glance`, t.routineCount && `${t.routineCount} routine filings folded`,
+                      t.cleared.length && `${t.cleared.length} done`].filter(Boolean).join(" · ") || `Last ${esc(t.window.label)}`}</p>
 
     ${t.needs.map(card).join("") || `<div class="card clear"><b>All clear</b>Widen the window or loosen the rules to see more.</div>`}
     ${n ? `<div class="clear"><b>That's everything that needs you.</b>Below: one-liners and the folded paperwork.</div>` : ""}
@@ -108,7 +109,7 @@ function card(c) {
     <div class="card-top"><span class="co">${esc(co.name)}</span><span class="tag${hot}">${esc(tag)}</span><time>${esc(when(c.time, c.kind !== "price"))}</time></div>
     ${body}
     ${askBlock(c)}
-    ${c.context?.length ? `<p class="also"><b>Also this month:</b> ${c.context.map((f) => `${esc(short(f))} (${esc(when(f.time, false))})`).join(" · ")}</p>` : ""}
+    ${c.context?.length ? `<p class="also"><b>Also this month:</b> ${c.context.map((f) => `${esc(label(f))}, ${esc(when(f.time, false))}`).join(" · ")}</p>` : ""}
     <div class="card-foot">
       ${primary ? `<a href="${esc(primary.url)}" target="_blank" rel="noopener">Filing ↗</a>` : ""}
       ${files.length > 1 ? `<button class="linkbtn" data-act="toggle" data-id="${esc(c.id)}">${state.open.has(c.id) ? "Hide" : `${files.length} filings`}</button>` : ""}
@@ -120,6 +121,13 @@ function card(c) {
 }
 
 const short = (f) => (f.category === "management_change" ? shortPeopleLine(f.headline) : f.headline);
+// A few words for "Also this month": "Q2 FY27 results", "Gopal Kothari named CFO", "Initiation of Forensic Audit".
+function label(f) {
+  const q = f.category === "results" && f.headline.match(/\((Q\d FY\d\d)\)/);
+  if (q) return `${q[1]} results`;
+  const s = short(f);
+  return s.length > 70 ? `${s.slice(0, 68).replace(/\s+\S*$/, "")}…` : s;
+}
 
 function filingBody(c) {
   const moves = (c.moves || []).map((a) => `<span class="move">${esc(when(a.time, false))}: <span class="${a.move >= 0 ? "up" : "down"}">${pct(a.move)}</span> · ${mult(a.volMult)} usual volume</span>`).join("");
@@ -157,9 +165,10 @@ function priceBody(c) {
 }
 
 function personBlock({ person: p, routes }) {
-  const years = (s) => (s.from || s.to ? `${s.from ? (s.approx ? "c. " : "") + s.from : ""}–${s.to ?? "now"}` : s.years_note || "");
+  const years = (s) => (!s.from && s.to ? `until ${s.to}`
+    : s.from || s.to ? `${s.approx ? "c. " : ""}${s.from}–${s.to ?? "now"}` : s.years_note || "");
   const facts = [
-    ...p.career.map((s) => ({ text: `${s.role}, ${s.org}`, yrs: years(s) })),
+    ...p.career.map((s) => ({ text: s.role.includes(s.org) ? s.role : `${s.role}, ${s.org}`, yrs: years(s) })),
     ...p.education.filter((e) => e.school).map((e) => ({ text: `${e.degree}, ${e.school}` })),
     ...(p.notable || []).map((x) => ({ text: x.text })),
   ].slice(0, 4);
@@ -170,8 +179,16 @@ function personBlock({ person: p, routes }) {
     ${facts.length ? `<ul class="facts">${facts.map((x) => `<li>${esc(x.text)}${x.yrs ? ` <span class="yrs">${esc(x.yrs)}</span>` : ""}</li>`).join("")}</ul>` : ""}
     ${p.gap ? `<p class="gap">${esc(p.gap)}</p>` : ""}
     ${p.event.url ? `<a class="src" href="${esc(p.event.url)}" target="_blank" rel="noopener">From the filing ↗</a>` : ""}
-    ${routes.length ? `<div class="ask"><p class="ask-h">Who can reach ${esc(p.name.split(" ")[0])}</p>${routes.map(routeRow).join("")}</div>` : ""}
+    ${routes.length ? `<div class="ask"><p class="ask-h">Who can reach ${esc(p.name.split(" ")[0])}</p>${more(`r:${p.id}`, routes, routeRow)}</div>` : ""}
   </div>`;
+}
+
+// The best one first; the rest a tap away. A morning scan shouldn't scroll past three names per card.
+function more(key, list, draw) {
+  if (list.length <= 1) return list.map(draw).join("");
+  const open = state.open.has(key);
+  return draw(list[0]) + (open ? list.slice(1).map(draw).join("") : "")
+    + `<button class="linkbtn morebtn" data-act="toggle" data-id="${esc(key)}">${open ? "Fewer" : `${list.length - 1} more`}</button>`;
 }
 
 function routeRow(r) {
@@ -189,12 +206,14 @@ function askBlock(c) {
   if (!who.length) return persons.length && !persons.some((p) => p.routes.length) ? `<p class="nobody">No one in your network has a known link yet.</p>` : "";
   const coName = c.company?.name || c.symbol;
   const title = persons.length ? `Who knows ${coName}` : `Ask about this`;
-  return `<div class="ask"><p class="ask-h">${esc(title)}</p>${who.map((w) => `
+  // Their current job is shown only when the reason is a past one; otherwise it repeats.
+  const draw = (w) => `
     <div class="contact"><span class="avatar" aria-hidden="true">${esc(initials(w.contact.name))}</span>
-      <div class="c-body"><div class="c-name">${esc(w.contact.name)} <span class="c-why">· ${esc(w.contact.headline)}</span></div>
+      <div class="c-body"><div class="c-name">${esc(w.contact.name)}${w.how === "inside" || w.how === "specialist" ? "" : ` <span class="c-why">· now ${esc(w.contact.headline)}</span>`}</div>
         <div class="c-why">${esc(w.text)}</div>
         <div class="c-meta"><span class="meter">${bars(w.how === "inside" || w.how === "alumnus" ? 3 : w.how === "specialist" ? 2 : 1)} ${esc(HOW[w.how] || w.how)}</span>
-          <span class="meter">${bars(closeness(w.tie))} you: ${spoke(w.tie)}</span></div></div></div>`).join("")}</div>`;
+          <span class="meter">${bars(closeness(w.tie))} you: ${spoke(w.tie)}</span></div></div></div>`;
+  return `<div class="ask"><p class="ask-h">${esc(title)}</p>${more(`w:${c.id}`, who, draw)}</div>`;
 }
 const HOW = { inside: "works there", alumnus: "worked there", peer: "at a competitor", supplier: "at a supplier",
               customer: "at a customer", specialist: "specialist" };
@@ -210,9 +229,10 @@ function row(c) {
 
 function warmRow(r) {
   const c = r.contact;
-  return `<div class="row"><div class="contact" style="padding:11px 14px"><span class="avatar" aria-hidden="true">${esc(initials(c.name))}</span>
+  return `<div class="row"><div class="contact padded"><span class="avatar" aria-hidden="true">${esc(initials(c.name))}</span>
     <div class="c-body"><div class="c-name">${esc(c.name)} <span class="c-why">· ${esc(c.headline)}</span></div>
-      <div class="c-why">${esc(r.why)}. A natural reason to call: ${esc(feed.companies[r.event.symbol]?.name || r.event.symbol)} is in today's queue.</div></div></div></div>`;
+      <div class="c-why">${esc(r.why)}.</div>
+      <div class="c-meta">Reason to call: ${esc(feed.companies[r.event.symbol]?.name || r.event.symbol)}, ${esc(r.event.title)}</div></div></div></div>`;
 }
 
 // ---------- settings sheet ----------

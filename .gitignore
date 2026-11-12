@@ -8,3 +8,4 @@ __pycache__/
 # Downloaded PDFs and raw API dumps stay local; extracted text and JSON are committed.
 data/raw/
 .venv/
+.env*

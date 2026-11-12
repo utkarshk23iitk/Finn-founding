@@ -83,3 +83,43 @@ Short record of the choices that shape FINN, and why. Newest last.
     belongs to Amber. The first version looked only one level down and
     missed the best person for Amber's acquisition: Farhan, who ran Ascent's
     plant until 2023.
+
+## Friday 13 Nov: the Today screen (Push)
+
+16. **Rules rank filings; no model.** Category (what a filing is) and
+    priority (how much it should interrupt) are separate. Headlines come
+    from NSE's own line; when that is generic, from the letter's "Sub:"
+    line; when that says only "Disclosure under Regulation 30", from its
+    first "we wish to inform you that" sentence. Reading the letter
+    changed real rankings: CG Power's "Action(s) taken or orders passed"
+    was a pollution board order to close a plant (5 Nov), stayed by the
+    High Court the next day; Bharti Airtel's five filings under the same
+    title were routine telecom-department notices.
+17. **A short queue with an end, not a feed.** It opens with "6 things need
+    you", each card has Done, and the list ends with "That's everything
+    that needs you". Below it: one-liners worth a glance, then routine
+    paperwork folded into counts.
+18. **One card per company and category.** Voltas filed four leadership
+    changes on 6 Nov; they are one card, each filing one line ("Jayant
+    Balan named MD"), not four paragraphs of legal prose.
+19. **A move joins the filing that explains it.** Alkem traded 10.6x its
+    median volume on 12 Nov, when it filed results and named a new CFO.
+    Results win ties, so the move sits on the results card. A move with
+    no filing behind it gets its own card that says so, ranked by size.
+20. **Every material card ends with a person.** One name is shown, the rest
+    are a tap away, each with two signals: how well they know the company
+    or person, and how long since you last spoke.
+21. **Context from the same company.** Each card lists the company's other
+    material filings from the month. Alkem's new CFO sits next to its
+    forensic audit (21 Oct, alleged misappropriation by a former employee)
+    and its new CEO (3 Nov). Read one at a time, those look routine.
+22. **Windows count back from the snapshot time**, shown in the header, so
+    the queue is the same whenever it is opened.
+23. **The browser enforces the privacy rule.** The site is static on
+    Vercel. Its Content Security Policy allows connections only to its own
+    origin, so the page cannot send contacts anywhere even if the code
+    tried. Thresholds and Done marks stay in the phone's local storage.
+24. **Known limits.** The data is a snapshot (13 Nov, 2:16 am), refreshed
+    by running the pipeline on a laptop; there is no scheduled refresh or
+    push notification yet. Results cards still show the quarter, not the
+    numbers; that is next.

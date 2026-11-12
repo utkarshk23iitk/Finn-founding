@@ -102,6 +102,7 @@ def _tidy(s: str) -> str:
     s = re.sub(r"^in this regard,?.{0,120}?\b(?:submits|states|clarifies|informs)\b(?: as follows)?\s*:?\s*", "", s, flags=re.I)
     s = LODR.sub("", s).strip(" -–—:.;,/")
     s = re.sub(r"^(?:sub(?:ject)?\s*[.:\-–]+\s*)", "", s, flags=re.I)
+    s = re.sub(r"^(?:about|regarding|that)\s*[,:]\s*", "", s, flags=re.I)
     s = re.sub(r"^(intimation|disclosure|information|update)s?\s+(of|on|regarding|about|for|under)\s+", "", s, flags=re.I)
     return s[:1].upper() + s[1:] if s else ""
 

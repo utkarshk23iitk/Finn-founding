@@ -11,6 +11,8 @@ FINN has three layers:
 - **Network:** who in the investor's own network can help explain it,
   shown inside Push and Pull.
 
+**Try it on a phone:** https://finn-founding.vercel.app
+
 Work in progress. Decisions are recorded in `docs/DECISIONS.md`.
 
 ## Run the pipeline
@@ -19,11 +21,13 @@ Python 3.11 or later.
 
 ```bash
 pip install -r requirements.txt
-python run.py prices
-python run.py filings --days 30
+python run.py prices            # a year of daily prices; the last week from NSE
+python run.py filings --days 30 # NSE filings for the portfolio
+python run.py export            # rank filings and write web/data/ for the app
 ```
 
-Data is cached in `data/`; the app reads only from the cache.
+Data is cached in `data/`; the app reads only from the cache. `web/` is a
+static site with no build step; `vercel deploy --prod` publishes it.
 
 ## Tests
 
