@@ -40,3 +40,46 @@ Short record of the choices that shape FINN, and why. Newest last.
    Ram College of Commerce); some name no past employer at all (Alkem's new
    CEO and CFO). When a profile is thin, FINN says so and points to the
    contact who knows the company instead of filling the gap from a model.
+   Each fact carries the exact words it rests on, and a test checks every
+   quote against the cached filing (43 checks, including one that must
+   catch a changed year or employer).
+
+## Friday 13 Nov: the network
+
+9. **What the investor gives FINN.** A contact list with each person's
+   career and education, how they met, a 1–5 closeness and the date they
+   last spoke. In real use that is the investor's own LinkedIn data export
+   (they own it), their calendar for last-contact dates, and their notes;
+   fuller career histories would need the contact's consent or a licensed
+   people-data provider. The demo uses 45 synthetic contacts with real
+   employers and schools, so links to real executives can be computed.
+10. **The network never leaves the phone.** Matching runs in the browser
+    against public data (filings, filed profiles, a company map). No
+    contact is sent to a server or a model. A test fails if the engine
+    gains any network call.
+11. **Real and synthetic never mix.** Real people's facts come only from
+    filings. The contacts are fictional, labelled as such, and a test
+    checks that none shares a name with a real executive.
+12. **A link is evidence, not a guess.** Same employer with overlapping
+    years (more if in the same function), the same intake, or the same
+    school. Each employer counts once. When a filing gives no years, FINN
+    says "the filing doesn't say when" and the link is medium at most.
+    Sharing only a boundary year (one left in 2001, the other joined in
+    2001) does not count as working together.
+13. **A route is two numbers, shown separately.** How well the contact
+    knows the person, and how close the investor is to the contact. For
+    Voltas' new MD, Meera knows him better (7 years at Voltas, then 4 at
+    Voltbek while he was its CEO), but you last spoke a year ago. Vikram
+    joined the Tata Administrative Service in the same 1999 intake and you
+    spoke last month. FINN shows both, not one blended score.
+14. **For "who knows this company", knowledge beats closeness.** Inside
+    knowledge comes first and closeness breaks ties. Specialists are matched
+    to the kind of event: a former drug regulator for a plant inspection, a
+    securities lawyer for a SEBI letter, an executive-search partner for a
+    new CEO. The first version also suggested a consumer-company CFO for
+    Amber's acquisition and a drug regulator for Dabur's SEBI letter; both
+    were wrong, and tests now forbid them.
+15. **Ownership chains count.** Ascent Circuits belongs to IL JIN, which
+    belongs to Amber. The first version looked only one level down and
+    missed the best person for Amber's acquisition: Farhan, who ran Ascent's
+    plant until 2023.
