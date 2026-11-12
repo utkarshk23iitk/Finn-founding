@@ -1,0 +1,775 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Registered Office: Apollo Tyres Ltd. 3rd Floor, Areekal Mansion, Panampilly Nagar, Kochi 682036, India 
+CIN: L25111KL1972PLC002449, Tel No. + 91 484 4012046, Fax No. +91 484 4012048, Email:investors@apollotyres.com 
+November 6, 2026 
+ 
+The Secretary, 
+BSE Ltd. 
+Phiroze Jeejeebhoy Towers, 
+Dalal Street, 
+Mumbai – 400001.  
+ 
+The Secretary, 
+National Stock Exchange of India Ltd, 
+Exchange Plaza, 
+Bandra-Kurla Complex, 
+Bandra (E), 
+Mumbai - 400 051 
+ 
+ 
+Sub: Transcript of Analyst/ Investor Conference Call  
+Dear Sir/Madam, 
+Pursuant to Regulation 30(6) and 46(2) of the SEBI (Listing Obligations and Disclosure Requirements) 
+Regulations, 2015, we wish to inform you that a Conference Call for the analysts and investors to discuss 
+the financial and operational performance of the Company for Q2 FY27 was held on November 5, 2026.  
+Please find attached herewith the transcript of the aforesaid call. The same has also been placed on the 
+website of the Company IR Presentations | Apollo Tyres Corporate. 
+This is for your information and records. 
+Thanking You, 
+Yours Sincerely, 
+ 
+For Apollo Tyres Ltd 
+ 
+ 
+ 
+Seema Thapar 
+Company Secretary & Compliance Officer 
+Apollo Tyres Limited  
+Q2 FY27 Earnings Conference Call  
+November 05, 2026 
+ 
+ 
+Joseph George: Good afternoon. On behalf of IIFL Capital, I welcome you all for the 2Q FY 
+'27 Results Conference Call of Apollo  Tyres Limited. From the 
+management, we have with us today Mr. Ravi Kumar Shingari , Chief 
+Financial Officer  and Himanshu Sharma, Head, Investor Relations and 
+Budgeting.  
+ 
+I would now like to hand over the call to Mr. Ravi Kumar Shingari  for his 
+opening remarks. 
+ 
+Over to you, Ravi.  
+ 
+Ravi Kumar Shingari: Thanks, Joseph. Good morning, everyone, and thank you for joining us 
+today. I would like to welcome you all to the Apollo Tyres Quarter Two FY 
+’27 Earnings Call.  
+ 
+Before I begin, let me say that I'm honored to take the role of Chief Financial 
+Officer at Apollo Ty res. I would like to thank Chairman Sir, Neeraj, the 
+Board and the leadership team for the trust they have placed in me. 
+ 
+Apollo Tyres has built a strong foundation over the years and I look forward 
+to working closely with the team as we continue to enhance performance, 
+strengthen financial discipline and create long- term value for our 
+shareholders and stakeholders. 
+ 
+Unfortunately, Neeraj could not join us today for the call due to some 
+unexpected circumstances, but on his behalf, and on behalf of Apollo 
+Tyres, I would like to wish everyone a very Happy Diwali.  
+ 
+Coming to the performance, the second quarter  was characterized by a 
+challenging operating environment, marked by persistent geopolitical 
+uncertainty and significant  inflation in the key raw material cost. Despite 
+these headwinds, I am very happy to say that the busy delivered a resilient 
+performance and continued to execute on its strategic priorities. 
+ 
+On a consolidated basis, our revenue grew over 16% year-on-year to Rs. 
+INR 79.7 billion, while EBITDA stood at INR 8.6 billion, translating into an 
+EBITDA margin of 10.7%. More importantly, this  was our strongest year -
+on-year revenue growth  in the last 16 quarters, reflecting the strength of 
+our brands, customer relationships and market positioning.  While 
+profitability was impacted by elevated raw material  cost, disciplined cost 
+management and operating efficiencies helped partially offset the 
+inflationary pressures. 
+ 
+While I'll come back to the results in a little while, let me take this 
+opportunity to talk about the tangible progress we are making across our 
+strategic priorities, reinforcing the long-term foundations of  the business. 
+On the innovation front, we  further strengthened our product portfolio 
+through new  approvals and engagements with leading OEMs including 
+BMW, Mercedes -Benz, Mahindra and Tata Motors. In digital 
+transformation, we are increasingly leveraging  artificial intelligence and 
+advanced analytics to  improve productivity, quality and operational 
+reliability. 
+ 
+During the quarter, we successfully completed the SAP S/4HANA 
+implementation for our US business  and now we are on our way to 
+implement the same for the European and the Indian operations.  
+ 
+On brand building, we continue to invest behind both Apollo and 
+Vredestein, driving consumer engagement across  our key markets. In 
+India, our BCCI led campaigns significantly expanded our rural outreach, 
+while in Europe, targeted partnerships and premium positioning  initiatives 
+further strengthened the Vredestein brand. 
+ 
+Equally importantly, we remain focused on strengthening organizational 
+capability. During the quarter, our  Chennai plant was recognized with the 
+CII EFI National Excellence Award for Employee Relations, reflecting our 
+commitment to  building a highly engaged and collaborative workforce. 
+Sustainability remains deeply embedded within our long-term strategy. We 
+continue to strengthen our  ESG framework and are encouraged by the 
+recognition received from leading ESG rating agencies. Operationally, our 
+AP plant and our Kerala plant achieved Gold Level Zero Waste to Landfill 
+Certification, further supporting our 2030 sustainability ambitions. 
+ 
+Coming back to the results, let me briefly touch upon India operations to 
+start with. India operations revenue increased by nearly 26% year-on-year 
+to INR 59.2 billion, representing an acceleration over the growth delivered 
+in the first quarter. The performance was  broad-based across both 
+Replacement and OEM channels with volume growth and pricing 
+contributing almost equally to the top-line expansion. 
+ 
+Profitability remained affected by the sharp escalation in raw material cost. 
+India EBITDA stood at INR 6.6 billion with a margin of 11.1% compared to 
+15.3% in the corresponding period last year. However, I believe the more 
+important takeaway from the first half year is the company's response to 
+this inflation cycle. Since April 2026, raw material costs have increased by 
+approximately 25%, making this one of the steepest and fastest cost 
+inflation episodes we have experienced in many years. 
+ 
+In response, Apollo has implemented pricing actions of up to 15% in the 
+Replacement segment alongside meaningful price increases in the OEM 
+business. While raw material prices will eventually stabilize and may even 
+soften over a period of time, our objective is  to ensure that the enhanced 
+pricing discipline demonstrated during this cycle  becomes a permanent 
+feature of the business. We strongly believe that this will contribute to a 
+fundamentally stronger, more resilient and more profitable business model 
+over the long term. 
+ 
+Looking ahead, we expect demand conditions in India to remain supportive. 
+While reported volume growth may moderate over the coming quarters due 
+to higher base, revenue momentum should continue to benefit from the 
+pricing actions implemented since April.  
+ 
+On margins, although the direction of recovery is clear, the price timing 
+actually will depend on the trajectory of commodity markets and geopolitical 
+developments. Our focus will remain on balancing growth with profitability 
+while maintaining disciplined execution. 
+ 
+Turning to Europe, the operating environment remained challenging during 
+the quarter. Revenue  declined by 12% year -on-year to EUR 157 million, 
+primarily reflecting weakness in the truck and agriculture segments, which 
+was impacted by temporary supply disruptions as a fallout of our Enschede 
+plant closure.  
+ 
+But despite these challenges, there were encouraging signs beneath the 
+surface. Our PCR business  continued to gain market share despite 
+subdued demand  conditions, reinforcing the strength of  a brand and 
+product proposition.  
+ 
+EBITDA margins for the European operations for the quarter stood at 
+10.3%. While our margin recovery trajectory in Europe has  taken longer 
+than initially anticipated, that has been due  to the combination of market 
+softness and transition -related challenges, but our strategic rationale 
+remains unchanged. The actions we are undertaking today are intended to 
+create a structurally more competitive  and financially stronger European 
+business.  
+ 
+Our immediate priorities remain clear, completing the manufacturing 
+transition, stabilizing the supply chain and enhancing the cost 
+competitiveness. Over the medium term, we remain committed to building 
+a European business capable of delivering high teen operating margins. 
+ 
+Moving on to the balance sheet, as we communicated previously, w e 
+continue to invest behind our strategic growth priorities. Consolidated net 
+capital expenditure during the first half of FY ‘27 was around INR 15 billion. 
+This is broadly in line with our full year plans. What is particularly 
+encouraging is the strength of a financial position despite this investment 
+cycle. Through disciplined balance sheet management over the  past 
+several years, we have significantly enhanced our financial flexibility. As on 
+30th September 2026, consolidated net debt to EBITDA stood at just 0.9 
+times, providing substantial capacity to  fund future growth while 
+maintaining a prudent capital structure.  
+ 
+Even under our ongoing investment plans, we are fairly confident that 
+leverages will stay comfortably within our targeted range. This financial 
+strength gives us the ability to continue investing in capacity expansion, 
+digital transformation, technology, product development without 
+compromising the balance sheet resilience. 
+ 
+To conclude, while geopolitical developments and commodity volatility 
+continue to create uncertainty in the near term, the underlying 
+fundamentals of a business have continued to strengthen. Over the past 
+several years, we have invested meaningfully in expanding and optimizing 
+our manufacturing footprint, enhancing operational capabilities, 
+strengthening our  brands, and building digital and technology platforms 
+that improve decision-making and productivity across the organization. 
+ 
+These investments are now increasingly translating into stronger 
+competitive positioning and improved resilience across market cycles. We 
+remain highly confident about the long- term opportunity ahead of us. In 
+India, we are well positioned to benefit from a growing tyre market, 
+improving product mix, and a more rational pricing strategy. In Europe, our 
+focus remains on unlocking the full potential of  the business through 
+improved competitiveness and a stronger operating model, enabling us 
+leverage a significantly large profit pool. Supported by a healthy balance 
+sheet, improved business fundamentals, and disciplined execution, we 
+believe that Apollo Tyres is  well positioned to deliver sustainable growth 
+and long-term value creation for our stakeholders. 
+ 
+Thank you for your time and your continued support. With that, we would 
+like to be very happy to take your questions. 
+ 
+Joseph George: Thank you, Ravi. This is Joseph again. Let's start the Q&A session. 
+Participants who have a question, please use the  Raise Hand icon to ask 
+a question. The first question is from the line of Raghunandan. Raghu, 
+please unmute yourself and ask your question. 
+ 
+Raghu Nandhan: Thank you for the opportunity. Wishing a very happy Diwali and best wishes 
+to Ravi and Himanshu for all the milestones ahead. Thanks for the opening 
+remarks. Firstly, if you can talk about the volume performance, in opening 
+remarks you mentioned half  of the growth came from volume, so 
+approximately 13 %. Within that, how is the performance in OEM, 
+Replacement and export segments? And also, within Replacement, if you 
+can talk about how various categories are doing, that will give a sense what 
+to expect ahead? 
+ 
+Ravi Kumar Shingari: Sure Raghu, and thank you so much for your kind wishes, Raghu. 
+Look forward to your support as we move forward. So, you know, in terms 
+of volume performance, OEMs actually led the pack, the OEM channel led 
+the pack for us in this quarter on a Y-on-Y basis. So , we, in OEM we 
+witnessed around about 25 % plus growth in volume followed by 
+Replacement which was in low double digits and exports wherein it was 
+largely flattish. 
+ 
+Moving into Replacement, I think the pack was there led by V-Strom, while 
+the numbers are fairly small but the volume growth was maximum seen in 
+terms of percentage in the two- wheeler segment which was again above 
+around 25%, 26% and followed by the Truck and the PCR segment which 
+both of them were while PCR exports did not deliver strong volume growth 
+but as far as India R eplacement is concerned both PCR and T ruck. PCR 
+in fact gave us about mid-teens and Truck was high single digits. 
+ 
+Raghu Nandhan: Yeah, thank you for giving that color . And on the commodity, extremely 
+challenging times but hopefully last one week the crude prices have started 
+to correct and that gives some hope for future. Firstly , for Q2, if you can 
+share how much was the increase in raw-mat basket and for various 
+commodities like natural rubber, synthetic rubber, how much was  the 
+prices? And then for Q3, what is the approximate increase expected on the 
+commodity basket and the price hike plans which you have? 
+ 
+Ravi Kumar Shingari: So, Raghu, on the Q2 raw-mat increase, now we already witnessed 
+a massive increase in the first quarter so from there we again saw an 
+upside but if I look at, if I compare Q2 FY ‘27 to Q2 FY ‘26 the overall basket 
+cost went up by approximately 25% wherein natural  rubber touched 
+unprecedented numbers and it continues to be on the rise. As we speak, it 
+has already touched the INR 300 mark in India. So compared to last year, 
+natural rubber grew, the cost went up by almost 25%, 26%. And then crude 
+led derivatives all witnessed substantial increase between 28%, to 35% 
+across various segments. Steel cord was around low double digits. And 
+going forward, we are expecting that from quarter two to quarter three, the 
+total basket cost may move up around mid to high single digits. 
+ 
+And as you would have seen that in the first half of the year, we have been 
+taking fairly timely pricing actions, which has been a big differentiator in this 
+financial year. Going forward in the quarter three and quarter four as well, 
+our teams are all geared up and they  have already, some increases have 
+been announced already in the month of October. And more importantly, 
+we have also started now getting the price impact increases from our OEMs 
+as well. So , all in all, I think there will be a pressure on  cost, but we are 
+confident that our commercial team  will be able to take timely pricing 
+actions. 
+ 
+Raghu Nandhan: Yeah, thank you for that. Just a last question. On the Europe business, can 
+you share how was the Reifen performance for the quarter, revenue and 
+EBITDA? 
+ 
+Ravi Kumar Shingari: So Reifen is a fairly stable  business. And by and large, it has 
+remained at the same levels as what we would have seen in the past years. 
+But coming specifically to quarter two, our margins, our EBITDA margins 
+have been, and you also have to understand there is a bit of seasonality in 
+that business. So, quarter two margins are slightly subdued, which you will 
+see changing in quarter three. But we, you know, as I said, the revenue 
+was flattish, and EBITDA margins, by and large remained, I would say, at 
+a similar level,  slightly lower than what we did last year due to the cost 
+pressures that we are seeing. But it is important to look at Reifen business 
+from a seasonality perspective, as I mentioned, and quarter three is when 
+we'll be able to see an uptick in the EBITDA margins there. 
+ 
+Raghu Nandhan: Thank you, sir, and wishing all the best for future. 
+ 
+Ravi Kumar Shingari: Thank you, Raghu. 
+ 
+Joseph George: We move on to the next participant. T he next question is in the line of 
+Siddhartha Bera. Siddhartha, can you unmute yourself and  go ahead, 
+please? 
+ 
+Siddhartha Bera: Yeah. Hi, sir. Thanks for the opportunity and Diwali festive greetings to the 
+team. Sir, first question is on the price hikes, can you quantify  how much 
+are you planning to sort of take to improve the sort of gross margins in the 
+coming quarters given the cost pressure, anything which you have taken in 
+maybe September or October which should sort of benefit in quarter three, 
+so some thoughts there will be helpful. 
+ 
+Ravi Kumar Shingari: So, Siddhartha, thank you so much for your wishes. See, from a 
+pricing action, if you would see that broadly the raw material push was 
+about 25% in the first half and we, to compensate and maintain the margins 
+at similar levels, we would have  needed around, you know, 16%  to 17% 
+price increase. So, till now we have been able to across various categories 
+on an average between 11% to 13% price increases.  
+ 
+Now, you know, as you know that the nature of the industry is such that the 
+pricing actions can't be taken at the same pace at which you see the RM 
+moving, so it will be gradual increases that we take across categories. 
+There are some announcements that we have done around October, but it 
+will be in different categories somewhere in the range of 1 % to 2% and 
+that's typically that's how pricing actions are taken but there is a sustained 
+plan and we have to watch the RM carefully at the same  time we have to 
+be cognizant of the market scenario. 
+ 
+So, there are planned increases which may come in December or January 
+depending upon how the RM is moving and how the competition or how 
+the market is responding. And yeah, so till October end, we would have 
+taken across as I said, across various categories between 13% to 15% and 
+which is more or less in line with the industry trend. In some cases, we are 
+leading the price increases and in some cases other players are doing it. 
+ 
+Siddhartha Bera: Got it, sir. And sir, second question is on the Europe side. I mean, we have 
+continued to see sort of on the revenue side, a lot of weakness in the last 
+few quarters. Some thoughts there, I mean, is it  more company specific 
+where because of the transition we could not supply or is the demand only 
+so weak and how do you see the outlook in the second half or maybe next 
+year for the business? 
+ 
+Ravi Kumar Shingari:  So, Europe impact is I think a combination of two, both factors as you 
+rightly pointed out. There is market has slowed down. So, there is that 
+impact of slowness which we see in the larger economy and also you know 
+our transition from Enschede and moving that supply chain to our different 
+plants. This was actually an expected impact that when we were doing our 
+budgets as well there will be a bit of impact on the sales but, and one was 
+the whole availability and supply but the second also is a domestic supply 
+chain management which we are now putting in place as we shut down our 
+Netherlands plant. 
+ 
+Going forward, quarter three onwards as and as we all know that quarter 
+three again is our stronger quarter. Quarter three onwards we are expected 
+to meet our budgets and probably get the revenue in line and the volumes 
+in line but you know coming back to the quarter two as just to share some 
+data points while you see the overall revenue going down but if you deep 
+dive into categories so in the PCLT category we actually  gained market 
+share wherein the market was slow but in the PCLT category we grew 5% 
+YoY and similarly in the Apollo T yre PCLT also we saw very , very high 
+growth volumes or probably northwards of 50% . So those two areas 
+actually propelled the volume growth but we saw decline in the agri and the 
+TBR segment largely due to a combination of the supply chain 
+reorganization and transitioning of our manufacturing from Enschede and 
+Hungary to India. 
+ 
+Siddhartha Bera: Understood sir. Sir, last question on the working capital side we did see a 
+steep contraction in the first half. Do you see some normalization coming 
+through in the second half or should we expect some of  those challenges 
+which are impacting that to continue for some time now? 
+ 
+Ravi Kumar Shingari:  So, you know, so first half I think a large impact was also due to the 
+payouts related to the plant shutdown.  Now that is behind us , so as you 
+rightly indicated the second half should see stable working capital norms 
+and also the seasonality aspect in Europe will come in and the cash flows 
+tend to get better in the second half of the year . So, combination of 
+everything we will see a more stable working capital in the second half of 
+the year. 
+ 
+Siddhartha Bera: Got it, sir. Thanks a lot. I'll come back in the queue.  
+ 
+Joseph George: The next question is from Arvind Sharma. Arvind, please unmute yourself 
+and go ahead.  
+ 
+Arvind Sharma: Hi, good morning. Can you hear me? 
+ 
+Ravi Kumar Shingari: Yes, Arvind, morning. We can hear you. 
+ 
+Arvind Sharma: Yeah. Hi good morning,  a very good morning. Thank you for taking my 
+question. Two questions from my side. First of all, when we look at your 2Q 
+numbers there was a very strong control on the other expenses or the 
+operational cost. So, what was the driver behind it, including employee cost 
+and how sustainable it is? 
+ 
+Ravi Kumar Shingari:  So, Arvind, as we  started seeing the cost push around RM, there is a 
+strategy meeting that we do almost every week. And the focus areas are 
+very clear, what pricing actions we need to take to maintain the  margins 
+and what kind of bad costs we can cut down or the costs that can be shifted 
+to a future date. So, I think there has been a very strong discipline around 
+our A &P budgets. And we have now a collaboration with BCCI. But 
+anything beyond that, we have been really monitoring very closely. And as 
+we saw impact on RM B, on a timely basis, we kept on taking those cuts. 
+We have kept a very strong check on the manageable costs around travel, 
+etc. 
+ 
+So wherever possible, wherever things have been in control, we can't do 
+much about freight because that's, again, being driven in a different 
+direction. But by and large, the controllable expenses have  been kept in 
+check. And as far as the sustainability is concerned, I think you would have 
+seen in the last few quarters that cost discipline has now become a  very 
+integral part of our operations. And to an extent, the whole leadership is 
+really monitoring this almost on a fortnightly basis. So that's the kind of rigor 
+and discipline that has been brought around the cost controls. 
+ 
+Arvind Sharma: Got it. Thanks so much. My second question would be on the India pricing 
+environment. You've alluded to  some price hikes undertaken to pass on 
+the cost pressures. But where do you think is the pricing environment right 
+now? And as a colleague, this question can talk a bit about the competitive 
+landscape in India, especially in the TBR segment. 
+ 
+Ravi Kumar Shingari: So, as I mentioned earlier that our attempt and endeavor is to ensure that 
+the steady margins are a regular feature. But at the pace at which RM has 
+moved, it is not really to match it exactly , there will be a timing gap. And 
+there is that amount of price increases that the  market conditions dictate, 
+which we can take. So, by now, I already indicated that we have taken price 
+increases within the range of 13% to 15% across various categories. 
+ 
+But specifically on TBR, we have been the market leaders on price 
+increases and the timing of it. And it is, again, there we are probably leading 
+the whole price increase strategy we are. Till now in TBR, we have taken 
+around between 13% to 14% price increase. What is more important to 
+understand is that  this while this was in Replacement, we have also 
+managed to get some reasonable price increase or similar price increases 
+with the OEMs as well,  wherein we all know that it is not a formula linked 
+pricing but despite that the teams have managed to implement these price 
+increases across OEMs . So therefore, you know around TBR this is the 
+actions that have already been taken. Have I answered your question 
+Arvind? 
+ 
+Arvind Sharma: Yeah, very clear. Thank you so much. 
+ 
+Joseph George: All right. The next participant we have is Rishi V ora. Rishi, go ahead and 
+unmute yourself. 
+Rishi Vora: Yeah, hi. Thank you for the opportunity. Sorry, I might have missed but 
+have you guided for what would be the quantum of commodity inflation in 
+third quarter at this point in time? 
+ 
+Ravi Kumar Shingari: Yeah, Rishi, so we talked about it but we are basically expecting around 
+mid to high single digit cost  push on the entire basket from quarter two to 
+quarter three. Rishi, am I audible? Did I answer your question? 
+ 
+Rishi Vora: Yeah, yeah, very clear. My second question was on the pricing side, right? 
+So obviously we would have taken pricing during the course of second 
+quarter and maybe not all the quantum would have gotten realized during 
+this quarter. So, what is like with the price increases which we have already 
+taken, what is the price pass through that will happen in third quarter 
+according to whether it will be 4%, 5% that will come through or lower or 
+higher just if you could say like what we have realized in 2Q and what is 
+remaining in 3Q? 
+ 
+Ravi Kumar Shingari: You know, so I think Rishi, it's important to understand that we are in an 
+inflationary cycle as far as the raw materials are concerned. So , while we 
+are trying to take timely  pricing action and as I indicated that  we are 
+expecting further cost push,  but you know the volatility is quite high and 
+you rightly mentioned that a large part of the price increases would have 
+been taken at different points of  time. So, in the quarter three, the range 
+that I mentioned between 13%  to 15 %, we will probably see the entire 
+impact of that full price increase coming in. How much of that compensates 
+the RM cost portion and what kind of further pricing action we take in the 
+month of December or November, you know, it will be probably more clear 
+as we move towards the end of the quarter. But as I said, our endeavor 
+and attempt is to ensure that we maintain healthy margins and that has 
+always been our guiding principle on the pricing action.  
+ 
+Rishi Vora: Understood. In OEMs, how much of the price increase which you would 
+have gotten? I assume it's a formula linked or generally it's negotiations? 
+ 
+Ravi Kumar Shingari: So, it's largely formula linked. So that of course comes with a lag of one 
+quarter, but there were some OEMs wherein it was not formula linked. And 
+as I mentioned, we have also managed through negotiations get an 
+appropriate price increase to maintain the cost, to take care of the cost 
+increase on raw material. 
+ 
+Rishi Vora: Understood. And just last question on the volume growth expectations , 
+right, in the domestic market . First half , you would have grown by low 
+double digits, you know, at least now base catches up, but do you expect 
+the industry to at least, you know, continue to grow at mid-single digit high 
+single digit volume run rate or is there any different to at least what you are 
+seeing at this point in time on ground? 
+ 
+Ravi Kumar Shingari: So, I would like to take you back last year  and if you will recall quarter 
+three of last year was when the GST changes happened and for us BCCI 
+came in. So, we already are sitting on a now an inflated base from last year. 
+So, in the first and the second quarter, we have seen very high,  I mean 
+almost the mid- teens volume growth in the India operations across  
+categories, but in quarter three since we are already starting from a higher 
+base, the large part of the revenue growth will  come from pricing actions. 
+Of course, we will see volume upsides as well. Our expectation is it should 
+be between mid to high single digits as compared to last year. 
+ 
+Rishi Vora: Any guidance on exports given that it has been volatile and obviously the 
+situation is also such, but any guidance on when you are seeing the exports 
+recovery? 
+ 
+Ravi Kumar Shingari: Difficult to say at this stage, you know, because you can see the volatility 
+is quite beyond control. And as we see international markets, our exports 
+are all around, you know to Europe to America and even to the Middle East, 
+Southeast Asia. So, I think it will be very  difficult to say but as of now we 
+are being very careful and conservative on the exports because we see a 
+strong demand momentum in the domestic market. Let's see what quarter 
+three does as far as the export conditions are concerned. 
+ 
+Rishi Vora: Understood. All the best team. Thank you. 
+ 
+Joseph George: Next question is from Vijay Pandey. Go ahead. 
+ 
+Vijay Pandey: Hi, can you hear me? 
+ 
+Ravi Kumar Shingari: Yes, Vijay we can hear you. 
+ 
+Vijay Pandey: Sir, firstly on the European demand. So, just want to understand how much 
+of the restructuring is over and what is left? When can we start? Like, can 
+we expect normal operations to resume from quarter three or quarter four? 
+And the weakness in the  agri, the supply constraint on the agri side, that 
+will remain for entire of this year and from next year, are you expected to 
+continue for the next  year also? Because I think we have a stopped  
+production for agri  tyres there, right?  So, if you can just highlight the 
+nuances being played at the European business. 
+ 
+Ravi Kumar Shingari: So, thanks, Vijay. So, Vijay, in Europe, as we all know, you know, too, we 
+had shut down our Enschede plant and that was basically to ensure that 
+we kind of move away from a high cost manufacturing location. Now, 
+alongside what was also happening was we also relocated our TBR 
+manufacturing facility from Hungary to AP, our India plant. Plant operations 
+in Enschede stopped end of first quarter. And as we speak, there is a team 
+on the ground which is now working towards  the whole dismantling of 
+equipments, sale, etc., which will take its own two to three quarters to bring 
+it to a full closure. 
+ 
+As far as the operations are concerned, by and large, we should be ready 
+with the supply, with the manufacturing facilities in the next  two quarters. 
+And hopefully from next financial year, we should see largely stable 
+operations in Europe and coming back to our normalized margin that we 
+used to always have in Europe. And in the first two quarters, there is a 
+massive focus on getting the whole supply chain in place. We are in the 
+process of actively doing our  reorganization around the warehouses in 
+different parts of Europe and also changing our business model. And 
+coupled with our whole S4/ HANA implementation in Europe, all that is 
+expected to get over in this financial year or maybe by quarter one of next 
+financial year. And hopefully by next year, you will see largely stable 
+operations in Europe. 
+ 
+Vijay Pandey: Okay. Sir, secondly, on the other expenses on the consolidated side, so 
+generally fourth quarter has a higher lumpsum increase. Last year, it was 
+also there. So should we expect that to happen this year, given the RM, 
+given the margin and the RM advents going on or this, because we have 
+maintained very well in the first two quarters and third quarter, we also  
+should be able to maintain. Just want to understand should this increase in 
+the fourth quarter back to normal level or how should we look at it? 
+ 
+Ravi Kumar Shingari: Vijay, you're talking about the other expenses, right? 
+ 
+Vijay Pandey:  Yes. 
+ 
+Ravi Kumar Shingari: Very difficult to say, you know, because see this is a dynamic  situation 
+right now and we are taking actions as and when the situations are 
+evolving. I already mentioned that the leadership meets every fortnight to 
+really take real-time decisions. And if it requires us to be even more stricter, 
+and vigilant in the fourth quarter, we will do that. But, you know, it's very 
+difficult to really comment. It will all be driven by how the other cost push 
+are working, what kind of demand we are seeing. But focus is always going 
+to be to ensure that the operations are stable and we are able to capitalize 
+on the demand momentum that we see in India. 
+ 
+Vijay Pandey:  Okay. Sir, secondly, on the debt side, so we have taken a gross debt of 
+around INR 1,500 crores this year in first half. A nd I think you also have 
+mentioned that INR 1,250 crores is from the non -convertible debentures. 
+So, of which 8.5% is the interest rate. So, how do you think the interest rate 
+moving forward, both in the terms of the P&L and the cash, because some 
+part of it will be, I don't think you are making the entire payment of interest 
+in one go, right? Or correct me if I'm wrong here. 
+ 
+Ravi Kumar Shingari: So, Vijay, on this, I think we can probably, you can connect with the IR 
+team offline and they can give you  more granular details. But, you know, 
+from my side, I want to just kind of emphasize and highlight that we are at 
+a very comfortable leverage situation. Our net debt to EBITDA at a consol 
+is below one with this additional debt as well. And even with all  the 
+expansion plans that we have announced, we are confident  that we will 
+remain in a workable limit on net debt to EBITDA. But on the  granular 
+details, you can get in touch with the IR team. They'll be happy to share the 
+details with you. 
+ 
+Vijay Pandey:  And sir, this level of the, this debt should be able to capture the upcoming 
+CapEx or we will need further debt going forward? Like, was it related to 
+working capital or it is also related to the CapEx coming forward? 
+ 
+Ravi Kumar Shingari: So, it's a combination of both, you know, and we will, we may see more 
+debt coming in as we embark on our expansion plans that we have 
+announced. But again, I like to emphasize that the whole leverage  ratios 
+remain look very comfortable. So, we are really not very, we are in a very, 
+very comfortable position. 
+ 
+Vijay Pandey: Okay, sir. Thank you and all the best. 
+ 
+Ravi Kumar Shingari: Thank you. 
+ 
+Joseph George: The next question is from Amyn Pirani. Ameen, please go ahead. 
+ 
+Amyn Pirani: Hi. Can you hear me? 
+ 
+Ravi Kumar Shingari: Yes, Amyn, we can. 
+ 
+Amyn Pirani: Yes. Hi, Ravi. First of all, congratulations on the new role and hopefully we 
+will interact more in the future. My first question is more of a medium term 
+one and then I have a few questions on the results. First of all, if I look at 
+your ROCE, we are  about to, or we have embarked on a slightly large 
+CapEx cycle. Net debt to EBITDA is low , but we've had a deleveraging 
+cycle and net debt will move up a bit now. So how should we think about 
+this, because at one point of time you had a mid-teens kind of a target and 
+obviously, you know, the external environment was not favorable. So how 
+should we think about how ROCEs will move, because as you rightly said, 
+you know, we are sitting on a high volume growth base, C apEx is 
+increasing. So how could we look at this from, say, the next 12 to 24 
+months? 
+ 
+Ravi Kumar Shingari: Thanks, Amyn, and thanks for your wishes. I look forward to meeting you 
+soon. You know, so I think we have seen in the results you would have 
+seen the demand coming through. At the same time, our capacities are 
+almost 85%, 90% in all across the plants. So,  I think it's very important to 
+keep that demand  momentum in consideration as we look at our 
+expansion, CapEx expansion, because otherwise, if we don't take timely 
+action, we will end up losing market share. So, for us, you know, it's always 
+a very tricky conundrum and we have to just balance it out with the right 
+amount of CapEx. 
+ 
+Now, ROCEs, of course, will, as we go through the CapEx cycle, there may 
+be a short-term impact on ROCE, but again, at a stable state, we will, as 
+we have guided in the past, we always want to target a mid- teem ROCE, 
+which will be our stable state of operations. And as I said, we prioritize right 
+now the growth story and once we are able to capitalize on that growth 
+story, we will see the ROCEs coming back. 
+ 
+Amyn Pirani: Okay. Great. That's good to know. Secondly, just, you know, some 
+bookkeeping questions on the results. So, in Europe, do we still have any 
+costs related to the Enschede plant still pending or from third quarter, it will 
+only be the Hungary plant on which our spends will be going? 
+ 
+Ravi Kumar Shingari: So. there are two parts to it , Amyn, one is that at an operational level, 
+there will be no plant operating costs as such because that stopped, and 
+Hungary will be the only operating plant there. But  we may, for next few 
+quarters we may see some bit of cost coming in which may be incurred for 
+just dismantling and moving the  equipments out. So those kind of costs 
+may keep coming in trickle but we don't expect them to be  a significant 
+amount. In this quarter itself if  you would have seen there is around EUR 
+2.3 million exceptional item in the European operations which was largely 
+as a fallout of some bit of employees that were remaining in a different legal 
+entity and that also now has been taken into the books. So by and large I 
+think we are through with the large part of the cost which we have already 
+taken into our accounts. There will be some bit of cleanup cost that you will 
+see coming up in Enschede. 
+ 
+Amyn Pirani: Okay. And since third quarter is generally a seasonally strong quarter 
+especially on the point of your winter tyres and specialty tyres, is Hungary 
+now fully equipped,  because I think some of the high performance tyres 
+were being supplied from Enschede in the past. So,  is now Hungary fully 
+equipped to take care of that? I am asking this in the context that is it 
+possible that this third quarter you may miss out on some of those demands 
+because you were still in transition and Hungary is not set up for that. So , 
+some color there would be helpful. 
+ 
+Ravi Kumar Shingari: Yeah, so I think see a significant part of that was already  being catered 
+and third quarter is largely the time for winter tyres and we had already 
+because PCR  is one of the most profitable segments in Europe and 
+therefore that plant was already put into place between India and Hungary. 
+The smaller sizes will be supplied from India and the high-end tyres will be 
+done from Hungary. So that plan is in motion. Going forward, I think what 
+is important is to take care of the OHT and the agri -supply which will be 
+catered from these plants. I think that is, so as I already mentioned in 
+quarter two we have seen a volume increase in the PCT Vredestein but 
+where we saw volume loss was largely agri and OHT. So that is something 
+which we will now, we will start seeing stabilizing from next year. 
+ 
+Amyn Pirani: Okay. Okay. Great. Thanks for that. 
+ 
+Joseph George: The next question is from Basudeb Banerjee. Basudeb, please go ahead. 
+Basudeb, you need to unmute yourself and go ahead. 
+ 
+Basudeb Banerjee: Yeah, hi all. Am I audible? 
+ 
+Ravi Kumar Shingari: Yes, Basu, you are audible. 
+ 
+Basudeb Banerjee: Yeah, thanks. Just to understand, as you said earlier in the call, during Q2 
+YoY raw mat basket is up 25% and overall cumulative price hike has been 
+somewhere around 12%, 13% and over and above that the raw-mat basket 
+is up somewhere around 8% in Q3 over Q2 and in Q3 till October there  is 
+a blended price hike of 2- odd-percentage over and above the 12 %, 13% 
+what have happened. So, is that the right way to understand? 
+ 
+Ravi Kumar Shingari: Basu, actually you know put it very simplistically, but we will have to do it 
+in a different way but I would again say that on this detailing it will be useful 
+if we connect offline and we can take you through the entire changes that 
+have happened at that granular level. 
+ 
+Basudeb Banerjee: So basically, what I was trying to understand that consumers have taken a 
+massive price hike as you rightly said and despite that  Replacement is 
+growing at double digit and now at 8% for the raw-mat basket hike will ask 
+for almost 5 %, 6% price hike where there is a 2% price hike which 
+mathematically implies December quarter further 300 bps, 400 bps of gross 
+margin risk. That being on one side being pure  mathematics, but on the 
+other side as whatever is the movement in Brent crude price you know what 
+has happened in past couple of days and the abnormal price of natural 
+rubber which easily if it follows Brent crude can correct 30%, 40% also. So, 
+basically I was trying to understand that which quarter one should try to see 
+as the peak of the raw-mat basket and post that if things remaining status 
+quo as today's price directionally your gross margin should start reversing, 
+going by past precedence that you don't cut prices in the replacement 
+market. 
+ 
+Ravi Kumar Shingari: So, Basu, when we did our second quarter earnings call our expectation 
+was that quarter three we should start seeing RM stabilizing, but you know 
+we are now as we are moving towards quarter three we see a single digit 
+high, single digit increase coming in quarter three as well. So, you know I 
+mentioned already it's a very volatile market which is a lot of things at least 
+on the cost side are not in our control as far as RM is concerned but what 
+we have managed to do and  you know I would say the industry pricing 
+discipline has been very, very at different rigor in this first half and therefore 
+you see across industry there has been successful price increases. So that 
+is something which is  in our control which depending on the market 
+situation we will keep taking timely action and of course the other expenses 
+is where we are going to put a lot of rigor in controlling that. 
+ 
+What, how the RM behaves in quarter three and quarter four and when it 
+starts stabilizing. As of now our expectation is that we should see it peaking 
+towards the end of the year and from next year onwards it should start 
+stabilizing. And this is again subject to all the volatilities that you see and 
+things changing on a daily basis. So, I would like to kind of give that caveat 
+to say how the geopolitical  situation emerged, but assuming that that 
+stabilizes, I would say from next year onwards we should start seeing RM 
+to kind of start tapering down. 
+ 
+Basudeb Banerjee: No, no, surely that's quite helpful. Yeah. So,  basically what you mean is 
+assuming the recent downward bias of Brent, if it directionally remains the 
+same, whatever high cost  inventory you have, what is the  change in 
+contract prices. So maybe especially from the next fiscal, the benefit  at 
+margin level one can expect and next two quarters it's just the stabilization 
+phase. 
+ 
+Himanshu Sharma: Basudeb, Himanshu this side. Just one thing to highlight, it is kind of crystal 
+ball gazing, but historically , we peak -out, our margins peak out or start 
+correcting as RM starts plateauing and we peak-out as it starts correcting. 
+One thing which I would want to highlight is compared to our last previous 
+cycles, we've been able to maintain or manage our expenses and balance 
+sheet in a much better manner. 
+ 
+And that is why the lowest point historically if you go back a few years, at 
+the height of RM  increase or height of where it used to  top, our margins 
+used to get down to single digit margins. We've been able to maintain  our 
+margins in a much better position. Our endeavor going forward will be, we'll 
+continue to maintain and optimize costs and grow and invest in growth. But 
+crystal ball gazing and saying which quarter exactly it will peak out will be 
+slightly difficult for us to comment. 
+ 
+Basudeb Banerjee: No, no. Definitely not exact quarter, what about directionally, but as you 
+rightly said, in earlier down cycles margins of India business used to be as 
+low as 7%, 8%. And now despite all these things, it is 11%. So definitely 
+we'll be wishing to  see with the price hikes and the  commodity basket 
+reversal, how quickly we go back to 16%, which anyways will take care of 
+the cash flows and ROC questions as in the past. Thanks. 
+ 
+Himanshu Sharma: Thank you. 
+ 
+Joseph George: Thank you. Due to time constraints, we'll take that as  the last question 
+today. On behalf of IIFL Capital, I thank you all for attending this call. Have 
+a good day. 
+ 
+Himanshu Sharma: Thank you. 
+ 
+Ravi Kumar Shingari: Thank you everyone. Thank you for joining today. 

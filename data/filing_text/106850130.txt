@@ -1,0 +1,642 @@
+ 
+ 
+ 
+ 
+ 
+November 06, 2026 
+ 
+BSE Limited 
+Phiroze Jeejeebhoy Towers, 
+Dalal Street, Fort, 
+Mumbai 400001 
+Scrip Code: 532504 
+National Stock Exchange of India Limited 
+Exchange Plaza,  
+Bandra Kurla Complex, Bandra (East),  
+Mumbai 400051 
+Symbol: NAVINFLUOR  
+ 
+ 
+Dear Sir / Madam, 
+ 
+Sub.: Transcript of Earnings Call held for the quarter and half year ended September 30, 2026 
+ 
+Pursuant to Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure 
+Requirements) Regulations, 2015, the transcript of the Company’s Earnings Call held on October 30, 
+2026 regarding discussion on operational and financial performanc e for the quarter and half year 
+ended September 30, 2026 (Q2 & H1 of FY 2026-27) is enclosed herewith. 
+ 
+This intimation is also being made available on the Company’s website at www.nfil.in.  
+ 
+Request you to take this intimation on record. 
+ 
+Thanking You, 
+ 
+Yours faithfully, 
+For NAVIN FLUORINE INTERNATIONAL LIMITED 
+ 
+ 
+Niraj B. Mankad 
+President Legal and Company Secretary 
+ 
+Encl.: a/a 
+ 
+ 
+Page 1 of 16 
+ 
+  
+   
+ 
+“Navin Fluorine International Limited 
+Q2 & H1 FY27 Earnings Conference Call” 
+October 30, 2026 
+ 
+     
+ 
+MANAGEMENT:  MR. VISHAD MAFATLAL – CHAIRMAN – NAVIN 
+FLUORINE INTERNATIONAL LIMITED 
+MR. NITIN KULKARNI – MANAGING DIRECTOR – 
+NAVIN FLUORINE INTERNATIONAL LIMITED 
+MR. ANISH GANATRA – CHIEF FINANCIAL OFFICER – 
+NAVIN FLUORINE INTERNATIONAL LIMITED 
+ 
+MODERATOR:  MS. PAYAL DAVE – CYGNUS PARTNERS 
+MS. POOJA SWAMI – CYGNUS PARTNERS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 2 of 16 
+ 
+Moderator:  Ladies and gentlemen, good day, and welcome to the Navin Fluorine International Limited 
+Conference Call hosted by Cygnus Partners.  As a reminder, all participant lines will be in the 
+listen-only mode and there will be an opportunity for you to ask questions after the presentation 
+concludes. Should you need assistance during the conference call, please signal an operator by 
+pressing star then zero on your touchtone phone. 
+Today on the call, we have with us Mr. Vishad Mafatlal, Chairman; Mr. Nitin Kulkarni, 
+Managing Director; and Mr. Anish Ganatra, Chief Financial Officer. 
+This call will contain forward -looking statements about the company, which are completely 
+based on the beliefs, opinion and expectation of today's call. Actual results may differ materially. 
+These statements are not the guarantee of future performance and involve risks and uncertainties 
+that are difficult to predict. A detailed safe harbor  statement is given on the Page number 2 of 
+the investor presentation of the company, which is uploaded on stock exchange and on the 
+company's website. 
+With this, I now hand the conference over to Mr. Vishad Mafatlal for his opening remarks. 
+Thank you, and over to you, sir. 
+Vishad Mafatlal: Navin Fluorine's Q2 and H1 FY27 Earnings Conference Call. Joining me today are our 
+Managing Director, Mr. Nitin Kulkarni; our Chief Financial Officer, Mr. Anish Ganatra; and 
+Ms. Payal Dave from Cygnus Partners, our Investor Relations Advisors. 
+Before we proceed, I would like to take this opportunity to thank MUFG Intime team for 
+supporting us in managing our Investor Relations activities during the last 5 years. We appreciate 
+their contribution and assistance extended to us during this period. 
+We have appointed Cygnus Partners as our Investor Relations consultant. We look forward to 
+working with them as we continue to strengthen our engagement with the investor community. 
+Coming to our performance in the first half of FY27, our PAT crossed INR500 crores with an 
+EPS of INR100. This result reflects our continued focus on strengthening our business, building 
+capabilities for the future and advancing our strategic priorities through disciplined execution. 
+As we navigate the evolving business environment, our priority remains to strengthen our 
+business fundamentals and deliver sustainable growth across all verticals. At the same time, the 
+safety, health and well -being of our employees remain paramount, and w e continue to uphold 
+high standards of safety and operational excellence across our facilities. 
+I am also pleased to share that the Board has declared an interim dividend of INR8 per equity 
+share with a face value of INR2 per share.  
+In our HPP business, we continue to strengthen long -term customer relationships and 
+commercial partnerships. 
+In this context, I would like to highlight an important development announced recently. The 
+tenure of our existing HFO supply contract with Solstice Advanced Materials has been extended 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 3 of 16 
+ 
+by 4 years until December 2032 and will have an additional revenue potential of approximately 
+USD180 million. I thank the management at Solstice for their continued trust in our capabilities 
+and look forward to deepening our relationships with them.  
+We are also making steady progress in developing Advanced Materials as a potential growth 
+platform over the longer term. We are focusing on specialized applications across areas such as 
+data centers, electronics, semiconductors and defense, leveraging our expertise in fluorination 
+chemistry and R&D capability.  We are confident this business will create additional growth 
+opportunities for us. 
+Let me now provide a brief update on our ongoing capex programs. During the quarter, we 
+commissioned the debottlenecking of our MPP capacity at Dahej. Our HFC capacity expansion 
+is progressing as planned and remains on track for commissioning shortly. The Chemours 
+project, which will enable us to participate in the emerging advanced cooling market, is also 
+progressing towards commissioning in Q3 FY27. 
+Our investment in advanced material adoption capacity is progressing as per schedule and is 
+expected to commission by Q2 FY28. In our CDMO business, Phase 2 of the cGMP -4 facility 
+involving a capex of approximately INR125 crores is progressing as planned and is expected to 
+become operational by the end of Q4 FY27. 
+The TDF project to develop an indigenous specialty material with DRDO is progressing well as 
+per schedule. While we deliver sustainable results and continue to invest in growth projects, the 
+leadership and I are actively looking at meaningful investments in cutting-edge technologies that 
+drive value for all our customers and ourselves. 
+This includes enhancing the integration of digital technologies across our businesses, leveraging 
+AI to strengthen our research capabilities and optimize our processes. We are also investing in 
+renewable energy across plants, which will meet more than 60% of our energy requirements 
+through renewable resources. 
+As we progress to the next phase of growth, we recognize the importance of continuously 
+strengthening our organizational capabilities and investing in our people. We remain committed 
+to developing our existing talent, enhancing critical skill sets and buil ding the capabilities 
+required to support our evolving business needs and long-term growth ambitions. 
+I would like to also thank our customers, employees, partners and all stakeholders for their 
+continued trust and support, and we look forward to building on this foundation in the years 
+ahead. With that, I wish you and your families a very Happy Diwali and a prosperous New Year 
+in advance. 
+I will now hand over to Nitin to take you through our business and operating performance. 
+Nitin Kulkarni: Thank you, Vishad  bhai. And good evening, everyone, and thank you for attending the call 
+today. We have delivered strong set of results in what is otherwise a very volatile geopolitical 
+environment. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 4 of 16 
+ 
+In this regard, I would like to recognize the efforts of our leadership and their teams for their 
+commitment, agility and effectiveness in navigating these challenging times. All our business 
+verticals witnessed a strong performance during the quarter, sup ported by healthy growth 
+momentum. 
+In our HPP business, we continued to deliver healthy revenue growth during the quarter, 
+supported by higher volumes and improved realization. The pricing environment for HFC 
+remains firm, with realization improved on a sequential basis. We are also witness ing 
+encouraging customer interest in our upcoming capacities, providing good visibility for the 
+business going forward. 
+Our new AHF facility has witnessed an improvement in utilization, contributing to our growth 
+momentum and R32 capex is progressing as planned and remains on track for commissioning 
+shortly. An extension of contract from Solstice Advanced Materials provides potential visibility 
+beyond FY28, and would like to extend my appreciation to the partners and teams involved. 
+With our established customer relationships, growing portfolio of products and expanding 
+geographical footprint, we are well positioned to secure the opportunities in this business 
+vertical.  In the Specialty Chemical business, we continue to see healthy growth momentum 
+supported by strong order visibility for the second half of FY27 and beyond   Our product 
+pipeline continues to expand across both existing and new molecules, strengthening our portfolio 
+of differentiated chemistries and supporting our growth prospects. During the quarter, we 
+commissioned the debottlenecking of our MPP capacity at D ahej in September 2026, further 
+enhancing our production capabilities. 
+Moving on to CDMO business. We continue to see strong momentum with our FY27 target well 
+within reach, supported by encouraging business developments and healthy product pipeline. 
+I'm pleased to mention few of our existing molecules have been -- have seen positive 
+developments in their end use with favorable results of the trials. Our engagement with leading 
+European CDMO major continues to deepen, driven by increasing demand for an  existing 
+molecule and expanding role in the customer supply chain. 
+From a strategic perspective in this vertical, we continue to focus on building a balanced 
+portfolio of late -stage and commercial molecules complemented by early -stage programs. We 
+are also expanding our presence across promising therapeutics areas, includ ing oncology, 
+cardiovascular, neurology and animal health through engagements with global innovators. 
+With this, I hand over the call to Anish for sharing the financial highlights. 
+Anish Ganatra: Thank you, Nitin. Good evening, everyone, and a warm welcome to the earnings conference 
+call. Moving on to the financial performance for Q2 and first half FY27.  
+Let me begin with the key highlights for the quarter. On a consolidated basis, operating revenue 
+for the quarter stood at INR1,191 crores, registering a year-on-year growth of 57%. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 5 of 16 
+ 
+Operating EBITDA grew by 66% year -on-year to INR407 crores, with margins expanding to 
+34.2%. Operating PBT increased by 87% to INR336 crores, while profit after tax rose by 81% 
+to INR269 crores, reflecting the strong growth in both revenue and profitability. 
+Turning to the half year performance. Operating revenue for first half FY27 increased by 51% 
+to INR2,236 crores, supported by broad-based momentum across HPP, Specialty Chemicals and 
+CDMO businesses. Operating EBITDA grew by 69% to INR765 crores, with margins expanding 
+by 367 basis points to 34.2%. 
+Operating PBT grew by 93% year -on-year to INR619 crores compared with INR320 crores in 
+first half FY26. Profit after tax also increased to INR513 crores, a growth of 93% year -over-
+year. Our EPS stood at INR100 and our net operating working capital days stood at 72 days, 
+which is within our financial framework. 
+With that, we can now open the floor for questions-and-answers. 
+Moderator: Thank you so much, sir. Ladies and gentlemen, we will now begin with the question-and-answer 
+session. Our first question comes from the line of Sanjesh Jain with ICICI Securities. 
+Sanjesh Jain: My first question is on the revenue bridge. All the 3 segments sequentially has grown 
+impressively. Can you help us understand what has led to this sequential growth? Because prices 
+in ref gases has largely been stable in the HPP and specialty, I thought we were -- except Corteva, 
+most of the plants were running full. 
+And in CDMO, I think there is more offtake in the European Union. How much more can we do 
+there? Can you help us understand all the 3 segments, what is driving the growth? And from 
+here on, what growth driver from the Q2 base? 
+Anish Ganatra: All right. Thanks, Sanjesh. If you look at Q1 to Q2, right, that's what you're referring to. I mean 
+if you look at it, the HPP business has largely grown both from a benefit of pricing advantage in 
+the ref gas business. There has been movement on prices. 
+I mean this is the danger of relying on averages, right? I mean averages don't tell you what we 
+kind of -- our teams managed to place the product at better pricing. We've also had good volumes 
+because like we've said before, our AHF plant has come into play. So volumes on AHF are pretty 
+good. That is helping. 
+Also Q-on-Q, we've had growth in the Orchid business too, the HFO business of Solstice. So 
+that has also helped.  Specialty, I mean, again, I refer back to my commentary, I think, probably 
+in the last 2, 3 quarters, where we've consistently said that this business will become more like 
+a INR350 crores business. 
+Now again, our philosophy in this business, given the global dynamics is to extract more and 
+more juice from the current assets. Our MPP plants, and the operational efficiency that we are 
+doing allows us to do more campaigns in the same plants because of t he way we are mapping 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 6 of 16 
+ 
+the products and minimizing the steps. Also, our teams in R&D and innovation are helping us 
+do that. 
+So that's helping. I mean, in fact, if you see specialty MPP-1, MPP-2, we will have far exceeded 
+the PAR by the end of this year. So in this environment, our teams are able to deliver that. 
+CDMO, there is growth both from the base business from Fermion as well as some encouraging 
+new qualification campaigns that we've run too. So that's helping the CDMO business. 
+But essentially, this is kind of the growth explaining from the sequential from quarter-to-quarter. 
+Here on, if you look going forward, right? The growth will come. We recently commissioned 
+the debottlenecking at the end of September. So you should start t o see growth coming in from 
+that in the specialty even beyond where we are today because that hasn't been factored in the 
+numbers. 
+You will also see growth coming in HPP from the new R32 commission plant that is being 
+commissioned shortly. Of course, it will ramp up towards the end of this quarter, and we'll start 
+to see some incremental sort of growth coming in this quarter, but then full ramp-up possibly in 
+the next quarter, yes. 
+Sanjesh Jain:  Correct, correct. 
+Anish Ganatra: CDMO, of course, like we said, and I think Vishad and Nitin mentioned, we are at the striking 
+distance of our USD100 million target in terms of order book visibility.  And so there will be 
+growth for that business too by the end of this year. And beyond that, again, we've already 
+announced the Phase 2 capex that will start delivering growth also in that vertical. 
+Sanjesh Jain: That's great. Super explanation. I think what has impressed more in this quarter is that we were 
+able to maintain the gross profit despite a very inflationary environment. What is helping us to 
+hold on to gross profit all our peers have struggled there? 
+Anish Ganatra: So again, if you look at our EBITDA bridges, I mean, in terms of the percentage bridges, which 
+is -- and I am telling you both from a year-on-year and a quarter-on-quarter perspective. I mean, 
+okay, you know, we are able to, between the forex tailwind and the price actions -- pricing 
+actions we are taking, largely we are able to offset the sourcing impacts. 
+Also, what is happening for us is operating leverage is playing in. Plus, there is a lot of effort 
+being done on operating efficiency, which is also helping capture and protect the EBITDA. As 
+we go forward, this is something and that is exactly the reason why Nitin brought out in his 
+speech, the fact that even in this environment, the commitment of the teams, the agility of the 
+teams is helping us navigate. And that is -- sorry, there's some disturbance. 
+Sanjesh Jain: There. No, no, sir, I'm there, I'm there. 
+Anish Ganatra: Sorry. Okay. No. So exactly, I mean, so we'll all have to remain committed and agile to respond 
+to the geopolitical challenges because I don't think we are out of the winds yet in terms of the 
+geopolitics. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 7 of 16 
+ 
+Sanjesh Jain: Got it. One last question before I join back in the queue. The contract extension, I thought we 
+had a higher headroom for the volume, but the implied contract for next 4 years implies a USD45 
+million run rate annually versus a USD58 million run rate we had. What could be missing in 
+this? 
+Anish Ganatra: No. So the way you should look at these -- so there are 2 things happening here, right? One is 
+the fact that the extension gives us a longer visibility and adds in about close to USD180 million 
+potential for revenue over the next 4 years of the same assets is definitely going to add in leverage 
+in terms of where we are. 
+Second, the pricing mechanism is always a pass -through mechanism in these contracts, right?  
+So that's something to bear in mind that as we go from now here on, how the pricing mechanism 
+works, if you recovered your capex, there will be a different answer to it. 
+So there's a lot to the commercial contracts in the way they get structured that you can't make a 
+simplistic notion on the average rate. In fact, if anything, this contract is going to guarantee us 
+larger volumes than what we had before. 
+Sanjesh Jain: Got it, Anish. I think these are my questions. Thanks for answering all the questions, and best 
+of luck for the coming quarter, and happy Diwali in advance to the entire Navin team. 
+Moderator: Our next question comes from the line of Rohit Nagraj with 360 ONE Capital. 
+Rohit Nagraj: Congrats on, again, a good set of numbers. First one on the clarification on the HFO contract. 
+So if we look at for the last 7 years, the average run rate has been about USD60-odd million. 
+But for next 4 years, it indicates USD45 million. So I just want a clarification in terms of whether 
+the revenue run rate will moderate going beyond FY29? 
+And second question, allied to that, our HFO -- own HFO commercialization, will that get 
+delayed because now we will be supplying to Honeywell beyond 2030? 
+Anish Ganatra: No. So I'll take the second one first. But if you think of this, Rohit, at the end of the day, we will 
+not get into the same application. But you and I both know there are 40 different varieties of 
+HFOs, yes. And so as long as we are sort of not within conflicting of the contract, there is nothing 
+to stop us to do that, yes. 
+And so therefore, I don't think that means anything on whatever else we are doing on the other 
+HFOs, yes. We've also said before that as we do the other HFOs, we will be looking both at 
+partnership models as well as product models, yes, depending on whatever suits best for us. 
+In terms of your question on the contract and the average rate, like I was just telling Sanjesh, 
+you can't look at this in a very simplistic way dividing by the number of years. because, frankly, 
+if you had a certain pricing in mind, which you set in '22 for the current contract or 2020 actually 
+for the current contract, that pricing environment is different to what we are today, what will be 
+in '28. The way to look at this is that on a same asset base, you're going to extend both the 
+volumes, the revenues and also the period. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 8 of 16 
+ 
+This was a 7-year contract. This now becomes an 11-year contract. So in other words, whenever 
+we talk of our growth between now to FY30, and there was this question, what happens to the 
+Honeywell contract after '28, this particular thing actually addresses that, the base is protected. 
+Rohit Nagraj: Right. Perfect. Second question on Chemours. We've seen some delay and obviously, there have 
+been challenges in terms of geopolitical and other things. Just one clarification here that whether 
+because of the delay in commissioning of the project, the qualification cycle also will get delayed 
+or since we've been supplying the material in the interim, that qualification cycle will not have 
+material impact because of the commissioning of this project? 
+Anish Ganatra: No. So again, we've said this before, Rohit. When you look at this project, we've been working 
+with Chemours to co -develop this -- so the project itself, which started from a tech pack and 
+developing in the lab to the pilot scale and to supplying them curr ently to the initial capacity, 
+the process routes are different. 
+So one, we are actually -- the delay is more attributable to looking at the right process to go into 
+the initial capacity, which then allows us to accelerate the larger capacity should there be 
+demand. So in fact, the delay is a conscious choice rather than anything else between the 
+partners. And this is evidenced by the fact that as we are coming to commission that asset, we 
+already have orders in place coming in for the future quarters. 
+Rohit Nagraj: Okay. Thanks a lot, and all the best, and Diwali wishes to the entire team. 
+Moderator: Our next question comes from the line of Ankur Periwal with Axis Capital. 
+Ankur Periwal: Congratulations on a strong set of numbers. First question on the CDMO side. With Phase 2 of 
+the cGMP 4 coming in, will it be largely used or consumed for Fermion contract itself? Or there 
+could be newer molecules also which will be driving growth here? 
+Anish Ganatra: cGMP 4 Phase 1 and Phase 2, Ankur are both dedicated plants to Fermion. So this is going to 
+be completely dedicated plants. 
+Ankur Periwal: Sure. And the follow-up question to that will be that since you mentioned there are 3 molecules 
+that we are working on and we are at advanced stage of -- for one of them, if I got that right. 
+What are the time lines one should look at for the next phase of  expansion here for the newer 
+molecules? 
+Anish Ganatra: So again, you have to look at this that when we started to do the Phase 2 cGMP 4 plant, we were 
+already doing the warehouse all the way up to Phase 6, and we are doing ETP all the way up to 
+Phase 5, right? So we can actually go to cGMP 5 pretty quickly wit h the infra there in terms of 
+the utility, etcetera. 
+I mean the developments that you're referring to are actually positive  on 2 molecules. If you 
+picked it up, one of the molecules has already received approval in China, and that's on fast track 
+on FDA approval. in the U.S.  market. So that will sort of probably come in. Again, the other 
+molecule is more about the potential expansion, label expansion of darolutamide itself. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 9 of 16 
+ 
+And that again has promising concepts on value. I mean we are very quick -- so the moment we 
+see and sense the utilization of our GMP plants coming to 70%, 80%, we will be triggering off 
+Phase 5. There is absolutely no doubt in our mind on that. And I've said this before as well, come 
+to USD100 million number, we'll sort of be starting to knocking that door very soon, frankly. 
+Ankur Periwal: Sure, Anish. That's very helpful. Just second bit on the specialty chemicals side. with Nectar 
+looking to be ramped up probably, let's say, within this financial year, fully utilization in terms 
+of the peak revenue. How do you see that revenue piece pickin g up? Well, Chemours is one to 
+ramp that up. But apart from Chemours and MPP debottlenecking, any other projects that we 
+are working on, which will require separate dedicated capex? 
+Anish Ganatra: So we've got -- like I said in my last commentary, Ankur, we've got 5 molecules, new molecules 
+that we were working on. Some of the numbers that you see, the growth that you see, which 
+Sanjesh was asking is actually out of those molecules as well. 
+There are campaign orders for those molecules going all the way until the end of this year and 
+beyond as well. So there will be growth coming from there. For Nectar, we had always clarified 
+that FY27, we would be somewhere around 60%, 65% of the PAR and the balance PAR will 
+come into FY28. 
+So that's the ramp-up sort of around the specialty business. And INR350 crores as a run rate, we 
+have said about last 3 quarters. So that's what you're seeing play out as well. And it will go up 
+because of the reasons we talked before as well. 
+Moderator: Our next question comes from the line of Archit Joshi with Nuvama Wealth Management. 
+Archit Joshi: Just 1 question. Any development on the DRDO contract, any ramp or economics that we've 
+been coming across and you can share anything on that account? 
+Anish Ganatra: So Archit, so the DRDO, again, we are working to the schedule as prescribed with the defense. 
+So that's going on track with that. Again, like we shared, this molecule has dual use, yes. So as 
+and when the product is developed, we will be accelerating the application in the pharma phase 
+sooner than what time the defense takes because that will take time from the defense side in 
+terms of when they get comfortable, right, in terms of the qualification, etcetera. 
+Again, you know the potential market over there, even at 50%, just the Indian market is roughly 
+about INR400 crores in the pharma side, yes. 
+Archit Joshi: Sure, sir. Just one small bit again on the HF prices also have firmed up quite a lot in the entire 
+onslaught within the world. Have you been able to benefit since we have also commissioned the 
+capacity? 
+Anish Ganatra: I think, again, yes. Pricing, as we know, is an equation of cost, right? I mean when you look at 
+how HF prices have gone up, you should also look at how prices for sulfur, gas, right? A lot of 
+raw materials has gone up, right? Fluorspar is also going up. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 10 of 16 
+ 
+So I mean, frankly, I think in this sort of an environment, a 34% EBITDA is really a solid 
+EBITDA that cannot come only from pricing. That has to  continuously come from the 
+efficiencies and the improvements we drive within the organization. And that's going to be our 
+mantra. 
+Moderator: Our next question comes from the line of Arun Prasath with Avendus Spark. 
+Arun Prasath: Anish bhai, my first question is that I think, first of all, it's impressive that we have reached the 
+CDMO targets of USD100 million on a run rate basis much earlier than we initially said. But 
+following up that, and am I right if I assume that for including the Phase 2, the new target will 
+be somewhere close to INR1,200 crores to INR1,300 crores? 
+Anish Ganatra: So Arun, again, we have always been saying that we will do USD100 million by FY27. So it's 
+not early. It's actually on  time. and we've been saying this for some time now. We've also said 
+that cGMP-4 Phase 2, when Phase 1 and Phase 2 put together, the peak annual revenue potential 
+is close to 3x of the capital or about INR900 crores to INR1,000 crores by FY28, FY29, if I'm 
+not mistaken. 
+So that's also on track. The molecules that we talked about, the label expansion for darolutamide, 
+the approval for the other molecule in the China jurisdiction, which then gives a greater 
+confidence of approval in the other jurisdictions is all positive d evelopment. So envisaging a 
+growth beyond FY27 in the numbers that you talked about is not sort of unimaginable. 
+Arun Prasath: Understood, sir. Second, Anish, I think given the growth that we are seeing in all the 3 segments, 
+inevitably, we are going to have a post-tax OCF of more than INR1,200 crores, INR1,300 crores 
+in a steady state. But so far, we haven't announced -- obviously, something will be in the plans, 
+but how should we see your capex? 
+Will the capex will continue at the current rate  or we will have a lot of surplus free cash flow, 
+which we will be distributing to the shareholders? How should we think in this capital allocation 
+perspective? 
+Anish Ganatra: Yes. So like I've said before, our capex frame will be in the INR700 crores to INR1,000 crores 
+every year. INR700 crores this year is what we are looking at given where we are. I think the 
+first half captures something in the range of INR300 crores, INR310 crores. So we are on track 
+for what we are saying we would do this year on the lower end of that range. 
+We are working on several projects. And as these projects’ kind of mature to our stage gates, 
+you will see capex being announced. We're very conscious of the fact that with the capexes we 
+have in place, our growth to FY28 is pretty much baked in. Some part, of course, goes to '29 like 
+the cGMP-4 that I was talking about. There will be others that will come in to capture the growth 
+before. And our portfolio is looking quite healthy and rich on the pipeline, yes. 
+Arun Prasath: Understood, sir. Sir, one more clarification on the HFO contract extension. It's very clear that 
+from what you said is that we will have some reduction in the gross margin at the portfolio level. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 11 of 16 
+ 
+But should we also extend -- I mean, incremental volume should result in a margin accretive at 
+EBITDA level, sir? 
+Anish Ganatra: So incremental, I mean when we are growing at the rate of 20%, 25% annually, our costs are not 
+going to grow at that rate. The question is what will be the EBITDA in the future . We are not 
+going to change the guidance from 30% because frankly, the first future we're not going to 
+change the guidance from 30%. 
+I'm not talking of the year, I'm talking long term, right? The reason for that is that I will not sit 
+here and let you believe that I have full knowledge of the future. In fact, if at all, our cognitive 
+ability does not allow us to predict the numbers for 5 years and 6 years on EBITDA margins. 
+The geopolitics are massively volatile, as you all know. So we'll figure that out. For this year 
+itself, for FY27, just to be clear, we are going to be working on the margins that you see for the 
+first half in the same sort of range for the year. That's what we'll be working towards. 
+Arun Prasath: Understood, sir. But I also heard that you spoke about HF placement, if I heard it rightly. So that 
+means are we selling it in the domestic market also, the HF from the HF plant? 
+Anish Ganatra: Sorry, I missed that. What did you say? 
+Arun Prasath: Sir, I heard that something like you talked about HF placement in the market. So can you clarify 
+that a bit, please? 
+Anish Ganatra: No, I was saying that from a ref gas point of view, everybody talks of averages, and you know 
+the danger of averages does not recognize the superlative ability of teams to place the product 
+in the right prices in the market. So we are doing better than the  average. So therefore, to look 
+at the average and say that you've not had any upside from the ref gas environment would not 
+be a fair statement. That's what I was trying to say. 
+And of course, on the HF side, we've always said that our merchant sales would be an X number. 
+Today, we are seeing that it's actually far larger than that, that we're able to place. And some of 
+the material that we are placing is also going in the international markets and also serving high 
+pure HF as well. 
+Arun Prasath: Okay. So if you can clarify what is our AHF utilization rate, sir, at this point of time? 
+Anish Ganatra: So we wouldn't want to talk of utilization rates. I mean, rest assured that we said it's being ramped 
+up. So it's not hit the full capacity, yes. So it is being ramped up, and it's a large plant. So there 
+is going to be more time to kind of hit the full capacity. 
+Moderator: Our next question comes from the line of Aditya Iyer with HDFC Securities. 
+Aditya Iyer: Hi, am I audible? 
+Anish Ganatra: Yes, you are. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 12 of 16 
+ 
+Aditya Iyer: Congratulations on a great set of numbers. I have a few questions. On the Chemours project, 
+what early indicators are we observing on OEM engagement? And under what conditions could 
+the proposed 10x scale up be triggered? 
+Anish Ganatra: So again, we've talked about this, Aditya. So one, this is more a Chemours conversation than a 
+Navin conversation. But I'll help you in as much as I can. I can't talk about specific numbers, 
+etcetera, on the project. We are under an NDA. 
+But if you look at what's available in the public domain, you will see that Chemours earlier in 
+this year qualified its product with a French company called 2CRSi, and they are one of the 
+OEM manufacturers of high compute kits. So they do one new architect ure. There's actually -- 
+that's been a joint development agreement with them. 
+So which then accelerates the adoption in the hypercomputing because, as you know, anybody 
+that establishes hypercomputing environments is likely to use OEMs to qualify their materials, 
+etcetera. So it's very encouraging. think the fact that as we commission the project and we have 
+line of sight and purchase orders in hand from Chemours, again signals that there is demand for 
+the adoption that's coming through. 
+We've always said it would take about 15 months once the project is commissioned to know 
+what the adoption rate is in the market, what the size of that market is and hence, what the capex 
+will be. So a bit premature to talk about the final eventual capex that will result at the end of all 
+of this. 
+Aditya Iyer: Okay, that's it from my end. All the best to the team and wishing you a happy Diwali. 
+Moderator: Our next question comes from the line of Sanjaya Satapathy with Ampersand Capital Investment 
+Advisors. 
+Sanjaya Satapathy: Sir, just wanted to confirm that your annual capex, you said that will stay at around INR700 
+crores, INR750 crores this year as well as next. Is that correct? 
+Anish Ganatra: I said our capex frame. So what I mean by that is we've built a very strong balance sheet and a 
+very strong capital frame, which allows us to hold our working capital to 70 to 75 days. And all 
+of that means that we are able to generate an EBITDA conversion of 60% which 60 %, 65% on 
+a more sustainable basis. 
+And that then translates the ability to spend. So we've got the ability to spend INR700 crores to 
+INR1,000 crores every year within our capex frame, which is good enough, both from a point of 
+view of the project hopper that we have in our line of sight as well as the growth that we are 
+targeting over the next 5 years, right? 
+So in some years, you will find the capex on the lower range, some year on the higher range, it 
+will end somewhere in the middle every year, right? So  this year, I've said that we are looking 
+at INR700 crores. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 13 of 16 
+ 
+Next year, as we come towards the end of this year, there are several projects in the hopper 
+depending on what comes in and gets approved through our stage gate processes. We'll be 
+announcing those capexes and they will certainly then be more clear in terms of what we will 
+spend. Does that help? 
+Sanjaya Satapathy: Yes. This is very helpful. And last question, sir, can you just articulate that among the 3 segments 
+that you have over the next 3-odd year, will there be a significant shift away from HFC business 
+in your overall revenue mix or investment mix? 
+Anish Ganatra: No, I think we are going to build on the businesses we have. And we -- as we've also said that 
+we are incubating a new business vertical called Advanced Materials, which is -- again, we've 
+given out when we spoke in the last call that if you think of Navin  from now to 2030 and look 
+at 20% to 25% growth, Advanced Materials will be roughly about 10% to 15% of the expanded 
+pie by 2030. But that's a milestone. That's not the end of the journey. This is a growth business 
+we are looking for the next decade. 
+Sanjaya Satapathy: Understood. Thanks a lot, sir, and wonderful to see your success story panning out the way it is. 
+Moderator: Our next question comes from the line of Jason Soans with IDBI Capital. 
+Jason Soans: Congrats on a very strong set of numbers. Sir, I just wanted to know, I mean, if I remember 
+correctly, the utilization for the HFO plant end of FY26 was around 80%. So sir, just wanted to 
+know, I mean, of course, you have an extension now. And so  when you look at your average 
+kind of utilization over the years, are you expecting it to be around 80%, 90% only going ahead, 
+even going beyond '29? 
+Anish Ganatra: So we want, you know, the utilization will improve. I mean, as you know, this product goes into 
+2 sort of end applications, right? And as the global market scenario improves over time, you will 
+see the demand going up in the construction sector. 
+And of course, this also gets used in chillers for high cooling, etcetera. So demand is expected 
+to go in that side, too.  So we will see the volumes go up. What we've indicated there is the 
+numbers that we see as potential based on the minimum quantities or minimum expected 
+quantities from the customer, yes. 
+Jason Soans: Sure, sure, sir. And sir, earlier, you did speak about working on the 5 molecules in the second 
+phase. And you said there are good orders, campaign orders for these molecules. So  do we see 
+any visibility for any dedicated plants or going ahead for any of the molecules? 
+Anish Ganatra: See, we've always said that in the Ag ri market, we remain constructive of the long -term 
+fundamentals of the demand for agri products, right? Our approach to navigating and accessing 
+that growth is going to be to utilize the current assets and juice them up more and more. 
+And which is why we confidently said that when you look at FY27 at the end, you will see that 
+our PAR of MPP-1 and MPP-2 will have been far exceeded because we've done a lot of work in 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 14 of 16 
+ 
+terms of making sure that more products can be mapped into those plants and these molecules 
+will get not only mapped into those plants, but also in the debottlenecking space. 
+So all in all, will we see a new kind of MPP? I think it's a hypothetical question at this stage. 
+Our approach is going to remain to extract more and more from the current assets.  If there was 
+something that would come up there from a business that would demand a dedicated capacity, 
+of course, we'll openly look at the commercials, etcetera. It passes through our stage gates, we'll 
+go through the approval and announce it in the market. 
+Jason Soans: Sure. And sir, on the last call, you had said that in CDMO space, you're working on 10 molecules, 
+3 molecules expected to have a readout in the next 8 to 12 months. So there is a healthy pipeline 
+clearly. So I just wanted any update or any new things you want to share on that front? How is 
+that pipeline looking ahead? 
+Anish Ganatra: Yes. In fact, I just said earlier in the call that you have got 2 of those molecules where the 
+progress is very encouraging. So in the near term, that's the update that I can share actually. And 
+I'm happy to repeat it unless you missed the earlier comment, you know. 
+Jason Soans: No, sir, that's fine. And sir, just 1 clarification. I missed out. You did mention that certain plants 
+for the CDMO are basically dedicated to the Darolutamide or the Fermion contract. So could 
+you just repeat what exactly is dedicated for the Darolutamide or the Fermion 
+Anish Ganatra: Dedicated means that we will run the -- it's been customized to run and optimize for the molecule 
+that we require for that particular product. So dedicated means we will not do product changes, 
+campaign changes, would run that product daily. I mean I don't know another word for dedicated, 
+but that's possible the best I can explain, sir. 
+Jason Soans: Yes, yes. That was a bit. Okay, okay. Sure, sir. 
+Moderator: Our next question comes from the line of Ranjit with IIFL Capital Services Limited. 
+Ranjit: Congratulations on a very strong set of numbers. My question is on the HFO pricing 
+environment. So how do you see... 
+Moderator: Ranjit, I'm really sorry, but can you just be a little loud? 
+Ranjit: Yes. Is this better? 
+Anish Ganatra: Yes. As loud as you can. We can hear it. 
+Ranjit: Let me use the handset just a second. Yes, sir. This is good? 
+Anish Ganatra: Let's try. Go on. 
+Ranjit: So, I was saying thank you for the opportunity and congratulations on a great set of numbers.  
+My question is on the HFO pricing environment. How do you see the global HFO pricing 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 15 of 16 
+ 
+environment evolving over the next few years, particularly as the patent expires and the 
+competition increases? Specifically, if you look at... 
+Anish Ganatra: No. So if you are referring to -- sorry, I didn't mean to cut your question, but you had to be a 
+little bit louder. So your last part was very faint. 
+Ranjit: Yes. So my question was largely on the global HFO pricing environment. How do you see it 
+evolving post the patent expiry? And in relation to that, the extension that we have seen does 
+offer some bit of a comfort on the realizations? 
+Anish Ganatra: No, I think the way you have to understand these markets, one, there is -- each HFO has a 
+different application. And largely, the patent owner will also cover a qualification route for the 
+use of the product.  So we've always said that in our discussions with Solstice, they've always 
+indicated that this product is an evergreen product in terms of the end-use application that they're 
+looking for. So we -- in fact, like I've said before as well, the extension is not  just a time 
+extension, but there is expectation that the volumes will be larger, too, yes. 
+Ranjit: Yes. So any comfort on the realization that you have got from them? 
+Anish Ganatra: Comfort on the realization, yes, of course, I mean, in what way do you mean? Sorry. I mean 
+we've already given the numbers out as potential revenue numbers. And that's all -- I think that 
+should be good enough, no? Ranjit? 
+Ranjit: Yes. Right, sir. So my question was largely if you see there is a large difference between the 
+HFO and the other refrigerants. And eventually, when these will have a patent expiry, the 
+expectation is that there will be competition and the price erosion will happen. 
+Anish Ganatra: No. So I think you're looking at the ref gas market and HFO in the ref gas market. This product 
+is slightly different even if it's an HFO. Similarly, the Chemours product is again a different 
+HFO. So Chemours product is a different application.  Solstice is a different application. You 
+have to look at it from the end applications. 
+If you're looking at the ref gas market, I mean, the global HFO capacity is 10% of the global ref 
+gas demand in tonnage terms. I mean there's not enough volume there to kind of play in the 
+market on the pricing. So whichever way you look at HFO is a produc t that is on the higher 
+pricing side in the end market for the end application it serves because it is a more greener 
+product, more cleaner product. So it's going to come at some sort of premium, right? 
+Moderator: Thank you so much. Ladies and gentlemen, that was the last question for today. I now hand the 
+conference over to the management for the closing remarks. Thank you, and over to you, team. 
+Anish Ganatra: All right. Thank you all for taking the time today and be with us on behalf of the Navin team 
+and Cygnus, we wish you all a very Happy Diwali and a Happy New Year in advance. Thanks 
+again. 
+  Navin Fluorine International Limited 
+  October 30, 2026 
+ 
+Page 16 of 16 
+ 
+Moderator: Thank you so much. Ladies and gentlemen, on behalf of Navin Fluorine International Limited, 
+that concludes today's call. Thank you for joining us, and you may now disconnect your lines. 

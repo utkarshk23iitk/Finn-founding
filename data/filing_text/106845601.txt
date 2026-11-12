@@ -1,0 +1,744 @@
+Registered Office: 
+Pl Industries  Limited 
+Udaisagar Road, Udaipur - 313001, Rajasthan, India. 
+Tel.: 0294 6651100, 2492451 – 55 I CIN: L24211RJ1946PLC000469
+   info@piind.com                 www.piindustries.com 
+PIIL:SEC: NSE/BSE:57/2026-27 
+November 4, 2026 
+BSE Limited 
+Corporate Relationship Department. 
+PJ Towers, 25th Floor, Dalal Street, 
+Mumbai – 400 001
+C
+ode No. 523642 
+National Stock Exchange of India Ltd.  
+Exchange Plaza, Plot No. C/1,  G-Block Bandra Kurla 
+Complex, 
+Bandra (East), Mumbai – 400 051 
+C
+ode No. PIIND 
+D
+ear Sir/Madam, 
+S
+ub: Outcome of Board Meeting 
+I
+n compliance with Regulation 30 read with Part A of Schedule Ill of the SEBI (Listing Obligations & Disclosure 
+Requirements) Regulations, 2015 ( “SEBI Listing Regulations ”), we hereby inform you that the Board o f
+D
+irectors ( “the Board ”) of the Company at its meeting held to day i.e., November 4 , 2026, has inter -alia,
+considered and approved the unaudited standalone & consolidated financial results of the Company for the 
+quarter and half year ended September 30, 2026 pursuant to Regulation 33 of the SEBI Listing Regulations. 
+A c
+opy of the same along with the statement of assets and liabilities, cash flow statements, and limited review 
+report by the Statutory Auditors are enclosed herewith as Annexure A. 
+T
+he meeting of the Board commenced at 02:00 p.m. (IST) and concluded at 07:00 p.m. (IST). 
+W
+e request you to kindly take the above on record. 
+T
+hanking you, 
+Yo
+urs faithfully, 
+For PI Industries Limited 
+S
+hruti Joshi 
+Company Secretary & Compliance Officer 
+E
+ncl.: As above 
+Pl Industries Ltd. 
+STATEMENT OF STANDALONE UNAUDITED FINANCIAL RESULTS FOR THE QUARTER AND HALF-YEAR ENDED 30TH SEPTEMBER 2026 
+(In, Million) 
+Quarter ended Half-Yearonded Yt ar t nded 
+S.No Particulars 30.09 .2026 30.06.2026 30.09.2025 30.09.2026 30.09.2025 31.03 .2026 
+Unaudited Unaudited Unaudited Unaudited Unaudited Audited 
+I Revenue from operations 15,335 15,989 17,526 31,324 35,217 61,827 
+II Other income 625 608 803 1,233 1,603 3,077 
+Ill Total Income (1+11) 15,960 16,597 18,329 32,557 36,820 64,904 
+IV Expenses 
+Cost of materials consumed 7,597 6,285 8,390 13,882 15.456 27,888 
+Purchases of stock -in- trad e 375 295 519 670 803 1,044 
+Changes In Inventories of finished goads, work In progress and 
+stock-in-trade 
+(120) 440 (1,418} 320 (1,250} (2,830} 
+Employee benefit expense 1,695 1,754 1,500 3.449 3,147 6,238 
+Finance cost 19 23 9 42 25 74 
+Depreciation and amortisation expense 822 803 718 1,625 1.424 3,046 
+Net impairment losses on financial assets 34 36 49 70 130 246 
+Other expense 2,786 2,591 2.416 5,377 5,124 9,886 
+Total expenses 13,208 12,227 12,183 25,435 24,859 45,592 
+V Profit before exceptional Item and tax (Ill-IV) 2,752 4,370 6,146 7,122 11,961 19,312 
+VI Exceptional item gain/(loss) (Refer note 4) - - - - - (1,323} 
+VII Profit after exceptional but before tax (V+VI) 2,752 4,370 6,146 7,122 11,961 17,989 
+VIII Income tax expense 
+Current tax 452 719 1,091 1,171 2,lll 3,383 
+Deferred tax 229 236 149 465 422 367 
+Income tax of earlier years - - (5) - (126) (109) 
+Total tax expense 681 955 1,235 1,636 2,407 3,641 
+IX Profit for the period/year (VII -Vlfl) 2,07'1 3,415 4,911 5,486 9,554 14,348 
+X Other comprehensive Income after tax (OCf) 
+A Items that will not be reclassified to profit or loss 
+Remeasurements gain/(loss) on defined benefits plans 15 14 8 29 16 56 
+Income tax relating to the above item (5) (5) (3) (10) (6) (20) 
+B Items that will be reclassified to profit or loss 
+Effective portion of gain/(loss) on cash flow hedges 67 572 (930) 639 (850) (2,228} 
+Income tax relating to above items (23) (200) 325 (223) 297 779 
+Total other comprehensive lncame/(loss) for the 
+period/year 
+54 381 (600) 435 (543) (1,413) 
+XI Total comprehensive Income for the period/year (IX+X) 2,125 3,796 4,311 5,921 9,011 12,935 
+XII Paid-up equity share capital 
+(Face value of, 1/- each (Previous Year, 1/- each)) 152 152 152 152 152 152 
+XIII Other equity excluding revaluation reserves as per bola nee 113,539 
+sheet 
+XIV Earning per share• (In,) 
+(a) Basic 13.66 22.50 32.36 36.16 62.97 94.57 
+(b) Diluted 13.66 22.50 32.36 36.16 62.96 94 .56 
+See accompanying notes to the financial results 
+t Actuals for the quarter and half-year. not onnuohsed 
+Annexure A
+Pl Industries Ltd 
+STATEMENT OF STANDALONE UNAUDITED ASSETS AND LIABILITIES AS AT30TH SEPTEMBER 2026 
+(ln't'Mllllon) 
+Asal 
+.No Particulars 30.09.2026 31.03.2026 
+Unaudited Audited 
+ASSETS 
+Non-current assets 
+Property , pion! ond equipment 32,029 31,332 
+Capitol work-in-progress 8,423 6,135 
+Goodwill 671 671 
+Other lntongible assets 451 279 
+Intangible asset under development 2,837 2,618 
+Financial ossets 
+(i) Investment s 23,257 19,290 
+(ii) Otherfinonciolossets 62 1,562 
+Current lox ossets 45 45 
+Other non-current assets 922 268 
+Total non-current assets 68,697 62,200 
+2 Current assets 
+Inventor ies 10,357 10,502 
+Finonciol ossets 
+(i) Investments 19,282 13,271 
+(ii) T rode receivables 12,481 13,558 
+(Iii) Cosh and cosh equivalents 2,523 2,158 
+(iv) Bonk balances other than (iii) above 13,096 17,730 
+(v) Loons 13 14 
+(vi) Other finonciol assets 190 352 
+Contract assets 7,037 6,983 
+Other current assets 2,881 2,918 
+Total current assets 67,860 67,486 
+Total assets 136,557 129,686 
+II EQUITY & LIABILITIES 
+Equity 
+Equity shore capitol 152 152 
+Other equity 117,941 113,539 
+Total equity 118,093 113,691 
+2 Liabilities 
+Non-current liabilities 
+Finonciol Liabilities 
+(i) Lease liabilities 371 435 
+(ii) Other finonciol liobilitie s 926 1,363 
+Provisions 107 138 
+Deferred tax liabiliti es (Net) 838 140 
+Total non-current liabilities 2,242 2,076 
+Current liablllties 
+Financial liabilities 
+(i) Lease liabilities 204 214 
+(ii) T rode poyobles 
+o) totol outstonding dues of micro enterp rises ond small enterp rises 705 697 
+b) totol outstanding dues othe r than (ii) (a) abov e 9,404 7,798 
+(iii) Other finonciol liobilities 4,372 4,147 
+Provisions 354 314 
+Current tox liobiliti es 370 49 
+Other current liobilities 813 700 
+Total current liabilities 16,222 13,919 
+Total liabilities 18,464 15,995 
+Total equity and liabilities 
+Plln ustries Ltd. Pi 
+STATEMENT OF STANDALONE UNAUDITED CASH FLOWS FOR THE HALF-YEAR ENDED 30TH SEPTEMBER 2026 
+(In" Million) 
+PARTICULARS Half-Year ended Half-Year ended 
+September 30, 2026 September 30, 2025 
+A. CASH FLOW FROM OPERATING ACTIVITIES 
+Profit before tax 7,122 11,961 
+Adjustments for:-
+Depreciation ond amortisation expense 1,625 1,424 
+Finance cost 42 25 
+Net Impairment losses on financial assets 70 130 
+Provision for advances 36 2 
+Interest Income on financial assets ot amortised cost (762) (1,032) 
+Unwinding of discount on security deposits (1) (2) 
+Expense on employee stock option scheme - 2 
+Loss on sole/retirement of property , plant & equipment (net) 9 -
+Net gain on financial assets measured ot fair value through profit or loss (365) (317) 
+Unrealised (goin)/loss on foreign currency transactions (net) 164 (248) 
+Operating profit before working capital changes 7,940 11,945 
+(Increase)/ Decrease in trade receivables 752 {1,697) 
+(Increase)/ Decrease in loons 20 (41) 
+(Increase)/ Decrease in contract assets {54) {4,512) 
+(Increase)/ Decrease in other current financial assets 193 (43) 
+(Increase)/ Decrease in other non-current financial assets (2) -
+(Increase)/ Decrease in other current assets {l) (8) 
+(Increase)/ Decrease in other non-current assets {54) 4 
+(Increase)/ Decrease in inventories 145 {2,035) 
+Increase/ (Decrease) in current provisions ond trade payables 1,511 1,124 
+Increase/ (Decrease) in non-current provisions (3) 47 
+Increase/ (Decrease) in other current finonciol liobilities 600 309 
+Increase/ (Decrease) in other non -current finonciol liobilities 15 10 
+Increase/ (Decrease) in other current liabilities 113 52 
+Cash generated from operations 11,175 5,155 
+' Income taxes poid (Net of refunds) (846) {1,722) 
+Net cash Inflow from operating activities (A} 10,329 3,433 
+B. CASH FLOW FROM INVESTING ACTIVITIES 
+Payments for property, plant & equipment including capitol 
+work-in-progress, intangible assets ond capitol advances {5,870) {3,947) 
+Proceeds from sole of property, plant & equipment 47 13 
+Payment for purchase of investment into subsidiary {3,355) (2,314) 
+Payment for purchase of investments {15,706) {9,857) 
+Proceeds from sole of investments 9,403 11,897 
+Investment in deposits with bank {5,650) {10,416) 
+Maturity of deposits with bank 12,122 9,964 
+Interest received 762 1,042 
+Net cash used In Investing activities (B} (8,247} (3,618} 
+'I Industries Ltd. Pi 
+STATEMENT OF STANDALONE UNAUDITED CASH FLOWS FOR THE HALF-YEAR ENDED30TH SEPTEMBER 2026 
+(In, Million) 
+PARTICULARS Half-Year ended Half-Year ended 
+September 30, 2026 September 30, 2025 
+C. CASH FLOW FROM FINANCING ACTIVITIES 
+Payments of lease liabilitie s (principal) (109) (100) 
+Interest paid (42) (25) 
+Dividends paid (1,517) (1,517) 
+Net cash outflow from financing activities (C) (1,668} (1,642) 
+Net lncrease/(decrease) from operating, Investing & financing activities (A+B+C) 414 (1,827) 
+Effect of exchange difference s on tran slation of foreign currency cash & cash equivalents {49) -
+Net lncrease/(decrease) In cash & cash equivalents (A+B+C) 365 (1,827) 
+Opening balance of cash & cash equivalents 2,158 4,573 
+Closing balance of cash & cash equivalents 2,523 2,746 
+Note: Cash ond cash equivalents included in the statement of cash flows comprise of the 
+following :-
+I} Cash on hand 0 0 
+II) Balance with banks: 
+-In Current account s 501 756 
+-In EEFC account s 2,022 1,986 
+-Deposits with original maturity of less than 3 month s - 4 
+Total 2,523 2,746 
+The above statement of standalone unaudited cash flows has been prepared under the Indirect method as set aut In IND AS - 7. 
+l.Flgures In brackets Indicate cash outflows. 
+2.The sign '0' In these stat_ement af standalone unaudited financial results Indicates thatthe amounts Involved are below , five lacs and 
+the sign•- • Indicates that the amounts are nil. 
+Pl Industries Ltd. 
+Notes 
+The obove standalone unaudited financial results were reviewed and recommended by the Audit Committee of the Company and approved by the Board of 
+Directors at their meeting held on November 04, 2026. 
+2 The financial results for all the periods presented have been prepared In accordance with the recognition and measurement principles of Ind AS notified 
+under the Companies {Indian Accounting Standards) Rules, 2015 as amended from time to time. 
+3 The Company Is In the business of manufacturing and distribution of Agro Chemicals and accordingly has one reportable business segment viz. 'Agro 
+Chemicals'. 
+4 a) The carrying value of the Company's equity Investment In Pl Health Sciences Limited (PIHS) had been reassessed as at March 31, 2026 . There Is no change 
+In the underlying business strategy, however In view of the business losses and based on a valuation carried out by an Independent valuer, the Company had 
+recognised a provision of , 1,100 million In the year ended March 31, 2026 . This was disclosed as an "Exceptional Item" In the financial results. The 
+management remains confident about the long-term business prospects of PIHS. 
+b) Pursuant to the notification of the 'New Labour Codes' as Issued In November 2025. The Company reassessed Its employee benefit obligations In 
+accordance with the revised definition of Wages and accord ingly, an Incremental liability of, 223 million was recogn ised as an "Exceptional Item" during 
+the year ended March 31, 2026. 
+Place: Mumbai 
+Date: November 04, 2026 
+Regd. Office: Udalsagar Raad, Udalpur- 313001 {Raj) 
+Phone: 0294 2492451-55 Fax: 0294 2491946 
+CIN: L24211RJ1946PLC000469 
+For Pl Industries Limited 
+Mayank Slnghal 
+Vice Chairperson & Managing Director 
+DIN: 00006651 
+~o\) ST II;"'"'..-
+- -I 
+- 0 0- . 
+* 
+Price Waterhouse Chartered Accountants LLP 
+To 
+The Board of Directors 
+PI Industries Limited 
+Unit No. 3A, 1st Floor Wing A, 
+Next to JW Marriot Hotel Sahar, 
+Andheri East, Mumbai - 400099, 
+Maharashtra, India 
+Review Report 
+1. We have reviewed the Standalone Unaudited Financial Results of PI Industries Limited (the 
+"Company") for the quarter ended September 30, 2026 and the year to date results for the period 
+April 1, 2026 to September 30, 2026, which are included in the accompanying 'Statement of 
+Standalone Unaudited Financial Results for the quarter and half-year ended 30th September 2026' 
+and the Statement of Standalone Unaudited Assets and Liabilities as on that date and the Statement 
+of Standalone Unaudited Cash Flows for the half-year ended on that date (Collectively referred to as 
+the "Statement") . The Statement has been prepared by the Company pursuant to Regulation 33 of the 
+SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended (the "Listing 
+Regulations, 2015"), which has been initialled by us for identification purposes. The Statement is the 
+responsibility of the Company's Management and has been approved by the Board of Directors. Our 
+responsibility is to issue a report on the Statement based on our review. 
+2. We conducted our review of the Statement in accordance with the Standard on Review Engagements 
+(SRE) 2410, "Review of Interim Financial Information Performed by the Independent Auditor of the 
+Entity" issued by the Institute of Chartered Accountants of India. This Standard requires that we plan 
+and perform the review to obtain moderate assurance as to whether the Statement is free of material 
+misstatement. 
+3. A review is limited primarily to inquiries of company personnel and analytical procedures applied to 
+financial data and thus provides less assurance than an audit. We have not performed an audit and 
+accordingly, we do not express an audit opinion. 
+4. Based on our review conducted as above, nothing has come to our attention that causes us to believe 
+that the Statement has not been prepared in all material respects in accordance with the applicable 
+Accounting Standards prescribed under Section 133 of the Companies Act, 2013 and other recognised 
+accounting practices and policies and has not disclosed the information required to be disclosed in 
+terms of Regulation 33 of the Listing Regulations, 2015 including the manner in which it is to be 
+disclosed, or that it contains any material misstatement . 
+Waterhouse Chartered Accountants LLP 
+• tration~umber : 012754N/N500016 
+it Agrawal 
+Partner 
+Membership Number: 099903 
+UDIN: 26099903CIQDBZ6185 
+Place: Mumbai 
+Date: November 4, 2026 
+Price Waterhouse Chartered Accountant s LLP, Building No. 8, 8th Floor, Tower - B, DLF Cyber City, Gurugram - 122 002 
+T: +91 (124) 6169910 
+Registered office and Head office: 11-A, Vishnu Digamber Marg, Sucheta Bhawan, New Deihl - 110002 
+Price Waterhouse (a Partner ship Firm) convert ed into Price Waterhous e Chartered Account ants LLP (a Limit ed Liabilit y Partner ship with LLP identity no: LLPIN AAC-5001) 
+with effect from July 25, 2014. Post its conversion to Price Waterhou se Chartered Account ants LLP, its ICAI registration number is 012754N /N500016 (ICAI registration 
+number before conversion was 012754N) 
+Pi ustries Ltd. 
+STATEMENT OF CONSOLIDATED UNAUDITED FINANCIAL RESULTS FOR THE QUARTER AND HALF-YEAR ENDED 30TH SEPTEMBER 2026 
+(In, Million) 
+Quarter ended Half-Year ended Year ended 
+S.No Particulars 30.09.2026 30.06.2026 30.09.202S 30.09.2026 30.09 .2025 31.03.2026 
+Unaudited Unaudited Unaudit ed Unaudited Unaudit ed Audited 
+I Revenue from operation s 17,018 17,023 18,723 34,041 37,728 67,137 
+II Other income 611 641 825 1,252 1,684 3,107 
+Ill Total lncame (1+11) 17,629 17,664 19,548 35,293 39,412 70,244 
+IV Expenses 
+Cost of mat erials con sumed 7,897 6,819 8,920 14,716 16.494 29,900 
+Purchases of stock-in-trad e 749 423 819 1,172 1,157 1,680 
+Changes in inventorie s of finished good s, work in (46) 123 progress and stock-in-trade 0,735) 77 0,556) (3,247) 
+Employee benefit expense 2,565 2,608 2,205 5,173 4,528 9,077 
+Finance cost 84 79 26 163 65 164 
+Depreciation and amortisation expense 1,049 1,037 980 2,086 1,945 4,066 
+Net impairm ent losses on financial ossets 64 52 73 116 158 326 
+Other expense 3.462 3,324 3,028 6,786 6,343 12.405 
+Total expenses 15,824 14,465 14,316 30,289 29,134 54,371 
+V Share of profit of associate and joint venture 35 19 21 54 49 57 
+VI Profit before exceptional Items and tax (I11-IV+V) 1,840 3,218 5,253 5,058 10,327 15,930 
+VII Exceptional items gain/(l oss) (refer note 4) - - - - - 1,031 
+VIII Profit after exceptional but before tax (Vl+VII) 1,840 3,218 5,253 5,058 10,327 16,961 
+IX Income tax expense 
+Current tax 454 730 1,140 1,184 2,179 3,459 
+Deferred tax 164 46 25 210 181 401 
+Income tax of earlier years - - (5) - 026) 007) 
+Total tax expense 618 776 1,160 1,394 2,234 3,753 
+X Profit far the period/ year {VIII - IX) 1,222 2,442 4,093 3,664 8,093 13,208 
+XI Other comprehensive lncome/(loss) after tax (OCI) 
+A Item that will not be reclassified to profit or loss 
+Remeasurements gain/(l oss) on defined benefits plans 20 9 10 29 19 67 
+Income tax relating to th e above item (5) (5) (4) 00) {6) (22) 
+B Item that will be reclassified to profit or loss 
+Effective portion of gain/(l oss) on cash flow hedges 69 571 (929) 640 (852) (2,229) 
+Income tax relating to above item (23) {200) 325 (223) 298 780 
+Exchange difference on translat ion of foreign operations 106 (55) 288 51 664 1,200 
+Total other comprehensive lncome/{loss) far the 
+167 320 (310} 487 123 (204) period/ year 
+XII Total comprehensive income for the period/ year 1,389 2,762 3,783 4,151 8,216 13,004 (X+XI) 
+XIII Paid-up equity share capital 
+(Face value of ~ 1/- each (Previous Year ~ 1/- each)) 152 152 152 152 152 152 
+XIV Other equity excluding revaluat ion reserves as per 
+balance sheet 112,153 
+xv Earning per share• (in \') 
+(a) Basic 8.05 16.10 26.98 24.15 53.35 87.06 
+(b) Diluted 8.05 16.10 26.98 24.15 53.34 87.06 
+See acco mpany ing notes to the financial results 
+• Actuals far the quart er and half- year, not annuali sed I 
+ustries Ltd. 
+STATEMENT OF CONSOLIDATED UNAUDITED ASSETS AND LIABILITIES AS AT30TH SEPTEMBER 2026 
+S.No Portlculors 
+I ASSETS 
+1 Non-current ossets 
+Property , plant and equipment 
+Capitol work-in-progress 
+Goodwill 
+Other Intangible assets 
+Intangible asset under development 
+Investments accounted for using the equity method 
+Financial assets 
+(i) Investments 
+(ii) Other financial assets 
+Deferred tax assets (Net) 
+Current tax assets 
+Other non-current assets 
+Total non-current assets 
+2 Current assets 
+Inventories 
+Financial assets 
+(i) Investments 
+(ii) Trade receivables 
+(iii) Cash and cash equivalents 
+(iv) Bonk balances other than (iii) above 
+(v) Loons 
+(vi) Other financial assets 
+Contract assets 
+Other current assets 
+Total current assets 
+Total assets 
+ll EQUITY & LIABILITIES 
+1 Equity 
+Equity shore capitol 
+Other equity 
+Total equity 
+2 Liabilities 
+Non-current liabilities 
+Financial liabilities 
+(i) Borrowings 
+(ii) Lease liabilities 
+(iii) Other financial liabilities 
+Provisions 
+Deferred tax liabilities (Net) 
+Total non-current liabilities 
+Current liabilities 
+Financial liabilities 
+(i) Borrowings 
+(ii) Lease liabilities 
+(iii) Trade payables 
+a) total outstanding dues of micro enterprises and small enterprises 
+b) total outstanding dues of creditors other than (iii) (a) above 
+(iv) Other financial liabilities 
+Provisions 
+Current tax liabilities 
+Other current liabilities 
+Total current liabilities 
+Total liabilities 
+Total equity and liabilities 
+-
+en tiered ,1 ~,e. <"C'o 
+~o ~:;.\ j ) C-50o 1 ~~ ~ ~\,, ...... ~ 
+~ \ " i :'-ll \ ~<§>.~ :-
+•'J, "'01215•~•""' ~" 
+' "cl - • * Curugtall' 
+{In , Million) 
+Asat 
+30.09.2026 31.03.2026 
+Unaudited Audited 
+37,565 36,783 
+9,987 7,550 
+6,067 6,028 
+3,756 3,386 
+2,770 2,749 
+369 315 
+632 17 
+234 1,714 
+293 552 
+157 119 
+941 277 
+62,771 59,490 
+12,235 12,167 
+20,268 13,271 
+14,381 16,108 
+3,294 2,833 
+13,916 18,990 
+9 12 
+220 324 
+7,382 7,091 
+4,182 4,151 
+75,887 74,947 
+138,658 134,437 
+152 152 
+114,422 112,153 
+114,574 112,305 
+1,379 1,490 
+690 722 
+1,005 1,437 
+323 332 
+956 384 
+4,353 4,365 
+696 893 
+231 318 
+737 725 
+10,613 9,013 
+5,597 5,388 
+424 397 
+372 51 
+1,061 982 
+19,731 17,767 
+24,084 22,132 
+138 658 134,437 
+\)STR 1 
+~<::)Gu' 
+= ,,e-- Ci) 
+0- . c:::, 
+I 
+.. 
+Pl Industries Ltd. 
+STATEMENT OF CONSOLIDATED UNAUDITED CASH FLOWS FOR THE HALF-YEAR ENDED 30TH SEPTEMBER, 2026 
+{Int MIiiion) 
+PARTICULARS Half-Year ended Half-Year ended 
+September 30, 2026 September 30, 2025 
+A. CASH FLOW FROM OPERATING ACTIVITIES 
+Profit before tax 5,058 10,327 
+Adjustments for :-
+Depreciation and amortisation expense 2,086 1,945 
+Finance Cost 163 65 
+Net Impairment losses on financial assets 116 158 
+Provision for advances 36 2 
+Interest Income on financial assets at amortised cost (818) (1,089) 
+Unwinding of discount on security deposits m (2) 
+Expense on employee stock option scheme - 2 
+(Goin) I Loss on sole/retirement of property, plant & equipment (Net) 7 31 
+Net gain on financial assets measured at fair value through profit or loss (378) (317) 
+Shore of (profit) of associate and joint venture (54) (49) 
+Unrealised Loss/ (Goin) on foreign currency transactions (Net) 164 (237) 
+Operating profit before working capital changes 6,379 10,836 
+(Increase)/ Decrease in trade receivables 1,387 (1,750) 
+(Increase)/ Decrease _in loons 22 (43) 
+(Increase)/ Decrease in contract assets (291) (4,540) 
+(Increase)/ Decrease in other current financial assets 173 (61) 
+(Increase)/ Decrease in other non-current financial assets (6) (2) 
+(Increase)/ Decrease in other current assets (65) 03) 
+(Increase)/ Decrease in other non-current assets (57) 4 
+(lncreose)/Decreose in inventories (41) (2,286) 
+Increase/ (Decrease) in current provisions and trade payables 1,495 1,179 
+Increase/ (Decrease) in non-current provisions 19 80 
+Increase/ (Decrease) in other current financial liabilities 683 778 
+Increase/ (Decrease) in other non-current financial liabilities 20 67 
+Increase/ (Decrease) in other current liabilities 79 38 
+Cash generated from operations 9,797 4,287 
+Income taxes paid (net of refund) (898) 8,811) 
+Net cash inflow from operating Activities {A) 8,899 2,476 
+B. CASH FLOW FROM INVESTING ACTIVITIES 
+Payments for purchase of property, plant & equipment including capitol 
+work in progress, intangible assets and capitol advances (6,552) (4,475) 
+Proceeds from sole of property, plant & equipment 29 107 
+Payment for purchase of Investments 06,681) (9,857) 
+Proceeds from sole of investments 9,403 11,897 
+Investment in deposits with bank (5,650) (11,010) 
+Maturity of deposits with bank 12,545 9,961 
+Interest received 818 1,089 
+Net cash used In Investing activities (B) (6,088) (2,288) 
+Pl Industries Ltd. 
+STATEMENT OF CONSOLIDATED UNAUDITED CASH FLOWS FOR THE HALF-YEAR ENDED 30TH SEPTEMBER, 2026 
+(In'!' MIiiion) 
+PARTICULARS Half-Year ended Half-Year ended 
+September 30, 2026 September 30, 2025 
+C. CASH FLOW FROM FINANCING ACTIVITIES 
+Repayment of borrowings (992) (16) 
+Proceeds from borrowings 542 487 
+Payments of lease liabilities (principal) (175) (176) 
+Interest paid (163) (65) 
+Dividends paid (1,517) (1,517) 
+Net cosh outflow from financing activities (C) (2,305) (1,287) 
+Net cash Inflow (outflow) from operating, Investing & financing activities (A+B+C) 506 (1,099) 
+Effect of exchange differences on translation of foreign currency cash & cash equivalents (45) 84 
+Net Increase (decrease) In cash & cash equivalents 461 (1,015) 
+Opening balance of cash & cash equivalents 2,833 5,923 
+Closing balance of cash & cash equivalents 3,294 4,908 
+Note: Cash and cash equivalents included in the statement of cash flows comprise of the 
+following: 
+I) Cash on hand 1 1 
+II) Balance with banks : 
+-In Current accounts 1,288 2,270 
+-In EEFC accounts 2,003 2,004 
+-In deposit with original maturity of less than 3 months 2 633 
+Total 3,294 4,908 
+The above statement of consolidated unaudited cash flows has been prepared under the Indirect method as set out In IND AS• 7. 
+1. Figures In brackets Indicate cash outflows. 
+2. The sign '0' In these statement of consolidated unaudited financial results Indicates that the amounts Involved are below '!' five lacs 
+and the sign'-' Indicates that the amounts are nil. 
+Pl ustries Ltd. 
+Notes: 
+The above consolidated unaudited financial results were reviewed and recommended by the Audit Committee of the Company and approved by 
+the Board of Directors atthelr meeting held an November 04, 2026. 
+2 The consolidated financial results for all the periods presented have been prepared In accordance with the recognition and measurement 
+principles of Ind AS notified under the Companies {Indian Accounting Standards} Rules, 2015 as amended from time to time. 
+3 The consolidated financial results Include the results of the following entitles namely, Parent Company - Pl Industries Limited; Subsidiaries 
+(Including step down subsidiaries}: (a} Pl Health Sciences Limited (b} Pl Health Sciences USA, LLC {c} Pl Health Sciences Netherlands BV (d} 
+Archlmlca S.p.A Italy (e} Pl AgSciences Limited (Formerly known as Plant Health Care limited} (f} Pl AgSclences, Inc. (Formerly known as Plant 
+Health Care, Inc, Nevada} (g) Pl AgSclencles, S. de R.L. de C.V. (Formerly known as Plant Health Care de Mexico S. de R.L. de C.V.) (h} Pl 
+AgSclences (UK} Limited (Formerly known as Plant Health Care (UK} Limited} (I} Pl AgSclences Spain, S.A (Formerly known as Plant Health Care 
+Espana} 0) Pl AgSclences Brasil Ltda (Formerly know as Plant Health Care lnsumos Agrlcolas L TDA} (k} Jlvagro Limited (I} Pl Life Science 
+Research Limited (m} Pl Flowtech B.V. (n} Pl Industries Management Consultancies LLC Dubai (o} Pl lnnoventures Limited (Formerly known as 
+PILL Finance and Investments Limited} (p} Pl Japan Co. Limited (q} Pl Bloferma Private Limited {r} Pl Fermachem Private Limited ; Controlled 
+trust - PII ESOP Trust; Joint Venture - Pl Kumlal Private Limited (Including Its subsidiary - Kumlal Chemical Industry (India} Private Limited (w.e.f 
+July 03, 2026)); Associate - Sollnnos Agro Sciences Private Limited. 
+4 a} In April 2023, Pl Health Sciences Limited (PIHS}, a wholly owned subsidiary of the Company acquired 100% equity of Soils Pharmachem 
+Private Limited and Therachem Research Medilab (India} Private Limited and specific assets of Therachem Research Medilab LLC, USA. The 
+purchase consideration for the above Included contingent consideration to be paid over a period of 6 years subject to achievement of specified 
+business performance and to support for business development activities. 
+Considering the performance of the acquired business since the acquisition, and the successful establishment of an experienced In-house 
+global business development team, no longer requiring external business development support, the Company renegotiated a mutually 
+beneficial one-time settlement payment with erstwhile owners. This settlement resulted In a write-back of the contingent consideration of 'I' 
+1,260 million, which was presented under "Exceptional Items" during the year ended March 31, 2026. 
+b} Pursuant to the notification of the 'New Labour Codes' as Issued In November 2025, the Group reassessed Its employee benefit obligations In 
+accordance with the revised definition of wages and accordingly, an Incremental liability oh 229 million had been disclosed as an "Exceptional 
+Item" during the year ended March 31, 2026. 
+5 Segment Information as per Ind AS lOB "Operating Segments" Is as per Annexure I. 
+Place: Mumbai 
+Date: November 04, 2026 
+Regd. Office: Udalsagar Road, Udalpur- 313001 (Raj) 
+Phone: 0294 2492451-55 Fax: 0294 2491946 
+CIN: L24211RJ1946PLC000469 
+For Pl Industries Llmite 
+Mayank Singha! 
+Vice Chairperson & Managing Director 
+DIN: 00006651 
+O
+~STR 1«' 
+~ v' 
+- r--
+- -I 
+o- D 
+* 
+Pl Industries Ltd. 
+Annexure I 
+Statement of Unaudited Consolidated Segment-Wise Revenue, Results , Assets, Liabilities and Capital Employed 
+for the Quarter and Half -Vear ended 30th September 2026 
+(In, Million) 
+Quarter Ended Half-Vear ended Vear ended 
+S,NCI Particulars 30.09.2026 30.06.2026 30.09 .2025 30.09.2026 30.09.2025 31.03.2026 
+Unaudited Unaudited Unaudited Unaudited Unaudited Audited 
+l Segment revenue 
+a. Agro chemicals 76,280 76,488 78,092 32,768 36,379 64,768 
+b. Pharma 759 542 634 7,307 7,357 3,005 
+Total 17,039 17,030 18,726 34,069 37,736 67,173 
+Less : Inter segment revenue 27 7 3 28 8 36 
+Segment revenue 17,018 17,023 18,723 34,041 37,728 67,137 
+2 Segment results 
+Proflt/(Loss) before tax 
+a. Agro chemicals 2,473 3,835 5,907 6,308 77,563 77,975 
+b. Pharma (607) (876) (879) (1,477) (1,579) (2,744) 
+Add: Inter segment adjustment (32) 199 165 167 343 699 
+Profit before exceptional Items and tax 1,840 3,218 5,253 5,058 10,327 15,930 
+Exceptional items gain/(loss) - - - - - 1,037 
+Profit before tax 1,840 3,218 5,253 5,058 10,327 16,961 
+3 Segment assets 
+a. Agro chemicals 724,244 124,549 118,638 124,244 118,638 719,736 
+b. Pharma 14,414 14,561 14,371 14,414 14,371 14,707 
+Segment assets 138,658 139,110 133,009 138,658 133,009 134,437 
+4 Segment liabilities 
+a. Agro chemicals 20,648 20,696 19,921 20,648 19,921 78,175 
+b. Pharma 3,436 3,731 4,819 3,436 4,879 4,077 
+Segment liabilities 24,084 24,427 24,740 24,084 24,740 22,132 
+5 Capital employed 
+(Segment assets-Segment liabilities) 
+a. Agro chemicals 103,596 703,853 98,717 103,596 98,717 107,621 
+b. Pharma 10,978 10,830 9,552 10,978 9,552 10,684 
+Capital employed 114,574 114,683 108,269 114,574 108,269 112,305 
+Notes: 
+The business of the Group is divided into two segments os below: 
+a) Agro chemicals 
+Agro chemicals includes Agchem exports (CSM), Dom estic Agri Brands and Biologicals. 
+Price Waterhouse Chartered Accountants LLP 
+Review Report 
+To 
+The Board of Directors 
+PI Industries Limited 
+Unit No. 3A, 1st Floor Wing A, 
+Next to JW Marriot Hotel Sahar, 
+Andheri East, Mumbai - 400099, 
+Maharashtra, India 
+1. We have reviewed the Consolidated Unaudited Financial Results of PI Industries Limited (the 
+"Holding Company"), its subsidiaries (the Holding Company and its subsidiaries hereinafter referred 
+to as the "Group"), controlled trust and its share of the net profit after tax and total comprehensive 
+income of its joint venture and associate company (refer paragraph 4 below) for the quarter ended 
+September 30, 2026 and the year to date results for the period April 1, 2026 to September 30, 2026, 
+which are included in the accompanying 'Statement of Consolidated Unaudited Financial Results for 
+the quarter and half-year ended 30th September 2026' and the Statement of Consolidated Unaudited 
+Assets and Liabilities as on that date and the Statement of Consolidated Unaudited Cash Flows for the 
+half-year ended on that date (Collectively referred to as the "Statement "). The Statement is being 
+submitted by the Holding Company pursuant to the requirement of Regulation 33 of the SEBI (Listing 
+Obligations and Disclosure Requirements) Regulations, 2015, as amended (the "Listing Regulations, 
+2015"), which has been initialled by us for identification purposes . 
+2. This Statement, which is the responsibility of the Holding Company's Management and has been 
+approved by the Holding Company's Board of Directors, has been prepared in accordance with the 
+recognition and measurement principles laid down in Indian Accounting Standard 34 "Interim 
+Financial Reporting", prescribed under Section 133 of the Companies Act, 2013, and other accounting 
+principles generally accepted in India. Our responsibility is to express a conclusion on the Statement 
+based on our review. 
+3. We conduct ed our review of the Statement in accordance with the Standard on Review Engagements 
+('SRE') 2410 "Review of Interim Financial Information Performed by the Independent Auditor of the 
+Entity", issued by the Institute of Chartered Accountants oflndia. This Standard requires that we plan 
+and perform the review to obtain moderate assurance as to whether the Statement is free of material 
+misstatement. A review of interim financial information consists of making inquiries, primarily of 
+persons responsible for financial and accounting matters, and applying analytical and other review 
+procedures. A review is substantially less in scope than an audit conducted in accordance with 
+Standards on Auditing and consequently does not enable us to obtain assurance that we would become 
+aware of all significant matters that might be identified in an audit. Accordingly, we do not express an 
+audit opinion. 
+We also performed procedures in accordance with the circular issued by the SEBI under Regulation 
+33 (8) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended, 
+to the extent applicable. 
+Price Waterhouse Chartered Accountant s LLP, Building No. 8, 8th Floor, Tower - B, DLF Cyber City, Gurugram - 122 002 
+T: +91 (124) 6169910 
+Registered office and Head office: 11-A, Vishnu Digamber Marg, Sucheta Bhawan, New Delhi - 110002 
+Price Waterhou se (a Partner ship Firm) converted into Price Waterhouse Chartered Acco untants LLP (a Limit ed Liability Partnership with LLP identity no: LLPIN AAC-5001) 
+with effect from July 25, 2014. Post its conversion to Price Waterhouse Chart ered Account ants LLP, its ICAI registration numb er is 01 2754N/NS00016 (tCAI registration 
+number before conversion was 01 2754N) 
+4. The Statement includes the results of the following entities: namely, Holding Company - PI Industries 
+Limited; Subsidiaries (including step-down subsidiaries) : (a) PI Health Sciences Limited (b) PI Health 
+Sciences USA, LLC (c) PI Health Sciences Netherlands BV (d) Archimica S.p.A Italy (e) PI Industries 
+Management Consultancies L.L.C Dubai (f) PI AgSciences Limited (Formerly known as Plant Health 
+Care Limited) (g) PI AgSciences, Inc. (Formerly known as Plant Health Care, Inc Nevada) (h) PI 
+AgSciences, S. de R.L. de C.V. (Formerly known as Plant Health Care de Mexico S. de R.L. de C.V.) (i) 
+PI AgSciences (UK) Limited (Formerly known as Plant Health Care (UK) Limited) (i) PI AgSciences 
+Spain, S.A (Formerly known as Plant Health Care Espana) (k) PI AgSciences Brasil LTDA (Formerly 
+known as Plant Health Care InsumosAgricolas LTDA) 0) Jivagro Limited (m) PI Life Science Research 
+Limited (n) PI Flowtech B.V. (o) PI Innoventures Limited (Formerly known as PILL Finance and 
+Investments Limited) (p) PI Japan Co. Limited (q) PI Bioferma Private Limited (r) PI Fermachem 
+Private Limited; Controlled trust - PI ESOP Trust; Joint Venture - PI Kumiai Private Limited 
+(including its subsidiary - Kumiai Chemical Industry (India) Private Limited (w.e.f July 3, 2026)); 
+Associate - Solinnos Agro Sciences Private Limited. 
+5. Based on our review conducted and procedures performed as stated in paragraph 3 above and based 
+on the consideration of the review reports of the other auditors referred to in paragraph 6 and 7 below, 
+nothing has come to our attention that causes us to believe that the accompanying Statement has not 
+been prepared in all material respects in accordance with the recognition and measurement principles 
+laid down in the aforesaid Indian Accounting Standard and other accounting principles generally 
+accepted in India and has not disclosed the information required to be disclosed in terms of Regulation 
+33 of the Listing Regulations, 2015 including the manner in which it is to be disclosed, or that it 
+contains any material misstatement. 
+6. The interim consolidated financial results of two subsidiaries (including four step down subsidiaries, 
+one associate, one joint venture (including its subsidiary)) and one step down subsidiary (including 
+further five step down subsidiaries) reflect total assets of Rs. 18,505 Mn and net assets of Rs. 13,637 
+Mn as at September 30, 2026 and total revenues of Rs. 1,376 Mn and Rs. 2,248 Mn, total net loss after 
+tax of Rs. 854 Mn and Rs. 4,083 Mn and total comprehensive loss of Rs. 819 Mn and Rs. 4,080 Mn, 
+for the quarter ended September 30, 2026 and for the period from April 1, 2026 to September 30, 
+2026, respectively, and cash flows (net) of Rs. 246 Mn for the period from April 1, 2026 to September 
+30, 2026, as considered in the Consolidated Unaudited Financial Results (before considering the 
+impact of consolidation adjustments). These interim financial results have been reviewed by other 
+auditors and their reports, vide which they have issued an unmodified conclusion, have been furnished 
+to us by the Management or other auditors and our conclusion on the Statement, in so far as it relates 
+to the amounts and disclosures included in respect of these subsidiaries, is based on the reports of the 
+other auditors and the procedures performed by us as stated in paragraph 3 above. 
+Our conclusion on the Statement is not modified in respect of the above matter. 
+7. The interim financial results of two subsidiaries and one controlled trust reflect total assets of Rs. 3,933 
+Mn and net assets of Rs. 2,718 Mn as at September 30, 2026 and total revenues of Rs. 770 Mn and Rs. 
+1,192 Mn, total net profit/Ooss) after tax of Rs. 10 Mn and Rs. (32) Mn and total comprehensive 
+income/Ooss) of Rs. 10 Mn and Rs. (32) Mn, for the quarter ended September 30, 2026 and for the 
+period from April 1, 2026 to September 30, 2026, respectively, and cash flows (net) of Rs. (138) Mn 
+for the period from April 1, 2026 to September 30, 2026, as considered in the Consolidated Unaudited 
+Financial Results. These interim financial results have been reviewed by other auditors and their 
+reports, vide which they have issued an unmodified conclusion, have been furnished to us by the 
+Management or other auditors and our conclusion on the Statement, in so far as it relates to the 
+amounts and disclosures included in respect of these subsidiaries and controlled trust, is based on the 
+reports of the other auditors and the procedures performed by us as stated in paragraph 3 above. 
+Our conclusion on the Statement is not modified in respect of the above matter. 
+l 
+8. The Consolidated Unaudited Financial Results include the interim financial results of four subsidiaries 
+which have not been reviewed by their auditors, whose interim financial results before considering the 
+impact of consolidation adjustments, reflect total assets of Rs. 7,221 Mn and net assets of Rs. 7,154 Mn 
+as at September 30, 2026 and total revenue of Rs. 99 Mn and Rs. 154 Mn, total net profit after tax of 
+Rs. 9 Mn and Rs. 5 Mn and total comprehensive income of Rs. 31 Mn and Rs. 12 Mn for the quarter 
+ended September 30, 2026 and for the period from April 1, 2026 to September 30, 2026, respectively, 
+and cash flows (net) of Rs. (20) Mn for the period from April 1, 2026 to September 30, 2026, as 
+considered in the Consolidated Unaudited Financial Results. According to the information and 
+explanations given to us by the Management, these interim financial results are not material to the 
+Group. 
+Our conclusion on the Statement is not modified in respect of the above matter. 
+For Price Waterhouse Chartered Accountants LLP 
+ration Num.per: 012754N/N500016 
+Pr it Agrawal 
+Partner 
+Membership Number: 099903 
+UDIN: 26099903OAJIXA1013 
+Place: Mumbai 
+Date: November 4, 2026 

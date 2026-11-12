@@ -52,8 +52,13 @@ def attachment_text(filing: dict, nse: NSE | None = None) -> str:
     if not url.lower().endswith(".pdf"):
         return ""
     from pypdf import PdfReader
-    path = (nse or NSE()).download(url, PDFS / f"{filing['id']}.pdf")
-    text = "\n".join((page.extract_text() or "") for page in PdfReader(path).pages)
+    try:
+        path = (nse or NSE()).download(url, PDFS / f"{filing['id']}.pdf")
+        text = "\n".join((page.extract_text() or "") for page in PdfReader(path).pages)
+    except Exception:
+        # An empty or broken attachment: skip it now, retry on the next run.
+        (PDFS / f"{filing['id']}.pdf").unlink(missing_ok=True)
+        return ""
     TEXTS.mkdir(parents=True, exist_ok=True)
     out.write_text(text)
     return text
