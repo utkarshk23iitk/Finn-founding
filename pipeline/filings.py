@@ -39,6 +39,26 @@ def fetch_window(nse: NSE, start: date, end: date, chunk_days: int = 7) -> list[
     return out
 
 
+TEXTS = DATA / "filing_text"
+PDFS = DATA / "raw" / "pdf"
+
+
+def attachment_text(filing: dict, nse: NSE | None = None) -> str:
+    """Text of a filing's PDF attachment, extracted once and cached."""
+    out = TEXTS / f"{filing['id']}.txt"
+    if out.exists():
+        return out.read_text()
+    url = filing.get("url") or ""
+    if not url.lower().endswith(".pdf"):
+        return ""
+    from pypdf import PdfReader
+    path = (nse or NSE()).download(url, PDFS / f"{filing['id']}.pdf")
+    text = "\n".join((page.extract_text() or "") for page in PdfReader(path).pages)
+    TEXTS.mkdir(parents=True, exist_ok=True)
+    out.write_text(text)
+    return text
+
+
 def load(symbol: str) -> list[dict]:
     path = FILINGS / f"{symbol}.json"
     return json.loads(path.read_text()) if path.exists() else []

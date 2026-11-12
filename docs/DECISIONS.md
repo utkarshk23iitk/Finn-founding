@@ -27,3 +27,16 @@ Short record of the choices that shape FINN, and why. Newest last.
 5. **Research companies give numeric guidance.** Infosys, Dixon, SRF and
    CreditAccess Grameen state targets on growth or margins, which "promised
    vs delivered" needs. Each also sits in one of the portfolio's themes.
+6. **The exchange's own file settles the latest day.** At 2 am Yahoo's
+   12 Nov bar had volume but no close. NSE's bhavcopy had the full bar, so
+   the last week comes from NSE, Yahoo supplies the year of history, and
+   NSE wins where both have a day. On shared days the two agree exactly.
+7. **Unusual volume is measured against the median, not the mean.** Wipro
+   traded 4.8m shares on 12 Nov against a 20-day mean pulled up by 74m on
+   its results day. A mean lets one results day hide the next spike.
+8. **Facts about real people come only from their companies' filings.**
+   SEBI requires a brief profile with every senior appointment. Some are
+   rich (Apollo Tyres' new CFO: 16 years as a KPMG India tax partner, Shri
+   Ram College of Commerce); some name no past employer at all (Alkem's new
+   CEO and CFO). When a profile is thin, FINN says so and points to the
+   contact who knows the company instead of filling the gap from a model.
