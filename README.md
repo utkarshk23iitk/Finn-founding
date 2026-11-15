@@ -13,6 +13,8 @@ FINN has three layers:
 
 **Try it on a phone:** https://finn-founding.vercel.app
 
+**Writeup:** [docs/WRITEUP.md](docs/WRITEUP.md) · **Decisions:** [docs/DECISIONS.md](docs/DECISIONS.md) · **Architecture:** [docs/architecture.svg](docs/architecture.svg)
+
 Work in progress. Decisions are recorded in `docs/DECISIONS.md`.
 
 ## Run the pipeline

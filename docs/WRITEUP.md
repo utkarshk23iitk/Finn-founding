@@ -6,7 +6,7 @@ Hello ENAM team,
 Here is my submission for the FINN challenge.
 
 - **Prototype (open on a phone):** https://finn-founding.vercel.app
-- **Repository:** [GitHub link]
+- **Repository:** https://github.com/utkarshk23iitk/Finn-founding
 - **AI build history:** [Claude Code session export, attached]
 
 ## What I built
