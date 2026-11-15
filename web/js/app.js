@@ -1,74 +1,94 @@
-// FINN Today screen. Renders the queue built by today.js; all state is local.
+// FINN. Three views over one local state: Today (push), Research (pull), Network (ask directly).
 import { makeResolver } from "./network.js";
-import { buildToday, WINDOWS, CATEGORY_LABEL, parseLocal, shortPeopleLine } from "./today.js";
+import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine } from "./today.js";
+import { esc, when, pct, mult, store, whoRow, routeRow } from "./ui.js";
+import { researchHTML } from "./research-view.js";
+import { networkHTML } from "./network-view.js";
 
 const $app = document.getElementById("app");
 const $sheet = document.getElementById("sheet");
 const ALERTABLE = ["results", "management_change", "M&A", "litigation", "credit_rating", "fund_raise", "pledging", "capex"];
-
-// ---------- small helpers ----------
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-function when(iso, withTime = true) {
-  const d = parseLocal(iso);
-  const day = `${d.getDate()} ${MONTHS[d.getMonth()]}`;
-  if (!withTime || iso.endsWith("T15:30:00")) return day;
-  const h = d.getHours(), m = String(d.getMinutes()).padStart(2, "0");
-  return `${day}, ${(h % 12) || 12}:${m} ${h < 12 ? "am" : "pm"}`;
-}
-const pct = (x) => `${x >= 0 ? "+" : "−"}${Math.abs(x).toFixed(1)}%`;
-const mult = (x) => `${x.toFixed(1)}×`;
-const initials = (name) => name.replace(/^dr\.?\s+/i, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
-const store = {
-  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
-  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode: keep in memory */ } },
-};
-function spoke(tie) {
-  const m = tie.months;
-  const txt = tie.days < 14 ? "spoke this fortnight" : m < 1 ? "spoke this month" : m === 1 ? "spoke a month ago" : `spoke ${m} months ago`;
-  return m >= 6 ? `<span class="stale">${txt}</span>` : txt;
-}
-const bars = (level) => `<span class="bars s${level}"><i></i><i></i><i></i></span>`;
-const LEVEL = { strong: 3, medium: 2, weak: 1, none: 0 };
-const closeness = (tie) => (tie.score >= 0.6 ? 3 : tie.score >= 0.3 ? 2 : 1);
+const TABS = [["today", "Today"], ["research", "Research"], ["network", "Network"]];
 
 // ---------- state ----------
-let feed, ctx;
+let feed, ctx, orgsDoc;
 const state = {
+  view: "today",
   settings: null,
   done: new Set(store.get("finn.done", [])),
   open: new Set(),
+  researchIndex: {},
+  research: null, researchState: "idle", researchError: "", ticker: "", tickerInput: "",
+  netQuery: "",
 };
 
 async function load() {
   const get = (p) => fetch(`data/${p}`).then((r) => { if (!r.ok) throw new Error(`${p}: ${r.status}`); return r.json(); });
   const [f, people, orgs, net] = await Promise.all([get("feed.json"), get("people.json"), get("orgs.json"), get("network.json")]);
   feed = f;
+  orgsDoc = orgs;
   ctx = { R: makeResolver(orgs), net, people };
   state.settings = { ...feed.defaults, window: "24h", ...store.get("finn.settings", {}) };
+  state.researchIndex = await get("research/index.json").catch(() => ({}));
+}
+
+// ---------- routing: #today, #research/DIXON, #network/semiconductors ----------
+function route() {
+  const [view, arg] = decodeURIComponent(location.hash.slice(1)).split("/");
+  state.view = TABS.some(([k]) => k === view) ? view : "today";
+  if (state.view === "research" && arg && arg.toUpperCase() !== state.ticker) openResearch(arg);
+  if (state.view === "network") state.netQuery = arg || "";
+  render();
+}
+
+async function openResearch(sym) {
+  sym = sym.toUpperCase().replace(/[^A-Z0-9&-]/g, "");
+  if (!sym) return;
+  Object.assign(state, { ticker: sym, tickerInput: sym, research: null, researchState: "loading" });
+  render();
+  try {
+    // Prepared companies are static files; any other ticker is read on demand and cached for a day.
+    const local = state.researchIndex[sym] ? await fetch(`data/research/${encodeURIComponent(sym)}.json`) : null;
+    const r = local?.ok ? local : await fetch(`api/research?symbol=${encodeURIComponent(sym)}`);
+    const body = await r.json().catch(() => ({}));
+    if (!r.ok || body.error) throw new Error(body.error || `The research service answered ${r.status}.`);
+    if (state.ticker === sym) Object.assign(state, { research: body, researchState: "ready" });
+  } catch (e) {
+    if (state.ticker === sym) Object.assign(state, { researchState: "error", researchError: e.message });
+  }
+  render();
 }
 
 // ---------- rendering ----------
 function render() {
-  const t = buildToday(feed, state.settings, ctx, state.done);
-  const n = t.needs.length;
-  const lede = n === 0
-    ? `Nothing needs you in the last ${t.window.label}.`
-    : `<span class="n">${n}</span> thing${n === 1 ? "" : "s"} need${n === 1 ? "s" : ""} you`;
+  const today = state.view === "today" ? buildToday(feed, state.settings, ctx, state.done) : null;
   $app.innerHTML = `
     <header class="top" id="top">
       <div class="brandrow">
         <span class="brand">FINN</span>
-        <span class="asof">As of ${esc(when(t.asOf))}</span>
-        <button class="iconbtn" data-act="settings" aria-label="Alert rules">
+        <nav class="tabs" aria-label="Views">${TABS.map(([k, l]) => `<a href="#${k}${k === "research" && state.ticker ? `/${esc(state.ticker)}` : ""}" class="tab" aria-current="${state.view === k ? "page" : "false"}">${l}</a>`).join("")}</nav>
+        ${state.view === "today" ? `<button class="iconbtn" data-act="settings" aria-label="Alert rules">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h7M12 4h2M2 12h3M8 12h6"/><circle cx="10.5" cy="4" r="1.6"/><circle cx="6.5" cy="12" r="1.6"/></svg>
-          Rules
-        </button>
+          Rules</button>` : ""}
       </div>
-      <nav class="windows" aria-label="Time window">
-        ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === t.window.key}" aria-label="Last ${esc(w.label)}">${esc(w.label[0].toUpperCase() + w.label.slice(1))}</button>`).join("")}
-      </nav>
+      ${today ? `<div class="subrow"><nav class="windows" aria-label="Time window">
+        ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === today.window.key}" aria-label="Last ${esc(w.label)}">${esc(w.label[0].toUpperCase() + w.label.slice(1))}</button>`).join("")}
+      </nav><span class="asof">As of ${esc(when(today.asOf))}</span></div>` : ""}
     </header>
+    ${today ? todayHTML(today) : state.view === "research" ? researchHTML(state, ctx) : networkHTML(state, ctx, orgsDoc)}
+    <footer class="foot">
+      <p><b>Your network stays on this phone.</b> Matching runs here, and the page is not allowed to send data to any other server.
+        The demo network is ${ctx.net.contacts.length} synthetic people; facts about real executives come only from their companies' filings.</p>
+      <p>Filings: NSE. Prices: NSE end-of-day file and Yahoo Finance. Research: the company's own earnings-call transcripts.</p>
+    </footer>`;
+}
+
+function todayHTML(t) {
+  const n = t.needs.length;
+  const lede = n === 0
+    ? `Nothing needs you in the last ${t.window.label}.`
+    : `<span class="n">${n}</span> thing${n === 1 ? "" : "s"} need${n === 1 ? "s" : ""} you`;
+  return `
     <p class="lede">${lede}</p>
     <p class="sub">${[t.glance.length && `${t.glance.length} worth a glance`, t.routineCount && `${t.routineCount} routine filings folded`,
                       t.cleared.length && `${t.cleared.length} done`].filter(Boolean).join(" · ") || `Last ${esc(t.window.label)}`}</p>
@@ -89,13 +109,7 @@ function render() {
     ${t.cleared.length ? `<h2 class="section">Done</h2>
       <details class="fold"><summary>${t.cleared.length} cleared</summary>
         <div>${t.cleared.map((c) => `<p class="detail">${esc(c.company?.name)}: ${esc(c.kind === "price" ? priceHeadline(c) : c.headline)}
-          <button class="linkbtn" data-act="undone" data-id="${esc(c.id)}">Restore</button></p>`).join("")}</div></details>` : ""}
-
-    <footer class="foot">
-      <p><b>Your network stays on this phone.</b> Matching runs here; no contact is sent to a server or a model.
-        The demo network is 45 synthetic people; facts about real executives come only from their companies' filings.</p>
-      <p>Filings: NSE. Prices: NSE end-of-day file and Yahoo Finance. Volume is compared with the median of the previous 20 sessions.</p>
-    </footer>`;
+          <button class="linkbtn" data-act="undone" data-id="${esc(c.id)}">Restore</button></p>`).join("")}</div></details>` : ""}`;
 }
 
 function card(c) {
@@ -132,10 +146,33 @@ function label(f) {
 function filingBody(c) {
   const moves = (c.moves || []).map((a) => `<span class="move">${esc(when(a.time, false))}: <span class="${a.move >= 0 ? "up" : "down"}">${pct(a.move)}</span> · ${mult(a.volMult)} usual volume</span>`).join("");
   const people = (c.network?.persons || []).map(personBlock).join("");
+  const res = c.category === "results" ? feed.results?.[c.symbol] : null;
+  if (res && res.lines && !res.error) {
+    const [lead, ...rest] = res.summary.split(" · ");
+    const q = c.headline.match(/\((Q\d FY\d\d)\)/)?.[1] || "";
+    return `<h3>${esc(q ? `${q}: ` : "")}${esc(lead)}</h3>
+      ${rest.length ? `<p class="detail">${esc(rest.join(" · "))}</p>` : ""}
+      ${resultsTable(res, q)}
+      ${moves ? `<div class="moves">${moves}</div>` : ""}`;
+  }
   return `<h3>${esc(c.headline)}</h3>
     ${c.detail ? `<p class="detail">${esc(c.detail)}</p>` : ""}
     ${moves ? `<div class="moves">${moves}</div>` : ""}
     ${people}`;
+}
+
+// Revenue, EBITDA, PBT, PAT against last quarter and a year ago, read from the filing's XBRL by code.
+function resultsTable(r, q) {
+  const cell = (l, k) => l[`${k}_flip`]
+    ? `<td class="flip ${/profit|narrowed/.test(l[`${k}_flip`]) ? "up" : "down"}">${esc(l[`${k}_flip`])}</td>`
+    : l[k] == null ? "<td>–</td>" : `<td class="${l[k] >= 0 ? "up" : "down"}">${pct(l[k])}</td>`;
+  const rows = [["revenue", r.lender ? "Revenue (total)" : "Revenue"], ["ebitda", "EBITDA"], ["pbt", "PBT"], ["pat", "PAT"]]
+    .filter(([k]) => !(k === "ebitda" && r.lender));
+  return `<table class="rtable"><thead><tr><th></th><th>${esc(q || "Quarter")}, ₹ cr</th><th>QoQ</th><th>YoY</th></tr></thead><tbody>
+    ${rows.map(([k, name]) => { const l = r.lines[k]; return `<tr><th>${name}</th><td class="num">${l.cur == null ? "–" : l.cur.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</td>${cell(l, "qoq")}${cell(l, "yoy")}</tr>`; }).join("")}
+    </tbody></table>
+    <p class="src">${r.lender ? "EBITDA isn't meaningful for a lender, so it's left out. " : "EBITDA = PBT + finance costs + depreciation − other income − exceptional items. "}
+      ${r.check && r.check !== "ok" ? `${esc(r.check)}. ` : ""}<a href="${esc(r.url)}" target="_blank" rel="noopener">${r.consolidated ? "Consolidated" : "Standalone"} filing ↗</a></p>`;
 }
 
 function priceHeadline(c) {
@@ -191,32 +228,13 @@ function more(key, list, draw) {
     + `<button class="linkbtn morebtn" data-act="toggle" data-id="${esc(key)}">${open ? "Fewer" : `${list.length - 1} more`}</button>`;
 }
 
-function routeRow(r) {
-  const c = r.contact, ev = r.link.evidence[0];
-  return `<div class="contact"><span class="avatar" aria-hidden="true">${esc(initials(c.name))}</span>
-    <div class="c-body"><div class="c-name">${esc(c.name)}</div>
-      <div class="c-why">${esc(ev.text)}</div>
-      <div class="c-meta"><span class="meter">${bars(LEVEL[r.link.strength])} knows them: ${esc(r.link.strength)}</span>
-        <span class="meter">${bars(closeness(r.tie))} you: ${spoke(r.tie)}</span></div></div></div>`;
-}
-
 function askBlock(c) {
   const who = c.network?.who || [];
   const persons = c.network?.persons || [];
   if (!who.length) return persons.length && !persons.some((p) => p.routes.length) ? `<p class="nobody">No one in your network has a known link yet.</p>` : "";
-  const coName = c.company?.name || c.symbol;
-  const title = persons.length ? `Who knows ${coName}` : `Ask about this`;
-  // Their current job is shown only when the reason is a past one; otherwise it repeats.
-  const draw = (w) => `
-    <div class="contact"><span class="avatar" aria-hidden="true">${esc(initials(w.contact.name))}</span>
-      <div class="c-body"><div class="c-name">${esc(w.contact.name)}${w.how === "inside" || w.how === "specialist" ? "" : ` <span class="c-why">· now ${esc(w.contact.headline)}</span>`}</div>
-        <div class="c-why">${esc(w.text)}</div>
-        <div class="c-meta"><span class="meter">${bars(w.how === "inside" || w.how === "alumnus" ? 3 : w.how === "specialist" ? 2 : 1)} ${esc(HOW[w.how] || w.how)}</span>
-          <span class="meter">${bars(closeness(w.tie))} you: ${spoke(w.tie)}</span></div></div></div>`;
-  return `<div class="ask"><p class="ask-h">${esc(title)}</p>${more(`w:${c.id}`, who, draw)}</div>`;
+  const title = persons.length ? `Who knows ${c.company?.name || c.symbol}` : `Ask about this`;
+  return `<div class="ask"><p class="ask-h">${esc(title)}</p>${more(`w:${c.id}`, who, whoRow)}</div>`;
 }
-const HOW = { inside: "works there", alumnus: "worked there", peer: "at a competitor", supplier: "at a supplier",
-              customer: "at a customer", specialist: "specialist" };
 
 function row(c) {
   const open = state.open.has(c.id);
@@ -229,7 +247,7 @@ function row(c) {
 
 function warmRow(r) {
   const c = r.contact;
-  return `<div class="row"><div class="contact padded"><span class="avatar" aria-hidden="true">${esc(initials(c.name))}</span>
+  return `<div class="row"><div class="contact padded"><span class="avatar" aria-hidden="true">${esc(c.name.replace(/^dr\.?\s+/i, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join(""))}</span>
     <div class="c-body"><div class="c-name">${esc(c.name)} <span class="c-why">· ${esc(c.headline)}</span></div>
       <div class="c-why">${esc(r.why)}.</div>
       <div class="c-meta">Reason to call: ${esc(feed.companies[r.event.symbol]?.name || r.event.symbol)}, ${esc(r.event.title)}</div></div></div></div>`;
@@ -267,6 +285,8 @@ document.addEventListener("click", (e) => {
   else if (act === "undone") { state.done.delete(id); store.set("finn.done", [...state.done]); render(); }
   else if (act === "settings") openSettings();
   else if (act === "close") $sheet.hidden = true;
+  else if (act === "research") location.hash = `research/${b.dataset.sym}`;
+  else if (act === "netq") location.hash = `network/${encodeURIComponent(b.dataset.q)}`;
   else if (act === "cat") {
     const set = new Set(state.settings.alert_categories);
     set.has(b.dataset.cat) ? set.delete(b.dataset.cat) : set.add(b.dataset.cat);
@@ -276,6 +296,18 @@ document.addEventListener("click", (e) => {
   } else if (act === "reset") {
     state.settings = { ...feed.defaults, window: state.settings.window };
     saveSettings(); openSettings();
+  }
+});
+document.addEventListener("submit", (e) => {
+  const form = e.target.closest("[data-form]");
+  if (!form) return;
+  e.preventDefault();
+  const value = new FormData(form).values().next().value?.trim() || "";
+  if (form.dataset.form === "research" && value) {
+    state.ticker = "";   // force a fresh load even for the same ticker
+    location.hash = `research/${value.toUpperCase()}`;
+  } else if (form.dataset.form === "network") {
+    location.hash = value ? `network/${encodeURIComponent(value)}` : "network";
   }
 });
 $sheet.addEventListener("input", (e) => {
@@ -288,7 +320,8 @@ $sheet.addEventListener("input", (e) => {
 });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $sheet.hidden = true; });
 window.addEventListener("scroll", () => document.getElementById("top")?.classList.toggle("scrolled", scrollY > 4), { passive: true });
+window.addEventListener("hashchange", route);
 
-load().then(render).catch((err) => {
+load().then(route).catch((err) => {
   $app.innerHTML = `<p class="loading">Couldn't load today's data (${esc(err.message)}). Reload to try again.</p>`;
 });

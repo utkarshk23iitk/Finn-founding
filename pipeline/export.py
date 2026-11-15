@@ -4,7 +4,7 @@ import shutil
 from datetime import datetime
 
 from . import classify as C
-from . import filings, prices
+from . import filings, prices, results
 from .config import ALERTS, DATA, PORTFOLIO, ROOT
 from .nse import NSE
 
@@ -63,6 +63,7 @@ def export() -> dict:
         "companies": {s: {"name": n, "sector": sec, "size": size} for s, (n, sec, size) in PORTFOLIO.items()},
         "filings": items,
         "prices": px,
+        "results": results.load(),
     }
     (WEB_DATA / "feed.json").write_text(json.dumps(feed, ensure_ascii=False, separators=(",", ":")))
     (WEB_DATA / "people.json").write_text(json.dumps(build_people(items), ensure_ascii=False, separators=(",", ":")))

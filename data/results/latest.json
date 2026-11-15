@@ -1,0 +1,654 @@
+{
+ "HDFCBANK": {
+  "symbol": "HDFCBANK",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_BANKING_202132_17102026174812_iXBRL_WEB.html",
+  "filed": "17-Oct-2026 17:47:13",
+  "lender": true,
+  "lines": {
+   "revenue": {
+    "cur": 95131.63,
+    "qoq": 5.0,
+    "yoy": 9.4
+   },
+   "ebitda": {
+    "cur": null,
+    "qoq": null,
+    "yoy": null
+   },
+   "pbt": {
+    "cur": 27825.48,
+    "qoq": 2.3,
+    "yoy": 7.4
+   },
+   "pat": {
+    "cur": 20700.03,
+    "qoq": 1.6,
+    "yoy": 5.6
+   }
+  },
+  "tax_rate": {
+   "cur": 25.6,
+   "yoy": 24.3
+  },
+  "summary": "Revenue +9.4% YoY, PAT +5.6%",
+  "check": "ok"
+ },
+ "BHARTIARTL": {
+  "symbol": "BHARTIARTL",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_210669_05112026193328_iXBRL_WEB.html",
+  "filed": "05-Nov-2026 19:29:31",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 60877.5,
+    "qoq": 4.0,
+    "yoy": 16.7
+   },
+   "ebitda": {
+    "cur": 34945.9,
+    "qoq": 4.9,
+    "yoy": 18.2
+   },
+   "pbt": {
+    "cur": 15318.2,
+    "qoq": 12.1,
+    "yoy": 25.1
+   },
+   "pat": {
+    "cur": 10710.4,
+    "qoq": 7.0,
+    "yoy": 23.8
+   }
+  },
+  "tax_rate": {
+   "cur": 30.8,
+   "yoy": 30.0
+  },
+  "summary": "Revenue +16.7% YoY, PAT +23.8% · EBITDA margin 57.4%",
+  "check": "ok"
+ },
+ "LT": {
+  "symbol": "LT",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_205120_27102026201332_iXBRL_WEB.html",
+  "filed": "27-Oct-2026 20:13:19",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 78749.94,
+    "qoq": 15.9,
+    "yoy": 15.8
+   },
+   "ebitda": {
+    "cur": 6844.65,
+    "qoq": 11.9,
+    "yoy": 0.6
+   },
+   "pbt": {
+    "cur": 7641.06,
+    "qoq": 10.4,
+    "yoy": 20.6
+   },
+   "pat": {
+    "cur": 5949.15,
+    "qoq": 19.3,
+    "yoy": 27.2
+   }
+  },
+  "tax_rate": {
+   "cur": 22.6,
+   "yoy": 26.0
+  },
+  "summary": "Revenue +15.8% YoY, PAT +27.2% · EBITDA margin 8.7%",
+  "check": "ok"
+ },
+ "SUNPHARMA": {
+  "symbol": "SUNPHARMA",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_207587_30102026193426_iXBRL_WEB.html",
+  "filed": "30-Oct-2026 19:34:09",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 16198.71,
+    "qoq": 5.9,
+    "yoy": 11.9
+   },
+   "ebitda": {
+    "cur": 4743.89,
+    "qoq": 7.4,
+    "yoy": 4.8
+   },
+   "pbt": {
+    "cur": 3159.37,
+    "qoq": -22.9,
+    "yoy": -24.2
+   },
+   "pat": {
+    "cur": 1995.07,
+    "qoq": -31.2,
+    "yoy": -36.2
+   }
+  },
+  "tax_rate": {
+   "cur": 36.6,
+   "yoy": 24.7
+  },
+  "summary": "Revenue +11.9% YoY, PAT −36.2% · tax took 37% of PBT against 25% a year ago · EBITDA margin 29.3%",
+  "check": "ok"
+ },
+ "M&M": {
+  "symbol": "M&M",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_210367_05112026174042_iXBRL_WEB.html",
+  "filed": "05-Nov-2026 17:22:43",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 57553.13,
+    "qoq": -1.1,
+    "yoy": 24.8
+   },
+   "ebitda": {
+    "cur": 10221.46,
+    "qoq": -3.3,
+    "yoy": 14.5
+   },
+   "pbt": {
+    "cur": 6894.67,
+    "qoq": -5.0,
+    "yoy": 23.4
+   },
+   "pat": {
+    "cur": 5166.77,
+    "qoq": -13.9,
+    "yoy": 30.4
+   }
+  },
+  "tax_rate": {
+   "cur": 31.9,
+   "yoy": 37.5
+  },
+  "summary": "Revenue +24.8% YoY, PAT +30.4% · EBITDA margin 17.8%",
+  "check": "ok"
+ },
+ "TITAN": {
+  "symbol": "TITAN",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_210618_05112026191123_iXBRL_WEB.html",
+  "filed": "05-Nov-2026 19:11:12",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 20614.0,
+    "qoq": -3.5,
+    "yoy": 10.1
+   },
+   "ebitda": {
+    "cur": 2984.0,
+    "qoq": 3.3,
+    "yoy": 59.1
+   },
+   "pbt": {
+    "cur": 3001.0,
+    "qoq": 23.7,
+    "yoy": 97.3
+   },
+   "pat": {
+    "cur": 2392.73,
+    "qoq": 34.6,
+    "yoy": 113.6
+   }
+  },
+  "tax_rate": {
+   "cur": 20.2,
+   "yoy": 26.4
+  },
+  "summary": "Revenue +10.1% YoY, PAT +113.6% · tax took 20% of PBT against 26% a year ago · EBITDA margin 14.5%",
+  "check": "ok"
+ },
+ "WIPRO": {
+  "symbol": "WIPRO",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_201410_15102026160931_iXBRL_WEB.html",
+  "filed": "15-Oct-2026 16:08:50",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 24752.7,
+    "qoq": 1.1,
+    "yoy": 9.1
+   },
+   "ebitda": {
+    "cur": 4862.7,
+    "qoq": 5.0,
+    "yoy": 11.2
+   },
+   "pbt": {
+    "cur": 4196.1,
+    "qoq": -3.2,
+    "yoy": -1.7
+   },
+   "pat": {
+    "cur": 3199.7,
+    "qoq": -4.7,
+    "yoy": -1.9
+   }
+  },
+  "tax_rate": {
+   "cur": 24.0,
+   "yoy": 23.9
+  },
+  "summary": "Revenue +9.1% YoY, PAT −1.9% · EBITDA margin 19.6%",
+  "check": "ok"
+ },
+ "DABUR": {
+  "symbol": "DABUR",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_209571_04112026180649_iXBRL_WEB.html",
+  "filed": "04-Nov-2026 18:06:22",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 3563.07,
+    "qoq": -5.3,
+    "yoy": 11.6
+   },
+   "ebitda": {
+    "cur": 632.44,
+    "qoq": -14.7,
+    "yoy": 7.5
+   },
+   "pbt": {
+    "cur": 645.82,
+    "qoq": -14.6,
+    "yoy": 12.7
+   },
+   "pat": {
+    "cur": 498.57,
+    "qoq": -14.9,
+    "yoy": 12.1
+   }
+  },
+  "tax_rate": {
+   "cur": 22.8,
+   "yoy": 22.4
+  },
+  "summary": "Revenue +11.6% YoY, PAT +12.1% · EBITDA margin 17.7%",
+  "check": "ok"
+ },
+ "ALKEM": {
+  "symbol": "ALKEM",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_212772_12112026164834_iXBRL_WEB.html",
+  "filed": "12-Nov-2026 16:47:13",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 4551.99,
+    "qoq": 21.7,
+    "yoy": 13.8
+   },
+   "ebitda": {
+    "cur": 1025.19,
+    "qoq": 33.8,
+    "yoy": 11.3
+   },
+   "pbt": {
+    "cur": 999.65,
+    "qoq": 29.5,
+    "yoy": 11.6
+   },
+   "pat": {
+    "cur": 667.13,
+    "qoq": 28.1,
+    "yoy": -14.4
+   }
+  },
+  "tax_rate": {
+   "cur": 33.2,
+   "yoy": 13.0
+  },
+  "summary": "Revenue +13.8% YoY, PAT −14.4% · tax took 33% of PBT against 13% a year ago · EBITDA margin 22.5%",
+  "check": "ok"
+ },
+ "VOLTAS": {
+  "symbol": "VOLTAS",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_211585_06112026205901_iXBRL_WEB.html",
+  "filed": "06-Nov-2026 20:59:01",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 2706.57,
+    "qoq": -42.1,
+    "yoy": 15.3
+   },
+   "ebitda": {
+    "cur": 127.86,
+    "qoq": -51.8,
+    "yoy": 81.6
+   },
+   "pbt": {
+    "cur": 124.03,
+    "qoq": -61.6,
+    "yoy": 36.8
+   },
+   "pat": {
+    "cur": 47.71,
+    "qoq": -77.6,
+    "yoy": 51.5
+   }
+  },
+  "tax_rate": {
+   "cur": 28.4,
+   "yoy": 25.0
+  },
+  "summary": "Revenue +15.3% YoY, PAT +51.5% · tax took 28% of PBT against 25% a year ago · EBITDA margin 4.7%",
+  "check": "ok"
+ },
+ "APOLLOTYRE": {
+  "symbol": "APOLLOTYRE",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_209419_04112026164438_iXBRL_WEB.html",
+  "filed": "04-Nov-2026 16:43:15",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 7968.15,
+    "qoq": 7.7,
+    "yoy": 16.6
+   },
+   "ebitda": {
+    "cur": 855.35,
+    "qoq": -1.5,
+    "yoy": -16.2
+   },
+   "pbt": {
+    "cur": 396.0,
+    "qoq": -15.3,
+    "yoy": 2.6
+   },
+   "pat": {
+    "cur": 292.29,
+    "qoq": -16.2,
+    "yoy": 13.3
+   }
+  },
+  "tax_rate": {
+   "cur": 26.2,
+   "yoy": 33.2
+  },
+  "summary": "Revenue +16.6% YoY, PAT +13.3% · tax took 26% of PBT against 33% a year ago · EBITDA margin 10.7%",
+  "check": "ok"
+ },
+ "CHOLAFIN": {
+  "symbol": "CHOLAFIN",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_NBFC_INDAS_206010_28102026232856_iXBRL_WEB.html",
+  "filed": "28-Oct-2026 23:28:37",
+  "lender": true,
+  "lines": {
+   "revenue": {
+    "cur": 9394.51,
+    "qoq": 6.1,
+    "yoy": 25.4
+   },
+   "ebitda": {
+    "cur": null,
+    "qoq": null,
+    "yoy": null
+   },
+   "pbt": {
+    "cur": 2187.05,
+    "qoq": -1.6,
+    "yoy": 39.8
+   },
+   "pat": {
+    "cur": 1630.34,
+    "qoq": -1.6,
+    "yoy": 40.6
+   }
+  },
+  "tax_rate": {
+   "cur": 25.5,
+   "yoy": 26.0
+  },
+  "summary": "Revenue +25.4% YoY, PAT +40.6%",
+  "check": "ok"
+ },
+ "MANAPPURAM": {
+  "symbol": "MANAPPURAM",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_NBFC_INDAS_213156_12112026203425_iXBRL_WEB.html",
+  "filed": "12-Nov-2026 20:34:15",
+  "lender": true,
+  "lines": {
+   "revenue": {
+    "cur": 3361.55,
+    "qoq": 10.8,
+    "yoy": 47.2
+   },
+   "ebitda": {
+    "cur": null,
+    "qoq": null,
+    "yoy": null
+   },
+   "pbt": {
+    "cur": 937.59,
+    "qoq": 19.9,
+    "yoy": 210.5
+   },
+   "pat": {
+    "cur": 701.25,
+    "qoq": 19.9,
+    "yoy": 222.7
+   }
+  },
+  "tax_rate": {
+   "cur": 25.2,
+   "yoy": 28.0
+  },
+  "summary": "Revenue +47.2% YoY, PAT +222.7% · tax took 25% of PBT against 28% a year ago",
+  "check": "ok"
+ },
+ "PIIND": {
+  "symbol": "PIIND",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_209873_04112026203604_iXBRL_WEB.html",
+  "filed": "04-Nov-2026 20:35:27",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 1701.8,
+    "qoq": -0.0,
+    "yoy": -9.1
+   },
+   "ebitda": {
+    "cur": 232.7,
+    "qoq": -36.7,
+    "yoy": -57.0
+   },
+   "pbt": {
+    "cur": 180.5,
+    "qoq": -43.6,
+    "yoy": -65.5
+   },
+   "pat": {
+    "cur": 122.2,
+    "qoq": -50.0,
+    "yoy": -70.1
+   }
+  },
+  "tax_rate": {
+   "cur": 34.2,
+   "yoy": 22.2
+  },
+  "summary": "Revenue −9.1% YoY, PAT −70.1% · EBITDA margin 13.7%",
+  "check": "ok"
+ },
+ "NAVINFLUOR": {
+  "symbol": "NAVINFLUOR",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_207284_30102026171026_iXBRL_WEB.html",
+  "filed": "30-Oct-2026 17:10:11",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 1190.74,
+    "qoq": 13.9,
+    "yoy": 57.0
+   },
+   "ebitda": {
+    "cur": 407.45,
+    "qoq": 14.1,
+    "yoy": 65.5
+   },
+   "pbt": {
+    "cur": 351.56,
+    "qoq": 10.4,
+    "yoy": 78.0
+   },
+   "pat": {
+    "cur": 269.23,
+    "qoq": 10.7,
+    "yoy": 81.5
+   }
+  },
+  "tax_rate": {
+   "cur": 23.4,
+   "yoy": 24.9
+  },
+  "summary": "Revenue +57.0% YoY, PAT +81.5% · EBITDA margin 34.2%",
+  "check": "ok"
+ },
+ "CGPOWER": {
+  "symbol": "CGPOWER",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_203673_23102026191034_iXBRL_WEB.html",
+  "filed": "23-Oct-2026 19:10:34",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 3801.54,
+    "qoq": 15.9,
+    "yoy": 30.1
+   },
+   "ebitda": {
+    "cur": 539.58,
+    "qoq": 35.8,
+    "yoy": 43.2
+   },
+   "pbt": {
+    "cur": 559.22,
+    "qoq": 32.2,
+    "yoy": 44.1
+   },
+   "pat": {
+    "cur": 409.09,
+    "qoq": 32.7,
+    "yoy": 43.8
+   }
+  },
+  "tax_rate": {
+   "cur": 26.8,
+   "yoy": 26.7
+  },
+  "summary": "Revenue +30.1% YoY, PAT +43.8% · EBITDA margin 14.2%",
+  "check": "ok"
+ },
+ "KAYNES": {
+  "symbol": "KAYNES",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_214715_15112026000908_iXBRL_WEB.html",
+  "filed": "15-Nov-2026 00:09:08",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 952.51,
+    "qoq": 0.7,
+    "yoy": 5.1
+   },
+   "ebitda": {
+    "cur": 125.58,
+    "qoq": -14.9,
+    "yoy": -15.2
+   },
+   "pbt": {
+    "cur": 70.73,
+    "qoq": -19.5,
+    "yoy": -53.4
+   },
+   "pat": {
+    "cur": 39.8,
+    "qoq": -29.5,
+    "yoy": -67.2
+   }
+  },
+  "tax_rate": {
+   "cur": 35.2,
+   "yoy": 19.9
+  },
+  "summary": "Revenue +5.1% YoY, PAT −67.2% · tax took 35% of PBT against 20% a year ago · EBITDA margin 13.2%",
+  "check": "ok"
+ },
+ "AMBER": {
+  "symbol": "AMBER",
+  "quarter_end": "2026-09-30",
+  "consolidated": true,
+  "url": "https://nsearchives.nseindia.in/corporate/ixbrl/INTEGRATED_FILING_INDAS_213277_12112026235425_iXBRL_WEB.html",
+  "filed": "12-Nov-2026 23:54:10",
+  "lender": false,
+  "lines": {
+   "revenue": {
+    "cur": 2627.17,
+    "qoq": -32.4,
+    "yoy": 59.5
+   },
+   "ebitda": {
+    "cur": 98.48,
+    "qoq": -68.4,
+    "yoy": 7.9
+   },
+   "pbt": {
+    "cur": -86.16,
+    "qoq": null,
+    "qoq_flip": "to a loss",
+    "yoy": null,
+    "yoy_flip": "loss widened"
+   },
+   "pat": {
+    "cur": -66.35,
+    "qoq": null,
+    "qoq_flip": "to a loss",
+    "yoy": null,
+    "yoy_flip": "loss widened"
+   }
+  },
+  "tax_rate": {
+   "cur": null,
+   "yoy": null
+  },
+  "summary": "Revenue +59.5% YoY, loss widened (PAT −₹66 cr) · EBITDA margin 3.7%",
+  "check": "ok"
+ }
+}

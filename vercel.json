@@ -4,6 +4,9 @@
   "installCommand": "true",
   "buildCommand": "true",
   "outputDirectory": "web",
+  "functions": {
+    "api/research.py": {"maxDuration": 300}
+  },
   "headers": [
     {
       "source": "/(.*)",

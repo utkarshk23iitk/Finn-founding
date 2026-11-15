@@ -1,5 +1,10 @@
-# Only the static app is uploaded. Anchored with "/" so a pattern can't hide web/data.
+# Upload only the static app, the research function and the code it imports.
+# Anchored with "/" so a pattern can't hide web/data.
 /*
 !/web
+!/api
+!/pipeline
+!/requirements.txt
 !/vercel.json
 !/package.json
+__pycache__

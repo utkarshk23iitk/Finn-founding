@@ -88,3 +88,22 @@ test("routine paperwork is counted, not shown", () => {
   assert.ok(t.routineCount > 20);
   assert.equal(t.routine.reduce((n, [, c]) => n + c, 0), t.routineCount);
 });
+
+test("network search finds companies, themes and real executives", async () => {
+  const { search } = await import("../web/js/network-view.js");
+  const orgs = read("orgs.json");
+  const r1 = search("amber", ctx, orgs);
+  assert.ok(r1.companies.includes("amber"));
+  const r2 = search("rural lending", ctx, orgs);
+  assert.deepEqual(r2.themes, ["rural-lending"]);
+  const r3 = search("shingari", ctx, orgs);
+  assert.equal(r3.people[0].name, "Ravi Kumar Shingari");
+  assert.equal(search("a", ctx, orgs), null, "one letter is not a query");
+});
+
+test("research summary counts settled promises only", async () => {
+  const { summary } = await import("../web/js/research-view.js");
+  const s = summary({ promises: [{ verdict: "delivered" }, { verdict: "missed" }, { verdict: "pending" }, { verdict: "revised" }] });
+  assert.equal(s.settled, 2);
+  assert.equal(s.delivered, 1);
+});

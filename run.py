@@ -13,7 +13,7 @@ from pipeline.config import PORTFOLIO, RESEARCH
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("step", choices=["prices", "filings", "export", "research"])
+    p.add_argument("step", choices=["prices", "filings", "results", "export", "research"])
     p.add_argument("symbols", nargs="*", help="research: NSE symbols (default: the research list)")
     p.add_argument("--days", type=int, default=30, help="filings: how many days back")
     args = p.parse_args()
@@ -30,6 +30,11 @@ def main():
         print(f"filings: {sum(counts.values())} items for {len(counts)} companies")
         for s, n in sorted(counts.items(), key=lambda kv: -kv[1]):
             print(f"  {s:11} {n}")
+    elif args.step == "results":
+        from pipeline import results
+        out = results.update(symbols)
+        for s, r in out.items():
+            print(f"  {s:11} {r.get('quarter_end', '')} {r.get('error') or r.get('summary', '')} {'' if r.get('check', 'ok') == 'ok' else '! ' + r['check']}")
     elif args.step == "research":
         from pipeline import research
         for sym in args.symbols or list(RESEARCH):

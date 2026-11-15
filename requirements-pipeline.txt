@@ -1,0 +1,5 @@
+-r requirements.txt
+yfinance>=1.7
+pandas>=2.3
+lxml>=6.0
+pytest>=8

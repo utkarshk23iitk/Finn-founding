@@ -17,7 +17,7 @@ from .config import DATA
 try:
     import truststore
     truststore.inject_into_ssl()
-except ImportError:
+except Exception:   # not installed, or no system store on this host: keep the default bundle
     pass
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "

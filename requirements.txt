@@ -1,7 +1,6 @@
+# What the research function needs (Vercel installs this file).
+# The full data pipeline also needs requirements-pipeline.txt.
 requests>=2.32
-yfinance>=1.7
-pandas>=2.3
-lxml>=6.0
 beautifulsoup4>=4.15
 pypdf>=6.0
 truststore>=0.10
