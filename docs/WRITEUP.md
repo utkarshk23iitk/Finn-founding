@@ -14,7 +14,7 @@ Here is my submission for the FINN challenge.
 FINN is one idea in three views: **every item ends with a person.** It tells
 you what changed, why it matters, and who in your own network can explain it.
 
-**Today (Push).** A short queue with an end, not a feed: "6 things need you",
+**Updates (Push).** A short queue with an end, not a feed: "6 things need you",
 a Done button on each card, then one-liners worth a glance, then the routine
 paperwork folded into counts. 280 real NSE filings across an 18-company
 portfolio are ranked by rules, not a model.

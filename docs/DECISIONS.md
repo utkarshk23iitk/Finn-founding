@@ -183,3 +183,6 @@ Short record of the choices that shape FINN, and why. Newest last.
 35. **No targets is a finding.** TCS's and Britannia's last four calls gave no
     forward number or date. The page says so and shows what they reported,
     instead of an empty ledger.
+36. **The Push tab is "Updates", not "Today".** "Today" next to window
+    chips for 3 days, a week and a month read as a contradiction, and more so
+    with a snapshot two days old. Time words now live only in the chips.

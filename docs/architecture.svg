@@ -46,7 +46,7 @@
 
   <text x="20" y="342" class="zone">THE INVESTOR'S PHONE</text>
   <rect x="20" y="354" width="820" height="98" class="box priv"/>
-  <text x="36" y="378" class="h">Browser app: Today · Research · Network</text>
+  <text x="36" y="378" class="h">Browser app: Updates · Research · Network</text>
   <text x="36" y="398" class="t">Network engine (network.js) runs here: matches contacts to executives and companies by employer, overlapping years,</text>
   <text x="36" y="414" class="t">intake, school; ranks who to ask. Contacts, thresholds and Done marks stay in local storage. The page may only talk to its own</text>
   <text x="36" y="430" class="t">origin, so no contact can leave the phone. Real deployment: contacts imported on device, encrypted at rest, never uploaded.</text>

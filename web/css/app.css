@@ -237,3 +237,11 @@ blockquote.outcome { border-left-color: var(--v); }
 @media (min-width: 640px) {
   .lede { font-size: 24px; }
 }
+/* Narrow phones: the three tabs and Rules must fit inside the 16px side margins. */
+@media (max-width: 400px) {
+  .brandrow { gap: 8px; }
+  .brand { letter-spacing: .1em; }
+  .tabs { min-width: 0; }
+  .tab { padding: 5px 5px; min-width: 0; }
+  .iconbtn { padding: 0 9px; gap: 4px; }
+}

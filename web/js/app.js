@@ -1,4 +1,4 @@
-// FINN. Three views over one local state: Today (push), Research (pull), Network (ask directly).
+// FINN. Three views over one local state: Updates (push), Research (pull), Network (ask directly).
 import { makeResolver } from "./network.js";
 import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine, fromTheVerb } from "./today.js";
 import { esc, when, pct, mult, store, whoRow, routeRow } from "./ui.js";
@@ -8,7 +8,9 @@ import { networkHTML } from "./network-view.js";
 const $app = document.getElementById("app");
 const $sheet = document.getElementById("sheet");
 const ALERTABLE = ["results", "management_change", "M&A", "litigation", "credit_rating", "fund_raise", "pledging", "capex"];
-const TABS = [["today", "Today"], ["research", "Research"], ["network", "Network"]];
+// "Updates", not "Today": the screen covers whatever window the investor picks (24 hours to a month).
+// The link stays #today so existing links keep working.
+const TABS = [["today", "Updates"], ["research", "Research"], ["network", "Network"]];
 
 // ---------- state ----------
 let feed, ctx, orgsDoc;

@@ -37,7 +37,7 @@ on demand. `vercel deploy --prod` publishes both. The architecture is in
 
 ```bash
 python -m pytest -q   # quotes in filings, ranking rules, research checks
-npm test              # network engine, Today logic, views (Node 22)
+npm test              # network engine, Updates logic, views (Node 22)
 ```
 
 ## The demo network is synthetic
