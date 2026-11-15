@@ -1,0 +1,799 @@
+[ 
+ 
+Ref: CAGL/EQ/2026-27/122 
+ 
+October 26, 2026 
+ 
+To 
+BSE Limited 
+Phiroze Jeejeebhoy Towers  
+Dalal Street 
+Mumbai - 400001 
+Scrip code: 541770 
+ 
+National Stock Exchange of India Limited  
+Exchange Plaza, C-1, Block G 
+Bandra Kurla Complex, Bandra (East)  
+Mumbai - 400051 
+Symbol: CREDITACC 
+ 
+Dear Sir/Madam, 
+ 
+ 
+Sub.: Transcript of Conference Call for Q2 FY27 Results 
+ 
+Pursuant to provision of Regulation 30 and Regulation 46 of the SEBI (Listing Obligations and 
+Disclosure Requirements) Regulations, 2015, please find enclosed the transcript of Q 2 FY27 Results 
+Conference Call, held on October 22, 2026.   
+ 
+The same is also available on the Company’s website at: www.creditaccessgrameen.in. 
+ 
+This is for your information and records. 
+ 
+Thanking you 
+ 
+Yours’ Truly 
+For CreditAccess Grameen Limited 
+ 
+ 
+Deepti Ramani 
+Company Secretary & Compliance Officer 
+ 
+Encl.: As above 
+Page 1 of 19 
+ 
+ 
+ 
+“CreditAccess Grameen Limited 
+Q2 FY27 Earnings Conference Call” 
+October 22, 2026 
+ 
+ 
+ 
+ 
+        
+ 
+MANAGEMENT: MR. GANESH NARAYANAN – MANAGING DIRECTOR 
+AND CHIEF EXECUTIVE OFFICER – CREDITACCESS 
+GRAMEEN LIMITED 
+ MR. GURURAJ RAO – CHIEF OPERATING OFFICER – 
+CREDITACCESS GRAMEEN LIMITED 
+ MR. NILESH DALVI – CHIEF FINANCIAL OFFICER – 
+CREDITACCESS GRAMEEN LIMITED 
+ MR. SAHIB SHARMA – DGM, INVESTOR RELATIONS 
+AND STRATEGY – CREDITACCESS GRAMEEN LIMITED 
+ 
+MODERATOR: MR. ABHIJIT TIBREWAL – MOTILAL OSWAL 
+FINANCIAL SERVICES 
+ 
+  
+
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 2 of 19 
+ 
+Moderator: Ladies and gentlemen, good day, and welcome to the CreditAccess Grameen Limited Q2 FY27 
+Earnings Conference Call hosted by Motilal Oswal Financial Services Limited. 
+ As a reminder, all participant lines will be in the listen -only mode and there will be an 
+opportunity for you to ask questions after the presentation concludes. Should you need assistance 
+during the conference call, please signal an operator by pressing st ar then zero on your touch -
+tone phone. Please note that this conference is being recorded. 
+ I now hand the conference over to Mr. Abhijit Tibrewal from Motilal Oswal Financial Services. 
+Thank you, and over to you, sir. 
+Abhijit Tibrewal: Thank you, Dorwin. Good evening, everyone. I am Abhijit Tibrewal from Motilal Oswal, and it 
+is our pleasure to welcome you all to this earnings call. Thank you very much for joining us for 
+the CreditAccess Grameen call to discuss their Q2 FY27 earnings. 
+ To discuss the company's earnings, I'm pleased to welcome Mr. Ganesh Narayanan, Managing 
+Director and Chief Executive Officer; Mr. Gururaj Rao, Chief Operating Officer; Mr. Nilesh 
+Dalvi, Chief Financial Officer; and Mr. Sahib Sharma, DGM, Investor Relation s and Strategy. 
+On behalf of Motilal Oswal, we thank the senior management and the Investor Relations team 
+of CreditAccess Grameen for giving us this opportunity to host you today. 
+ I now invite Mr. Narayanan for his opening remarks, post which we will open the floor for a 
+Q&A. With that, over to you, sir. 
+Ganesh Narayanan: Thank you, Abhijit. A very good evening, everyone, and a very warm welcome to discuss our 
+second quarter and first half of FY27 business performance.  
+                                                We reported our highest quarterly profit of INR 502 Crore in this quarter, having grown fivefold 
+over the past 5 years. Current financial year marks a clear turnaround, recording INR 995 Crore 
+PAT in the first half as against INR 778 Crore PAT during the p revious financial year. Our H1 
+ROA stood at 5.9% and ROE stood at 23.8%.  We are delivering record profitability while 
+remaining amongst the most competitively priced lenders across our product segments. Our 
+lending franchise today spans across Group Loans, Individual Business Loans, secured business 
+loans, affordable housing lo ans and 2-wheeler finance, with growth, margins and asset quality 
+all moving in the right direction. 
+ Our AUM grew 19.5% YoY and 2.1% QoQ to INR 30,946 Crore. Disbursements stood at INR 
+6,355 Crore, up 19.4% YoY and 4.1% QoQ, taking H1 disbursements to INR 12,461 Crore. We 
+added 2.3 Lakh new borrowers, of which 35% were new -to-credit, taking our H1 additio ns to 
+4.9 Lakh customers. We also opened 60 new branches during the quarter, expanding our network 
+to 2,326 branches across 460 districts. Digital collections rose to 26.3% versus 18.1% a year 
+ago.  
+                                                When we began building our retail franchise, our thesis was very simple. The customers we've 
+served for years would need more than a Group Loan as their economic profile improves and 
+financing needs expand. That thesis continues to play out at scale with r egulatory support in 
+place. Of the ~45 Lakh borrower base, 15% or 6.8 Lakh borrowers belong to Retail Finance. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 3 of 19 
+ 
+Retail Finance AUM grew to INR 7,200 Crore, now 23.3% of the total AUM, up from 20.6% in 
+Q1 FY27. Within this, our secured book comprising of Secured Business Loans, Affordable 
+Housing Loans and 2 -Wheeler Loans grew 60.9% YoY to INR 695 Crore. Our mortgage  
+presence now spans across 300 GL and 128 Retail Finance branches with 2 -wheeler loans 
+offered through 950 -plus Group Loan branches.  Our 2-Wheeler Loan book witnessed strong 
+traction, having crossed INR 60 Crore compared to INR 20 Crore in Q1. Further, our ability to 
+meet evolving credit needs of our customers is also deepening their loyalty with borrower 
+retention rates improving from 85% in FY26 to 88% in H1 FY27.  Alongside, we are also 
+strengthening our collection ability with a dedicated collection team comprising of 500 -plus 
+employees across operating geographies.  
+                                                Our Group Loan portfolio stood at INR 23,746 Crore as of September 2026, a marginal decline 
+of 2% from the start of FY27. This was on account of write -offs and graduation. Most of the 
+INR 614 Crore portfolio written -off in H1 FY27 consisted of Group Loans.  With write-offs 
+normalizing and the seasonally stronger second half ahead and increase in customer acquisition 
+during H2, we expect the Group Loan book growth to return to guided levels. 
+ Commenting on our asset quality, we saw a temporary increase in monthly PAR accretion rate 
+during August and September, driven by excess rainfall and flooding in certain regions of Bihar, 
+UP, Chhattisgarh and Madhya Pradesh, along with seasonal festivities in a few geographies. 
+However, despite this, our asset quality is back to pre -crisis levels at its best in the last 10 
+quarters. 
+ Gross NPA stood at 1.79%, net NPA at 0.59% and PAR 90 plus at 1.11%, each improving 
+sequentially. collection efficiency, excluding arrears, stood at 97.9% and X -Bucket collection 
+efficiency for September stood at 99.71%. Credit cost for the quarter stood at INR 299 Crore or 
+0.99% on a non -annualized basis, of which 70 bps was driven by new PAR and 29 bps due to 
+increasing ECL provisioning rates. We further strengthened our ECL provisioning at 3.31% after 
+building a macroprudential buffer of 45 bps or INR 137 Crore.  Our annualized H1 FY27 credit 
+cost of 3.43% includes normative credit cost of 2.98% and 0.45% of macroprudential buffer, 
+which is well within our guided range.  
+                                                Commenting on our margins, we saw our NIM expand to 15.1% in Q2 from 14.4% in Q1, driven 
+by lower interest reversals in Group Loan book, higher yielding individual loan book, stable cost 
+of borrowing and higher capital push.  Our cost-to-income ratio improved to 28.2% and PPOP 
+grew 39.6% YoY and 11.2% QoQ to INR 970 Crore in Q2 FY27. Our marginal cost of 
+borrowing stood at 9.1% in Q2 FY27, while average cost of borrowing was stable at 9.1%. Our 
+capital position strengthened further with our capital adequacy at 26.9%, Tier 1 at 26.2% and 
+total equity base of INR 8,919 Crore.  
+                                                On the liability side, diversifying our funding mix, coupled with focus on long tenure funds 
+remains our medium -term strategy. We signed USD 175 million ECB loan in October, 
+syndicated by Standard Chartered Bank and DBS Bank.  Despite global macroeconomic 
+uncertainty and strong competition in the ECB market from FCNR (B) deposit mobilization by 
+banks, the transaction received a strong response at a competitive pricing with financial 
+institutions participating from across Asia, M iddle East and Africa.  We see this as a clear 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 4 of 19 
+ 
+reflection of international India continued confidence in our business model and governance 
+standards. This is our fifth ECB syndication in the past 5 years.  We also mobilized INR 940 
+Crore of domestic NCDs through private placement process in this financial year. ECBs and 
+NCDs help us both in liability diversification as well as securing longer tenure of funding to 
+strengthen our ALM. 
+ Basis our strong H1 FY27 financial performance. We raised our profitability guidance for FY27, 
+ROA of 5.2% to 5.8% versus 4% to 4.8% earlier and ROE of 21% to 24% versus 16% to 20% 
+earlier. We retain our AUM growth guidance of 20% to 25%, supported by return to growth in 
+Group Loan portfolio, coupled with continued momentum in Retail Finance.  
+                                                We expect a NIM of 14.4% to 14.7% as against 12.8% to 13.2% guided earlier, driven by healthy 
+asset quality, strong control over borrowing costs and a higher capital position even after 
+factoring the 50 -bps rate reduction applicable from October onwards.  We are best placed to 
+protect our NIMs in an evolving macroeconomic environment. Our risk -adjusted NIMs are 
+currently at highest levels. Further, we can maintain our borrowing cost range bound, supported 
+by diversified lender base, high -quality PSL book an d judicious borrowing mix between repo, 
+MCLR and fixed rates. Cost to income may range between 29% to 30% as operating costs remain 
+well under control, despite inflationary trends.  
+                                                We're maintaining our credit cost guidance of 3% to 4%, and it should comfortably cover for 
+any volatility on account of evolving drought-related conditions in some operating geographies. 
+We are seeing a few signs of drought -related challenges in October around certain pockets of 
+Maharashtra, wherein the borrowers are requesting for additional time for repayment, including 
+restructuring options. At this point of time, we're not seeing any o n-ground impact in any other 
+geographies. We also note that Northeast monsoons are expected to be normal, providing respite 
+to Southern Peninsula India. 
+ We'll focus on addressing the growing credit needs of our established seasoned customers with 
+a proven track record and record of repayment across credit cycles through renewals, Group 
+Loan servicing and targeted graduation to individual secured lending pr oducts. New customer 
+acquisition will be a key growth driver with momentum expected to accelerate in H2. 
+ To conclude, CA Grameen today is stronger, more diversified and more profitable than any point 
+in its history, and we are executing with the discipline of a franchise that has been tested through 
+cycles. As we enter the seasonally stronger second half, we do so with momentum in our 
+business, strengthen our balance sheet and full confidence in delivering the guidance we've set 
+out today. 
+ We will now open the forum for questions. 
+Moderator: Thank you very much. We will now begin the question -and-answer session. Our first question 
+comes from the line of Renish with ICICI. Please go ahead. 
+Renish: Just 2 things. So one on this 50 -bps lending rate cut. When I look at the marginal cost of 
+borrowing has gone up by almost 25  to 30 bps sequentially. So when there is a clear sign of 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 5 of 19 
+ 
+likely increase in cost of borrowing going ahead, what is the thought process behind trimming 
+lending rate now? 
+ I mean, I can understand the better profitability must be driving this, but when we see a broad 
+kind of a scenario spanning out, you know, cost of borrowing are likely to go up, just wanted to 
+understand why to consider lending rate cut at this stage, not waiting for maybe one more 
+quarter? 
+Ganesh Narayanan: Renish, our current NIMs are at highest levels. And as you know, the lending rate is guided by 
+our pricing policy, which takes into account several factors, including your credit cost, including 
+your cost of borrowing as well as opex. Only lever today is if credit costs increase, that is when 
+we can retain this pricing. Now the credit cost since we are publishing within the guided range 
+and being driven by the pricing policy, this will be range bound. We have earlier also indicated 
+we will do a 50-bps cut this quarter and probably 50-bps in the next quarter. The marginal cost 
+of borrowing increase is slightly because of the mix of borrowing that we've taken right now and 
+not necessarily indicating a higher increase point of time. We do acknowledge that the repo rates 
+have gone up, but it will be gradually passed and that will go through. 
+ If, for example, if the cost of borrowing goes up in next quarter, we have the right to reprice or 
+not necessarily pass back the 50 bps that is planned for the next quarter also. I think it is 
+something that we work on. But at this point of time, we need to pass this 50 bps to the customer 
+given that the credit cost has held its ground. 
+Nilesh Dalvi: Renish, Nilesh here. So I'll add a couple of points. So firstly, on the borrowing cost, we do have 
+borrowings from a wide range of lenders. So there are more than 80 lending institutions. And 
+obviously, the borrowing rates will be within the range. That's where the blended rate what 
+appears on the balance sheet is around 9%. So in second quarter, obviously, we did a couple of 
+NCD transactions. We had a couple of longer tenure funds, which o bviously will come at a 
+slightly higher rate. 
+But at the same time, what we have to also look at is the loans what we are replacing. So like 
+even in third quarter, we will see the marginal borrowing cost will be higher because we have 
+done a USD 175 million ECB in month of October, which will come at a higher rate. But it will 
+also replace the USD 200 million ECB, which is going to expire in the same month. And the 
+new ECB what we have taken is at a lower rate compared to the previous ECB which is getting 
+replaced. Now when I look at my borrowing for next 6 months, the amount what we are going 
+to draw down at a similar rate of the amount what we are going to repay. So that's where we are 
+of a view that our borrowing cost will stay in this 9.2% to 9.3% range till March.  
+While we do have certain repo -linked exposures, but around 30% of our borrowings are fixed.  
+40% are linked to MCLR and balance 30% are linked to the loans which are linked to repo, they 
+reprice at different points in time. So it is not that it will immediately kind of add to the corporate 
+borrowing and the MCLR -linked borrowings, typically, they re act with much lag. And today, 
+given the liquidity in the system, we have seen instances in a couple of banks  that the MCLR 
+has even come down. So from that perspective, as of now, we have visibility on the borrowing 
+cost. And then as Ganesh said, if any upside risks on the cost of borrowing, then maybe every 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 6 of 19 
+ 
+quarter when we look at the lending rate, we can reprice it. From that perspective we have 
+stability on the NIMs. 
+Renish: Got it. So we have flexibility to change our lending rate on a quarterly basis. I mean, that is 
+board-approved? 
+Nilesh Dalvi: Yes. So like we had said previous quarter, that we will pass on 50 bps in third quarter, fourth 
+quarter and next year's Q1. So now we have taken a 50 bps in the third quarter. Now the 
+subsequent rating, lending rate decisions will depend upon how the credi t cost is evolving and 
+how the borrowing cost is evolving. There is no compulsion that we have to pass on. It purely 
+depends on the adjusted NIM, what we want to retain. Today with the 14.5% to 15% NIMs. I 
+mean on a H1 basis, our NIM is 14. 7%. So on a risk -adjusted basis, the NIM is more than, I 
+mean, it's closer to 11% to more than 11% and we would want to retain a risk adjusted NIM of 
+10% so that it allows us to achieve our targeted ROA of 4.5% to 5% on a steady -state basis. So 
+from that perspective, we have enough flexibility to manage our NIMs aligning with the evolving 
+credit cost as well. 
+Renish: Got it. Okay. All of these well understood. Thanks, Ganesh and Nilesh. Secondly, on this credit 
+cost trajectory. So, obviously, credit costs will remain between 3% to 4% for sure, but I think in 
+that, the lower credit cost in Q1 will also help us. So from a trend perspective, do you see Q3, 
+Q4 credit cost inching up from Q2 levels? Because as you rightly mentioned, there are still some 
+risk of drought-related regions and also maybe few of the largest players are also indicating the 
+same thing. So what do yo u guys expect internally, the credit cost in Q3, Q4 should trend 
+upwards and still remain within guided range or how one should look at the trends going ahead? 
+Ganesh Narayanan: Renish right now our expectation is that in Q3, it should probably inch up a little more. However, 
+on an overall year basis, we still believe that we are significantly positioned to be within the 
+guided range. So one is you also have festivals in October, November and certain drought-related 
+situation emerging slowly in some districts of Maharashtra. Other than that, we don't see any 
+risk right now. We'll have to wait for how things evolve. But we budgeted, we estimated a certain 
+inching up, but it is more round within the guided range.  
+Nilesh Dalvi:                         For the first half, the credit cost run rate is 3%. So in the second half, even if it slightly inches 
+up, maybe even if we go to 5% run rate, still for the full year, we should be within 4% and today 
+like I said in my previous response the NIMs what we have  they are well enough to cover 4% 
+kind of a credit cost and still deliver the ROA what we are aiming for. 
+Renish: Correct. You are absolutely right, Nilesh. Broadly, what I just wanted to understand is that 
+obviously FY27 will be taken care of, but if my credit cost trajectory continue to inch up, then 
+at some point it might create a risk for FY28, wherein maybe we ar e expecting a credit cost to 
+remain at 3%. I mean that is what we expect in a steady state basis. If my credit cost continues 
+to inch up, then FY28 credit cost could remain more than 3%. Hence, I am more concerned about 
+Q3, Q4 trajectory? 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 7 of 19 
+ 
+Ganesh Narayanan: I think we have to wait it out for Q3 and Q4. And we have to kind of position ourselves for next 
+year, like we said because we have a significant pricing advantage. Any inching up in credit cost 
+can definitely praise us what we're looking at.  
+Nilesh Dalvi:                          So Renish, if for example, if we take a scenario wherein the credit cost even stays elevated next 
+year. In that case, we did not pass on any further price cuts. Like we had said in our previous 
+calls, we have to pass on, say, 100 bps to 150 bps price cut, but we have done 50 bps. We can 
+stop there. This is how the credit cost is falling. The profitability will be protected this year as 
+well as next year. 
+Renish: Got it. And maybe can I squeeze one more last question.  
+Ganesh Narayanan: Yes go ahead.  
+Renish: Being the industry leader, what is your assessment in any broad kind of scenario historically 
+how does the credit loss actually spread out? Obviously, interim, we can witness your portfolio 
+going up. But ultimately what kind of credit losses you guys have witnessed in historical events 
+when there is a drought situation? 
+Nilesh Dalvi: See, historically, we've not seen this kind of drought, number one. Historically, our data at least 
+indicates that we've not had any significant impact because of drought. But now this year, we'll 
+have to watch out because it's very widespread. Like I said , except for a few districts in 
+Maharashtra, we not seeing stress anywhere, but we'll have to watch out for November  and 
+December. But the big plus is at least the Northeast monsoon is holding up. So that is also a 
+good time to look out to and we'll have to watch out how things evolve. 
+Renish: Got it. So this is very helpful. Thank you and best of luck. 
+Moderator: Thank you. Our next question comes from the line of Shreya Shivani from Nomura. 
+Shreya Shivani: Thank you for the opportunity. I have 2 questions. First is, again, going back to the drought 
+situation. So what are the operational changes that we are implementing at our branch level in 
+Maharashtra, where we are seeing drought situations? Any change in incentive structure for the 
+loan officers, any other process changes that you can highlight?  
+Also, do we have any kind of credit guarantee schemes on our book, which can protect us 
+probably if certain portion of our book is impacted? That's my first question. Second question is 
+the impact of the insurance regulation reform, any commentary, the conversations that you have, 
+if you've had any conversations with the regulator, anything that you can share with us on that 
+matter? 
+Ganesh Narayanan: See first on the drought situation right now, it is around a few districts in Maharashtra, especially 
+in the Central part of Maharashtra, right? So there, probably we will not focus on sourcing new 
+customers. We will focus on only our existing customers wi th respect to business. We 
+strengthened our presence on the collection side with additional resources from across different 
+teams. And that is going to help us in the short term. With respect to guarantee, we have not yet 
+availed a guarantee for microfinance. There is some budgetary approval, which is pending.  
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 8 of 19 
+ 
+Though we've applied for it, we expect it to open up in a week or two. So as and when it opens, 
+we will start enrolling ourselves into that. That is where we are. But we do have a smaller amount 
+of guarantee that we've initiated for individual lending through CGTMSE as well as BII. 
+And with respect to insurance, right now, I think it's too early. We've not had any direct 
+discussions with regulators. However, we'll have to wait for the regulations to firm up. We 
+believe that it will be slightly moderated from current levels. I'm not s ure about what levels it 
+could be. But the impact we see is around 25 bps  to 30 bps on our ROA, which I think we are 
+better placed than anywhere else in case we need to cover it through pricing to protect our ROAs. 
+Shreya Shivani: Right. And sir, just one follow-up on the credit life piece. So, when you attach the credit life on 
+your policies, you are only covering the woman of the house, right? 
+Ganesh Narayanan: It's a choice of the customer, both for herself as well as for the husband. But our preferred 
+coverage would be for both the man and the woman. There will be a few thousand customers 
+probably who got both or any one or something else. 
+Shreya Shivani: Okay. All right. And sir, just a follow -up on the first bit in terms of the collection efforts that 
+you are building in. While the drought situation has only been in Maharashtra, I believe in the 
+second quarter, some of your northern states would have also  been impacted by floods, etc. So 
+what has been the trajectory of behavior with the customers in those states? I just want to know 
+whether the floods have been more temporary in nature, the drought situation may stretch out. 
+Ganesh Narayanan: Yes. Typically, floods are temporary in nature. We come back within 2 to 3 weeks and which 
+has been the scenario even this time. 
+Shreya Shivani: All right. So it's only Maharashtra. We don't have a big exposure in AP and Telangana, right? 
+Ganesh Narayanan: No. 
+Shreya Shivani: Okay, understood. Thank you and all the best. 
+Moderator: Thank you. Our next question comes from the line of Nidhesh Jain with Investec. Please go 
+ahead. 
+Nidhesh Jain: Can you quantify the number of districts which are impacted or percentage of portfolio which is 
+exposed to those districts where we are seeing drought impact? 
+Ganesh Narayanan: We are seeing currently when I say impact today, there are customers who are coming out and 
+asking for time or restructuring solutions. This is something which is developing. We are seeing 
+this around 6 districts, especially in central part of Maharashtra. That is where we are talking 
+about, right? 
+Nidhesh Jain: And what portion of portfolio will be coming from these districts approximately? 
+Ganesh Narayanan: Right now, I think I don't have the data in hand. We can pick it up offline. But this is very early 
+signs.  
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 9 of 19 
+ 
+Nidhesh Jain: Sure. That's it from my side. Thank you. 
+Ganesh Narayanan: Thank you, Nidhesh. 
+Moderator: Thank you. Our next question comes from the line of Rajiv Mehta with YES Securities. Please 
+go ahead. 
+Rajiv Mehta: Hi, good evening. Congrats on good numbers for the quarter. See, again, on a few of the states 
+like UP, Bihar and MP, Tamil Nadu, we did see some inch up in PAR 15 accretion rate in 
+September. Are you trying to imply that except for Maharashtra, everything  else has kind of 
+cooled off in October. In October, the PAR 15 accretion in these states has kind of come back 
+to usual levels? 
+Ganesh Narayanan: Yes. So more or less the September spike was because of floods, like I said, as well as festivities 
+in that particular month. Other than Maharashtra, everywhere else we are normal in this month. 
+Rajiv Mehta: So even Karnataka and Tamil Nadu, we haven't seen any spike as yet in October, right? 
+Ganesh Narayanan: No. 
+Rajiv Mehta: And when I look at your credit cost guidance for the second half, which is implied because first 
+half has already occurred, then you see your write-offs will come down significantly because 
+since you're just having INR 550 Crore of NPA at this point in time. So, write-off quantum will 
+come down. So that credit cost will come down. And the PAR 15 accretion so far is not changing, 
+except for a few districts of Maharashtra. Then are you also trying to build in some more 
+strengthening of ECL provisions in the current guidance level? If you can quantify that? Is there 
+a plan to take Stage 1 provision to a certain higher level from where we are? 
+Ganesh Narayanan: So Stage 1 currently is around 1.8%. We have already taken a macro buffer of around 45 bps. 
+So that is something which we already have totaling to around INR 137 Crore. The provisioning 
+may inch up by maybe 5 bps to 6 bps every quarter in Q3 and Q4. This is the new data point 
+setting. 
+Rajiv Mehta: Okay. Yes, that is it from my side. Thank you. 
+Ganesh Narayanan: Thank you, Rajiv. 
+Rajiv Mehta: And sorry, can I just... 
+Moderator: You can go ahead sir. 
+Rajiv Mehta: Just one thing. I mean, I don't know whether if you can just clarify on the transaction, which the 
+promoter is trying to do maybe some color, if any idea about where are we, if you have any idea 
+about what is the status of it maybe from a time line point of view or the nature of your point of 
+view. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 10 of 19 
+ 
+Ganesh Narayanan: Right. See, as you know, currently, the promoters are in active discussion for a strategic investor 
+as the whole group. That is where it is. And we should see some progress in the next couple of 
+quarters. Anything else you're asking is what you're asking for. 
+Rajiv Mehta: Yes, yes. I mean sure. I mean it is also subject to a right price discovery, right? There is no time 
+element to it. I mean that is a clarification, if you can wait.  
+Ganesh Narayanan: Yes. 
+Rajiv Mehta: Okay. Thank you. 
+Moderator: Thank you. Our next question comes from the line of Piran Engineer with CITIC Securities 
+International. Please go ahead. Piran Engineer, your line has been unmuted. You may proceed 
+with your question. 
+Piran Engineer: Yes. Hi. Am I audible now? 
+Moderator: Yes, you are. Please go ahead. 
+Piran Engineer: Yes. Is it better? Okay. So sorry, just before I get to my questions, a couple of clarifications. So, 
+the strategic investor is at the HoldCo level, right, of the promoter? 
+Ganesh Narayanan: Yes. 
+Piran Engineer: Not at our level. 
+Ganesh Narayanan: No, not at our level. 
+Piran Engineer: Got it. And also, sir, did I hear you say correctly that, or maybe I didn't hear it correctly or didn't 
+understand it correctly, but it will be like a 25 bps to 30 bps credit cost impact next quarter, 
+higher credit costs? 
+Nilesh Dalvi: No, 25 bps to 30 bps was the insurance commission contribution to ROA. 
+Ganesh Narayanan: Yes, that's what. That was a comment on insurance in case the commissions drop to indicated 
+draft guidance, then we could have an impact of 25-30 bps on our ROA. 
+Piran Engineer: Okay. Got it. Sir, then could you just quantify when you say next quarter, credit cost could inch 
+up. So, broadly, can you give a sense of how much you think? 
+Ganesh Narayanan: Right now, what we are saying is that even if we budget a certain amount of increase because of 
+the drought situation, we don't see it go beyond our guidance in this entire year. So right now, if 
+you remove the provisions that is the buffer that we have 45 bps, we are at roughly around 3% 
+credit cost. Including the buffer, we are at around 3.45%. And even if we see an inch in credit 
+cost, we are not able to envisage a situation right now where our credit cost could cross our 
+guidance. So, you should assume that it will be somewhere between 3.5% to 4%. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 11 of 19 
+ 
+Piran Engineer: 3.5% to 4%. Okay. Got it. And sir, just firstly, now coming to my question, the way we should 
+think about the interplay between pricing of loans and cost of funds and credit cost is that over 
+a cycle, you want to achieve a 4% to 4.5% ROA. Is that a fair statement? 
+Nilesh Dalvi: So, Piran today, the way the pricing is structured is up to a certain credit cost, we can obviously 
+price it. But obviously, it's not an unlimited flexibility to price. So like you must have seen last 
+year in FY26 with a 7% credit cost, we did a 2.7% ROA. So typically, up to 4.5% to 5% credit 
+cost, we can pass it on and we can still protect our ROAs of around 4.5% to 5%. But if a credit 
+cost spikes beyond 5%, then obviously, we can't price it. So maybe up to that threshold, we can 
+protect our ROAs in the ra nge of 4.5% to 5%. So that's where I said today on a risk -adjusted 
+basis with a 14.5% NIM, we can absorb a 4% to 4.5% credit cost and still do a 5% ROA. 
+Piran Engineer: Got it. And just secondly, can you talk a bit about your IGL book because it has grown really 
+fast. Are you seeing similar delinquency trends there? And also, if you can clarify all these are 
+existing customers who were never in Stage 2 in the past? 
+Ganesh Narayanan: So, I'm just clarifying. So, it is not IGL. It is Individual Business Loans. 
+Piran Engineer: Yes. Sorry, I meant Individual Loans. 
+Ganesh Narayanan: So this is basically a graduation product, right? So these are your high vintage customers with 
+better credit profile as well as credit scores. For example, our prime product for graduation, 
+which is Unnati has an average tenure of customers over 7 years a nd an average credit score of 
+more than 730. And this book at the peak of the credit cycle in the last year as well as on a 
+continuous basis, the PAR 30 has never crossed 3%. 
+Piran Engineer: Okay. And so even now it's fair to say that delinquencies in this book are much lower than the 
+MFI book. 
+Ganesh Narayanan: It is much lower than the MFI. 
+Piran Engineer: Got it. Okay. That is it from my end. Thanks and wish you all the best. 
+Moderator: Thank you. Our next question comes from the line of Abhishek Murarka with HSBC. Please go 
+ahead. 
+Abhishek Murarka: Hello, am I audible? 
+Ganesh Narayanan: Yes. Hi, Abhishek. 
+Abhishek Murarka: I have 3 quick questions. One is in terms of disbursements for micro players, we have seen a 
+little bit of a slowdown or containment of this quarter. What are you observing on the ground? 
+Is everybody sort of pulling back? And is that more pronounced in the states that are impacted? 
+Is that still continuing or people are starting to disburse more? So just what are the dynamics 
+right now in terms of the states that are impacted by the drought or the flood? 
+Ganesh Narayanan: You are talking about industry or are you talking about CreditAccess? 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 12 of 19 
+ 
+Abhishek Murarka: Industry. In your locations where you are, what is the competitive action currently undertaken? 
+Ganesh Narayanan: So what we have seen through the cycle, we can see that banks have significantly pulled back 
+and MFIs have garnered better market share. That is a trend that is emerging. NBFCs have also 
+garnered better market share. SFBs have contracted a little, but banks have significantly 
+contracted on the microfinance side. Otherwise, I think it is business as usual. I do not see any 
+contraction. In our case, because majority of the write -off in H1 was from, you will see the 
+microfinance book inch up in Q3, Q4.  
+Abhishek Murarka: Yes. For you, I completely agree. And also the people who are disbursing, is it just 2 or 3 large 
+NBFCs or MFIs or is it more broad-based? 
+Ganesh Narayanan: I think currently, as we start publishing, like I said, historically, the only reason probably growth 
+is a little not visible is because of liquidity aspects to smaller NBFCs. The large ones continue 
+to do normal business. But as more liquidity kicks in, I think you should start seeing growth. So 
+that is where I see the challenge. Otherwise, I do not see any large player pulling back at this 
+point. 
+Abhishek Murarka: Got it. Because I mean, if you think back to, say 2024, due to heat wave or whatever other 
+triggers, basically when everybody pulled back, there was a credit crunch and that sort of led to 
+a bit of a spiral. So you do not see that kind of a caution at a ground level. 
+Ganesh Narayanan: I do not see that kind of situation right now. And you may also have to take slightly different 
+interpretation of microfinance growth going forward because now it is getting distributed 
+between individual and microfinance. So this graduation is something t hat everybody is 
+speaking. We will have to monitor both Individual Business Loans.  And if at all, we have data 
+at some point of time, how many customers have moved from microfinance into individual and 
+hence, what is the drop, right? So in my view, like us, industry also will be range bound in 
+microfinance growth, and you will see retail growth profit. 
+Abhishek Murarka: Perfect. And that brings me to IGL. So have you also taken any yield cuts in IGL products? 
+Ganesh Narayanan: Yes. So this 50 bps is across all our products. 
+Abhishek Murarka: Okay. Across all products. 
+Ganesh Narayanan: Except for mortgage and 2-wheeler. 
+Abhishek Murarka: Got it. And how long will it take for the yield cut to flow through into actual yield reduction? 
+Will it take a couple of quarters at least to start showing up? 
+Nilesh Dalvi: 4 to 6 quarters. 
+Abhishek Murarka: So suffice to say your yield broadly remains where it is this quarter or maybe even go up next 
+quarter because of the momentum of the bank book and then it starts coming down. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 13 of 19 
+ 
+Nilesh Dalvi: Yes, yields have peaked out, Abhishek. In Q2, the yields have peaked out, but the decline will 
+happen over 4 to 6 quarters. So like the 50 bps cut what we took, it will at least take 4 quarters 
+for the entire 50 bps cut to flow in. 
+Abhishek Murarka: Of course, yes. And then next quarter, you take a 50 bps cut that will also take 4, so there is the 
+overlapping effect. That is understandable. 
+Nilesh Dalvi: So the subsequent rate cuts Abhishek, the subsequent rate cuts will only happen if the credit cost 
+hold at 3%. If there is any increase, then we may have to revisit. 
+Abhishek Murarka: Understood. Got it. Thanks so much. Those were my questions and all the best. Congrats for the 
+quarter. 
+Moderator: Our next question comes from the line of Ashlesh Sonje with Kotak Securities. 
+Ashlesh Sonje: Hi team good evening.  A few questions from my side. Firstly, just a clarification, the increase 
+in PAR 15 plus accretion that we have seen in this quarter, especially in a few states like MP, 
+that number is primarily due to the flood situation in those states. It has nothing to  do with the 
+drought situation thus far. Is that understanding correct? 
+Ganesh Narayanan: Yes, that's correct. 
+Ashlesh Sonje: Okay. Understood. Sir, 2 more questions. Firstly, the kind of disbursement demand that you are 
+seeing today from the customers, has the demand for, let's say, smaller ticket loans gone up in 
+the last few months? Or there is no such trend right now? 
+Ganesh Narayanan: There is no specific pattern I can relate to. 
+Ashlesh Sonje: Okay. Understood. Sir, and lastly, in your borrower base, when you look at the overall leverage 
+of the borrower, not just for you, but across all MFI lenders, what proportion roughly would, 
+what proportion of borrowers would have roughly hit the INR 2 Lakh limit of leverage? 
+Ganesh Narayanan: I do not have this data off hand. I can get back to you. 
+Ashlesh Sonje: Okay, sir. Perfect. Those are all the questions I had. Thank you very much. 
+Ganesh Narayanan: Many have hit the limit. 
+Moderator: Thank you. Our next question comes from the line of Shreepal Doshi with Equirus. 
+Shreepal Doshi: Hi, sir. Good evening and thank you for giving me the opportunity. My question was largely on, 
+since you started acquiring new customers actively now, like what sort of a trend are we seeing 
+in terms of the customers having exposure to gold loan as a category? Are we seeing that the 
+newer customers that we are acquiring l arger proportion of them have exposure to gold loan 
+versus a trend that we were seeing probably 2 years back or 3 years back? 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 14 of 19 
+ 
+Ganesh Narayanan: See, right now, we did do some research on this data. Right now, what we are seeing is that it is 
+stable at around 10-12% of our customers on a consistent basis. We are not seeing any upswing 
+or lows at this point. 
+Shreepal Doshi: So this 10-12% is for the new customers that we acquire or the existing customers? 
+Ganesh Narayanan: On overall our overall customer base. I do not have a cut of new customers exposure to gold 
+loan at this point of time. But because we study this every month, the trend is range. I do not see 
+that, that is significantly inc. 
+Shreepal Doshi: So that is broadly a 10%, 12% versus what we had seen only two, 3 years back. So that is holding 
+up. 
+Ganesh Narayanan: If I am able to understand your question right, why we do this research every month is also to 
+see how the credit profiles are different for a pure microfinance customers as well as customers 
+with retail exposure. And consistently for the last 12 to 14 months, we have seen that customers 
+with retail exposure were far better than that of pure microfinance customer. 
+Shreepal Doshi: Got it. Sir, second question was largely towards FY28. How are we seeing that year shaping up 
+in terms of growth? Because I believe margins, we will see moderation given our pricing strategy 
+that we have. But overall loan growth as well as ROA trajectory, what is it that we are targeting? 
+Ganesh Narayanan: It should be similar in my view. But we may have to probably guide this towards Q4. But I do 
+not see a reason why we should have any stress on any of the margins that we are publishing 
+right now. 
+Shreepal Doshi: And growth also confident of holding it in the range of 20% to 25%? 
+Ganesh Narayanan: Yes. All the more today because you have a set of products that you picked up and you are 
+accelerating all of this. Say, for example, mortgage, which used to be done out of 120 branches 
+now. We are doing today right now around 42 8 branches. And we expect to scale up a few 
+hundred branches every year as we gain more experience and train our employees. So growth 
+will be a combination of microfinance and retail. Retail will grow faster. Microfinance, as we 
+said in our strategic plan, could be range bound in the range of anywhere between 10% to 12%. 
+Shreepal Doshi: Got it. Thank you so much for answering my questions. 
+Moderator: Thank you. Our next question comes from the line of Anand Dama with Nuvama. 
+Anand Dama: Yes, thank you for the opportunity and congratulations for that great set of numbers. My question 
+was about your borrower growth. That seems to be in single digit. Is it that you are not acquiring 
+new customers? Is that the problem that you are seeing for the entire micro industry? Or is it that 
+now you are focusing more on the average ticket size increase of the guards you can just explain 
+how the borrower growth is going to be in the coming years? And what basica lly explains the 
+borrower growth for now? 
+Ganesh Narayanan: So firstly, a lot of our efforts today is towards ensuring that Q3  and Q4 we start showing 
+significant increase in number of customers. There's a lot of effort going in that, and that should 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 15 of 19 
+ 
+hopefully improve. And this is also a result of higher graduation that is happening . One side, 
+you are acquiring customers. Second side, you are also graduating more customers into retail. 
+And microfinance side, I think the momentum will start in the next 2 quarters. Yes, it's a little 
+bit of lag, I agree. I am saying Q3 and Q4, you should start seeing us publish better numbers in 
+customer acquisition. 
+Anand Dama: Okay. Because what's happening is that right now, you are focusing more on average ticket size 
+or giving loan to the existing customers, and that's basically also keeping your opex to AUM on 
+a lower side. And to some extent, your ROEs also look far more higher.  But if you enter into a 
+cycle where the borrower growth doesn't come in or if you go for a higher growth and your opex 
+shoots up and then your credit cost also comes in, you will get into a situation where possibly 
+ROE will come down faster than what one would have expected it to do. 
+Ganesh Narayanan: This is true. And in a certain way, in a certain angle, I agree with you. But what I am trying to 
+indicate is that it is not that the focus on customer acquisition is not there. It's just that you have 
+come out of very strong 2 years of credit cycle, it takes some time to catch up momentum. And 
+hence, that is taking some time. Along with that, the company is also doing various other things 
+with respect to graduating customers, new products, process technology, etcetera. So which I 
+think is more or less streamlined today. And we are hoping that Q3 and Q4, we should actually 
+see momentum in customers. Ideally, we would like to publish more than 1 Lakh customers 
+every month, and that's the target that we are working on. We are right now around 80,000 
+customers per month. 
+Anand Dama: Yes. Look, I think most other guidance that you have given, I think you are overshooting, but I 
+think the borrower growth and the AUM growth is where I think you are still undershooting. 
+Gururaj Rao: Anand, Gururaj here; even last 4 quarters, we have added close to 10 Lakh customers. Even in 
+Q1, we added 2.5 Lakh customers. Q2, we added 2.3 Lakh customers. it is not showing in the 
+overall borrower number because of the write -off what we do, the credit crisis we are just out. 
+So most of the write -off has happened during last one year. So you won't see the borrower 
+number going up because there is a natural attrition as well as the write -off impact on the 
+number. But then starting from Q1 onwards, you can see little positive numbers coming in. In 
+Q3 and Q4, it will be much more. So I think from next quarter onwards, you can see the borrower 
+numbers also. 
+Ganesh Narayanan: Yes. See, also to keep in mind, we are working on 2 fronts now. One is that you are retaining 
+your vintage customers longer. You are already seeing that our customer retention rates moved 
+to 88% in H1 FY27 . Second is that we wrote-off 3 Lakh customers  in past 12 months.  With 
+write-off kind of clearing up subsequent quarters, you will see lesser customers down because 
+of write-offs.  
+Anand Dama: And sir, the NPAs in the mortgage book seems to be now going up. Is it still within your tolerable 
+level or like you feel that basically that is to some concern? 
+Ganesh Narayanan: It is still within our tolerable level. And we are quite bullish about this business at this point. 
+Anand Dama: Okay. So what's broadly tolerable level in the mortgage book in terms of NPAs? 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 16 of 19 
+ 
+Ganesh Narayanan: So, for us, industry is I think, roughly around, PAR 0 is around 5% to 8% of the book. But we've 
+built a model where we currently budgeted around 2% credit cost in the mortgage. That is where 
+we are working to. 
+Anand Dama: Okay. Sure. That’s comforting. Thanks so much. 
+Moderator: Thank you. Our next question comes from the line of Sonal with Prescient Capital. Please go 
+ahead. 
+Sonal Minhas: Hi, sir. This is Sonal Minhas from Prescient Capital. I hope I’m audible.  
+Moderator: You are audible, so you may proceed. 
+Sonal Minhas: Sure. I have just a small question. I'm on Slide 28, and I see the customers MFI exposure whereby 
+CA Grameen plus 2 has gone down from 17% to 15% QoQ and so has plus 3. From a guardrail 
+perspective or from a perspective of identifying new customers, is there a prudence there 
+whereby we say that these kind of customers, will CA Grameen plus 3 will inch towards zero 
+over time and we look for more higher quality customers? 
+Ganesh Narayanan: Can you repeat the question? I didn't get your question clearly. 
+Sonal Minhas: So, I'm on Slide number 28, sir. 
+Ganesh Narayanan: So, you are talking about the 3% Grameen plus 3? Yes. 
+Sonal Minhas: Yes. So, the number when I compare to last quarter, Grameen plus 2 and the plus 3 number has 
+gone down basically. Plus 2 has actually gone down to. So just wanted to understand from an 
+operations perspective, what are you doing to guardrail the quality and the vintage of customers? 
+That's broader the sense of the question I wanted to understand. 
+Ganesh Narayanan: I think this will gradually keep dropping. I'm not sure that we go to zero. It may remain probably 
+at a certain level because there is various issues because of which it can be Grameen plus 3 with 
+respect to credit bureau, etc. But what I'm seeing, trajectory, it will continue to go down. Second, 
+I don't think there's a specific strategy to target customers who don't have enough penetration.  
+The deeper you go, you will get better. With our continuous approach, we've always been able 
+to kind of get good new-to-credit customers. So that is an effort as we open more branches, more 
+deeper, we will continue to get a mix of both experience as well as new -to-credit customers. 
+New-to-credit customers in Q2 was around 35%. 
+Sonal Minhas: Got it, sir. And I think the earlier part, my second question is, sorry, is that as the earlier 
+participant was saying that you were mentioning that banks have vacated the space, some NBFCs 
+and small finance banks have also vacated the space. So is that gi ving you the confidence to 
+finding new better unique customers and the growth that you basically envisioning over the 
+course of next one year or so? 
+Ganesh Narayanan: I don't think banks have vacated at this space. They slowed down. But I feel all of this is 
+temporary. Because with repeated quarterly performances, the rest of them would also inch up 
+gradually. Temporarily, we do have an advantage of slightly lesser competition is how I put it. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 17 of 19 
+ 
+Sonal Minhas: Got it, sir. That explains. Thank you. 
+Moderator: Thank you. Our next question comes from the line of Rishi Mody with Mody Advisory. 
+Rishi Mody: Yes. Hi. Am I audible? 
+Moderator: You are audible, sir. You may proceed. 
+Rishi Mody: Yes. So just harping on a few points here. First is your customer count, right? I'm seeing that a 
+lot of it is going out through attrition, which means that maybe a good quality customers 
+transferring to a lower lending rate lender in the MFI space, and while your, if I just do a rough 
+calculation, your book has grown by 19%, your customer count has grown by 1%, which means 
+customer concentration has grown by 18%. Just firstly, what steps are we taking to combat this 
+attrition? Do we have any structural advantage? Or are we going to keep competing against 
+lower rate lenders and lose customers in the future? Secondly, what risk management metrics 
+have customer concentration risk checks at household level versus household level income, and 
+do we have data being actually captured with higher accuracy for this? So that's my first question. 
+I'll come to the second one after this. 
+Ganesh Narayanan: Okay. So let me take the first one. So, first point, we are one of the lowest priced lenders in the 
+microfinance industry. Hence, moving from us to somebody else for a low interest rate is very 
+unlikely. Number two, if you see our attrition, we've actually improved our retention from 85% 
+in FY26 to 88% in H1 FY27. What could possibly happen, like I said, is because we have a lot 
+of customers your customer count is dropping number one. Number two, customers would also 
+be graduating because of which your customer count could be dropping. Third, would also be 
+that customers are facing guardrails because of which we are not able to lend because the limits 
+will exhaust. So that can also be one reason. So, if you see our entire strategy for the next 5 years 
+is to ensure that the good quality customers are able to stay with us for a longer period of time 
+by handholding them through graduation products, which means they enter through 
+microfinance. And as they become better profile, then we graduate them to Individual Business 
+Loans and Secured Business Loans. So even in those products that we picked up, be it 2-wheeler, 
+mortgage, anything, we are quite competitive in the space from a pricing perspective. And in the 
+last quarter, we've been able to bring around 90 customers from other mortgage players back 
+into CA Grameen who were not with us earlier.  
+ Pricing-wise, we are well placed. It's just a question of our Individual Lending. And like I said, 
+because of heavier write -offs historically, the account also looks a little lower. But since our 
+write-off is more or less done, now you should see accelerati on of customer growth in the 
+upcoming quarters. 
+Rishi Mody: So, when you represent this 6.75 Lakh accretion number of customer count, this also includes 
+customers who you can't lend to because their borrowing limits are exceeded? Or what is this 
+number defining. Because the 3 Lakh, I understand is people you don't want to lend to. What is 
+the remaining 7 Lakh number, 6.75 Lakh number. 
+Ganesh Narayanan: Which means that customers who have left us also including customers who we've not been able 
+to renew or roll over because of breach of guardrails or number of lenders and limits exceeding. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 18 of 19 
+ 
+It could also have customers who don't want loan because that is also a pushing. Historically, 
+when we analyze the attrition, we've seen that we used to have around 15% attrition. When we 
+analyze that around 7 - 7.5% move up. And that is the bucket we're trying to hold back. Other 
+7.5% either don't borrow or they have defaulted because of which they are not getting a loan and 
+various other things. 
+Rishi Mody: Okay. Fine. Maybe just split it next time into people who actually moved out versus people who 
+you aren't willing to lend more to. So we get a more clearer picture maybe where actually 
+competition is affecting us versus where we're not getting affected. Th at's just one suggestion. 
+It’s possible to do that -- and if you could just come to the risk management piece sorry, I 
+interrupted you all. 
+Ganesh Narayanan: So from a risk management perspective, we have a very well evolved policy where we don't 
+cross greater than 2% in any district exposure. So that kind of restricts your per district exposure 
+to not more than 2% of our AUM, number one.  Number two, we also have lending limits, 
+different districts with respect to per capita income, with respect to repayment rates in that 
+particular district, etc. And we have product level controls for various products. Broadly 
+customer level, so one is vintage level. If the customer has higher vintage, then you have higher 
+limits. If the customer is lower vintage, you have lower limits.  
+Rishi Mody: No. So I understand what our general credit underwriting is. What I'm trying to understand is 
+that now because we are growing our book on the existing customers that we are going towards 
+more individual loans rather than the Group Loans, right? So people who were, borrowing INR 
+20,000, INR 10,000 are now getting affordable housing at INR 2 Lakh  to INR 3 Lakh first is 
+then their capability to repay. Second is… 
+Ganesh Narayanan: Okay. I got your question… 
+Rishi Mody: Like, household level debt we are able to calculate or not. 
+Ganesh Narayanan: Yes. So retail is completely different ballgame, okay. So when we graduate customers from 
+microfinance to retail, underwriting is a lot more sharper. We have specific credit teams who 
+visit and spend more than an hour to understand the profile of the cust omer, the cash flow, etc. 
+Credit score has also come into play. We factor all of these aspects before we take a call on a 
+larger credit. Like say, for example, our graduation path to Unnati loan, like I said, the average 
+credit score there is 730. The average vintage that they spent with us is 7 years. 
+These are high -quality, long vintage customers who are able to demonstrate better cash flow 
+without which they will not go up. So that is why though we have a 45 Lakh customer base, this 
+will grow at a much smaller pace. It's not that everybody moves there. So we are looking at 
+around 6% to 8% of our customers on a yearly basis getting converted into individual, but with 
+a combination of secured and unsecured individuals. I hope your question has been answered.  
+Rishi Mody: I have some more, but let's move on to the second question that I had is this credit guarantee 
+scheme, right? If you could just explain me the economics of it, how much does it cover on, in 
+case of a default, and what is the cost, who bears the cost eventu ally – Like we're going to pass 
+it on or we going to pay the cost from our own opex or credit cost? I'm just trying to understand. 
+ CreditAccess Grameen Limited 
+  October 22, 2026 
+ 
+Page 19 of 19 
+ 
+Nilesh Dalvi: Rishi, currently, we don't have the guarantee scheme for microfinance… 
+Rishi Mody: Yes you are in the process, right? So what will it end up being any idea? 
+Nilesh Dalvi: Typically, under the CGFMU scheme, the annual premium cost is around 1.3% to 1.5% and it 
+covers around 75% of the losses which you claim for and the total gap is 15% of the pool what 
+you have insured. 
+Rishi Mody: Okay. And this, I'm assuming all SFBs and banks would also be applying. Ideally, like I'm trying 
+to understand how the competitive scenario and credit underwriting will change once this comes 
+into play and hence competition for us should increase, right, once. Yes. 
+Ganesh Narayanan: So this is already a significant portion of banks SFBs already covered their book through this 
+scheme. 
+Rishi Mody: Okay. We haven't chosen to right now because -- we have better underwriting skills at this point. 
+-- Okay, fine… 
+Ganesh Narayanan: A few thousand Crore in the next few years and scale it up based on the experience. 
+Rishi Mody: Okay, fine. Great that’s it right for me right now. I will reach out to the IR team in case I need 
+more clarification. Thank you guys. 
+Moderator: Ladies and gentlemen, we will take that as our last question for today. I would now like to hand 
+the conference over to the management for any closing comments. 
+Ganesh Narayanan: Thank you all for the trust and confidence you've had in CA Grameen. I think we've done 2 good 
+quarters this year, and we are working towards ensuring the annual guidance we've given is met 
+with, and we are fully confident that the next 2 quarters would also see strong performance from 
+our side. Thank you so much. 
+Moderator: Thank you. On behalf of CreditAccess Grameen Limited and Motilal Oswal Financial Services 
+Limited, that concludes this conference. Thank you all for joining us. You may now disconnect 
+your lines. 
