@@ -1,6 +1,6 @@
 // FINN. Three views over one local state: Today (push), Research (pull), Network (ask directly).
 import { makeResolver } from "./network.js";
-import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine } from "./today.js";
+import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine, fromTheVerb } from "./today.js";
 import { esc, when, pct, mult, store, whoRow, routeRow } from "./ui.js";
 import { researchHTML } from "./research-view.js";
 import { networkHTML } from "./network-view.js";
@@ -134,7 +134,7 @@ function card(c) {
   </article>`;
 }
 
-const short = (f) => (f.category === "management_change" ? shortPeopleLine(f.headline) : f.headline);
+const short = (f) => (f.category === "management_change" ? shortPeopleLine(f.headline) : fromTheVerb(f.headline));
 // A few words for "Also this month": "Q2 FY27 results", "Gopal Kothari named CFO", "Initiation of Forensic Audit".
 function label(f) {
   const q = f.category === "results" && f.headline.match(/\((Q\d FY\d\d)\)/);
@@ -169,7 +169,7 @@ function resultsTable(r, q) {
   const rows = [["revenue", r.lender ? "Revenue (total)" : "Revenue"], ["ebitda", "EBITDA"], ["pbt", "PBT"], ["pat", "PAT"]]
     .filter(([k]) => !(k === "ebitda" && r.lender));
   return `<table class="rtable"><thead><tr><th></th><th>${esc(q || "Quarter")}, ₹ cr</th><th>QoQ</th><th>YoY</th></tr></thead><tbody>
-    ${rows.map(([k, name]) => { const l = r.lines[k]; return `<tr><th>${name}</th><td class="num">${l.cur == null ? "–" : l.cur.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</td>${cell(l, "qoq")}${cell(l, "yoy")}</tr>`; }).join("")}
+    ${rows.map(([k, name]) => { const l = r.lines[k]; return `<tr><th>${name}</th><td class="num">${l.cur == null ? "–" : l.cur.toLocaleString("en-IN", { maximumFractionDigits: 0 }).replace("-", "−")}</td>${cell(l, "qoq")}${cell(l, "yoy")}</tr>`; }).join("")}
     </tbody></table>
     <p class="src">${r.lender ? "EBITDA isn't meaningful for a lender, so it's left out. " : "EBITDA = PBT + finance costs + depreciation − other income − exceptional items. "}
       ${r.check && r.check !== "ok" ? `${esc(r.check)}. ` : ""}<a href="${esc(r.url)}" target="_blank" rel="noopener">${r.consolidated ? "Consolidated" : "Standalone"} filing ↗</a></p>`;

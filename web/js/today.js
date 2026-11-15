@@ -111,6 +111,16 @@ export function shortPeopleLine(h) {
   return `${m[2].trim()} ${verb} ${role}`;
 }
 
+// "IL JIN Electronics (India) Limited, a material subsidiary of the Company ("IL JIN") has completed the
+// acquisition of ..." -> "Completed the acquisition of ...": the news starts at the verb.
+export function fromTheVerb(s) {
+  const m = s.match(/^(.{25,200}?)\s(?:has|have|had)\s+(?:been\s+)?(completed|signed|entered|executed|received|approved|acquired|incorporated|commenced|won|bagged|secured|stayed|issued|allotted|appointed)\b/i);
+  // Only drop a corporate preamble; "The High Court has stayed ..." keeps its actor, which is the news.
+  if (!m || !/limited|subsidiary|llc|\binc\b|company|pvt/i.test(m[1])) return s;
+  const rest = s.slice(m.index + m[0].length - m[2].length);
+  return rest[0].toUpperCase() + rest.slice(1);
+}
+
 // One card per company and category in the window, newest filing first.
 export function groupFilings(items) {
   const groups = new Map();
@@ -126,7 +136,7 @@ export function groupFilings(items) {
     const lead = list.find((f) => !f.dependent && f.priority >= top.priority - 10) || top;
     const latest = list[0];
     const items = dedupeItems(list);
-    let headline = lead.headline, detail = lead.detail || (latest !== lead && latest.dependent ? latest.headline : "");
+    let headline = fromTheVerb(lead.headline), detail = lead.detail || (latest !== lead && latest.dependent ? latest.headline : "");
     if (top.category === "management_change") {
       // Leadership filings say the same thing in legal prose; say it in a line each.
       const lines = items.filter((f) => f.priority >= MEDIUM).sort((a, b) => b.priority - a.priority)
