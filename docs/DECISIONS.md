@@ -200,3 +200,17 @@ Short record of the choices that shape FINN, and why. Newest last.
     pill, legend and bar share one vocabulary (Cut, Raised, Target changed);
     a company's cards sit together; a flat day reads 0.0%, not a red −0.0%;
     the sparkline is captioned.
+38. **A second UI review, nine fixes.** Measured again at 320, 375, 768 and
+    1440px, light and dark, keyboard only. Focus no longer falls to the top
+    of the page after every tap: it returns to the same control, or to the
+    next card's Done when a card leaves. One short status line is announced
+    instead of the whole page. The Rules sheet keeps Tab inside it and hands
+    focus back to Rules when it closes. A guidance cut is never hidden behind
+    a clean record ("2 of 2 settled promises delivered · 1 target cut"), and
+    the headline uses the legend's words (Target cut, Target raised, Target
+    changed, Pending). "Can't tell" is drawn hollow so it isn't the same grey
+    as "Went quiet". Ranges read "₹6,700–7,000 crore", not "INR6,700 crores
+    to INR7,000 crores". The call marks on each promise have a key. A price
+    card names a bigger unusual day that its 40-session chart shows outside
+    the window (PI Industries' 19% results-day fall behind a 1% day). At
+    320px, Rules goes icon-only so the tabs keep their words.

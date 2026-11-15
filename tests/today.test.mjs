@@ -112,9 +112,9 @@ test("research headline leads with changes until enough promises are settled", a
   const { summary, headline, bucket } = await import("../web/js/research-view.js");
   const dixon = { promises: [{ verdict: "revised", direction: "cut" }, { verdict: "revised" }, { verdict: "revised" },
     { verdict: "dropped" }, { verdict: "pending" }, { verdict: "pending" }] };
-  assert.equal(headline(summary(dixon)), "1 target cut · 2 changed · 1 went quiet · 2 still open");
+  assert.equal(headline(summary(dixon)), "1 target cut · 2 target changed · 1 went quiet · 2 pending", "the legend's words");
   const infy = { promises: [{ verdict: "delivered" }, { verdict: "delivered" }, { verdict: "revised", direction: "cut" }] };
-  assert.equal(headline(summary(infy)), "2 of 2 settled promises delivered");
+  assert.equal(headline(summary(infy)), "2 of 2 settled promises delivered · 1 target cut", "a cut isn't hidden behind a clean record");
   assert.equal(bucket({ verdict: "revised", direction: "raised" }), "raised");
 });
 
@@ -131,4 +131,12 @@ test("a company's cards sit together", () => {
   const firstSeen = syms.filter((s, i) => syms.indexOf(s) === i);
   const runs = syms.filter((s, i) => i === 0 || s !== syms[i - 1]);
   assert.deepEqual(runs, firstSeen, "no company appears in two separate runs");
+});
+
+test("a price card names a bigger unusual day that its chart shows outside the window", () => {
+  const pi = today({ window: "24h" }).needs.find((c) => c.kind === "price" && c.symbol === "PIIND");
+  assert.ok(pi, "PI Industries has a price card at 24 hours");
+  assert.equal(pi.earlier?.date, "2026-11-05");
+  assert.ok(pi.earlier.move < -15, "the 19% fall, not the 1% day");
+  assert.ok(pi.marked.includes("2026-11-05"), "and its bar is marked in the chart");
 });

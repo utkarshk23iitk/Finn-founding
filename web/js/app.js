@@ -1,12 +1,15 @@
 // FINN. Three views over one local state: Updates (push), Research (pull), Network (ask directly).
 import { makeResolver } from "./network.js";
-import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine, fromTheVerb } from "./today.js";
+import { buildToday, WINDOWS, CATEGORY_LABEL, CHART_SESSIONS, shortPeopleLine, fromTheVerb } from "./today.js";
 import { esc, when, pct, sign, mult, store, whoRow, routeRow } from "./ui.js";
-import { researchHTML } from "./research-view.js";
+import { researchHTML, summary, headline } from "./research-view.js";
 import { networkHTML } from "./network-view.js";
 
 const $app = document.getElementById("app");
 const $sheet = document.getElementById("sheet");
+const $status = document.getElementById("status");
+// Screen readers hear one short line about what a tap changed, not the whole page re-read.
+const announce = (msg) => { $status.textContent = ""; setTimeout(() => { $status.textContent = msg; }, 50); };
 const ALERTABLE = ["results", "management_change", "M&A", "litigation", "credit_rating", "fund_raise", "pledging", "capex"];
 // "Updates", not "Today": the screen covers whatever window the investor picks (24 hours to a month).
 // The link stays #today so existing links keep working.
@@ -54,19 +57,52 @@ async function openResearch(sym) {
     const r = local?.ok ? local : await fetch(`api/research?symbol=${encodeURIComponent(sym)}`);
     const body = await r.json().catch(() => ({}));
     if (!r.ok || body.error) throw new Error(body.error || `The research service answered ${r.status}.`);
-    if (state.ticker === sym) Object.assign(state, { research: body, researchState: "ready" });
+    if (state.ticker === sym) {
+      Object.assign(state, { research: body, researchState: "ready" });
+      announce(`${body.name || sym}: ${body.promises?.length ? headline(summary(body)) : "no explicit targets in the last four calls"}`);
+    }
   } catch (e) {
     // A dropped connection usually means the first read is still finishing on the server.
     const msg = e instanceof TypeError
       ? "The first read of a new company can take a couple of minutes, and the connection dropped before it finished. Try again shortly; once done, it's cached for a day."
       : e.message;
-    if (state.ticker === sym) Object.assign(state, { researchState: "error", researchError: msg });
+    if (state.ticker === sym) { Object.assign(state, { researchState: "error", researchError: msg }); announce(`Couldn't research ${sym}. ${msg}`); }
   }
   render();
 }
 
 // ---------- rendering ----------
+// Every render rewrites the page, so put keyboard focus back where it was: on the same control,
+// or, when a Done card leaves the list, on the next card's Done (the heading if none is left).
+const KEYS = ["act", "id", "w", "sym", "q", "cat"];
+function focusKey() {
+  const a = document.activeElement;
+  if (!a || a === document.body || !$app.contains(a)) return null;
+  if (a.matches(".tab")) return { sel: `.tab[href="${a.getAttribute("href").split("/")[0]}"], .tab[href^="${a.getAttribute("href").split("/")[0]}/"]` };
+  if (a.dataset.act) {
+    const sel = KEYS.filter((k) => a.dataset[k] != null).map((k) => `[data-${k}="${CSS.escape(a.dataset[k])}"]`).join("");
+    const cards = [...$app.querySelectorAll("article.card[data-id]")];
+    return { sel, card: cards.indexOf(a.closest("article.card[data-id]")) };
+  }
+  if (a.name) return { sel: `[name="${CSS.escape(a.name)}"]` };
+  const form = a.closest("form[data-form]");
+  if (form) return { sel: `form[data-form="${form.dataset.form}"] [type="submit"]` };
+  return null;
+}
+function restoreFocus(k) {
+  if (!k) return;
+  let el = $app.querySelector(k.sel);
+  if (!el && k.card >= 0) el = $app.querySelectorAll("article.card[data-id] .done")[k.card] || $app.querySelector("h1.lede");
+  el?.focus({ preventScroll: true });
+}
+
 function render() {
+  const k = focusKey();
+  renderPage();
+  restoreFocus(k);
+}
+
+function renderPage() {
   const today = state.view === "today" ? buildToday(feed, state.settings, ctx, state.done) : null;
   $app.innerHTML = `
     <header class="top" id="top">
@@ -75,7 +111,7 @@ function render() {
         <nav class="tabs" aria-label="Views">${TABS.map(([k, l]) => `<a href="#${k}${k === "research" && state.ticker ? `/${esc(state.ticker)}` : ""}" class="tab" aria-current="${state.view === k ? "page" : "false"}">${l}</a>`).join("")}</nav>
         ${state.view === "today" ? `<button class="iconbtn" data-act="settings" aria-label="Alert rules">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h7M12 4h2M2 12h3M8 12h6"/><circle cx="10.5" cy="4" r="1.6"/><circle cx="6.5" cy="12" r="1.6"/></svg>
-          Rules</button>` : ""}
+          <span class="lbl">Rules</span></button>` : ""}
       </div>
       ${today ? `<div class="subrow"><nav class="windows" aria-label="Time window">
         ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === today.window.key}" aria-label="Last ${esc(w.label)}">${esc(w.label[0].toUpperCase() + w.label.slice(1))}</button>`).join("")}
@@ -95,7 +131,7 @@ function todayHTML(t) {
     ? `Nothing needs you in the last ${t.window.label}.`
     : `<span class="n">${n}</span> thing${n === 1 ? "" : "s"} need${n === 1 ? "s" : ""} you`;
   return `
-    <h1 class="lede">${lede}</h1>
+    <h1 class="lede" tabindex="-1">${lede}</h1>
     <p class="sub">${[`As of ${esc(when(t.asOf))}`, t.glance.length && `${t.glance.length} worth a glance`, t.routineCount && `${t.routineCount} routine filings folded`,
                       t.cleared.length && `${t.cleared.length} done`].filter(Boolean).join(" · ")}</p>
 
@@ -187,8 +223,8 @@ function priceHeadline(c) {
 }
 
 function priceBody(c) {
-  const rows = feed.prices[c.symbol].slice(-40);
-  const hits = new Set(c.days.map((d) => d.date));
+  const rows = feed.prices[c.symbol].slice(-CHART_SESSIONS);
+  const hits = new Set([...c.days.map((d) => d.date), ...(c.marked || [])]);
   const w = 320, h = 44, n = rows.length, bw = w / n;
   const vmax = Math.max(...rows.map((r) => r[2])), pmin = Math.min(...rows.map((r) => r[1])), pmax = Math.max(...rows.map((r) => r[1]));
   const barsSvg = rows.map((r, i) => {
@@ -205,7 +241,9 @@ function priceBody(c) {
       ${barsSvg}<polyline class="px" points="${line}"/></svg>
     <p class="spark-cap">Daily volume (bars) and price (line), last ${n} sessions · unusual days in amber</p>
     ${why}
-    ${others.length ? `<p class="detail">Also unusual: ${others.map((d) => `${when(d.time, false)} ${pct(d.move)}, ${mult(d.volMult)}`).join(" · ")}</p>` : ""}`;
+    ${others.length ? `<p class="detail">Also unusual: ${others.map((d) => `${when(d.time, false)} ${pct(d.move)}, ${mult(d.volMult)}`).join(" · ")}</p>` : ""}
+    ${c.earlier ? `<p class="why">Bigger, earlier in the chart: <b>${esc(when(c.earlier.time, false))}, ${esc(pct(c.earlier.move))} on ${esc(mult(c.earlier.volMult))} usual volume</b>. ${
+      c.earlier.why ? `Likely why: ${esc(label(c.earlier.why))} (${esc(when(c.earlier.why.time))}).` : "No filing explains it."}</p>` : ""}`;
 }
 
 function personBlock({ person: p, routes }) {
@@ -277,21 +315,29 @@ function openSettings() {
     <div class="panel-foot"><button class="linkbtn" data-act="reset">Reset to defaults</button><button class="primary" data-act="close">Done</button></div>
   </div>`;
   $sheet.hidden = false;
+  $app.inert = true;   // keep Tab inside the sheet
   $sheet.querySelector("input")?.focus();
 }
+function closeSettings() {
+  if ($sheet.hidden) return;
+  $sheet.hidden = true;
+  $app.inert = false;
+  $app.querySelector('[data-act="settings"]')?.focus();
+}
+const needsLine = () => $app.querySelector("h1.lede")?.textContent.trim() || "";
 function saveSettings() { store.set("finn.settings", state.settings); render(); }
 
 // ---------- events ----------
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-act]");
-  if (!b) { if (e.target === $sheet) $sheet.hidden = true; return; }
+  if (!b) { if (e.target === $sheet) closeSettings(); return; }
   const id = b.dataset.id, act = b.dataset.act;
-  if (act === "window") { state.settings.window = b.dataset.w; saveSettings(); }
+  if (act === "window") { state.settings.window = b.dataset.w; saveSettings(); announce(`${b.textContent.trim()}: ${needsLine()}`); }
   else if (act === "toggle") { state.open.has(id) ? state.open.delete(id) : state.open.add(id); render(); }
-  else if (act === "done") { state.done.add(id); store.set("finn.done", [...state.done]); render(); }
-  else if (act === "undone") { state.done.delete(id); store.set("finn.done", [...state.done]); render(); }
+  else if (act === "done") { state.done.add(id); store.set("finn.done", [...state.done]); render(); announce(`Marked done. ${needsLine()}`); }
+  else if (act === "undone") { state.done.delete(id); store.set("finn.done", [...state.done]); render(); announce(`Restored. ${needsLine()}`); }
   else if (act === "settings") openSettings();
-  else if (act === "close") $sheet.hidden = true;
+  else if (act === "close") closeSettings();
   else if (act === "research") location.hash = `research/${b.dataset.sym}`;
   else if (act === "netq") location.hash = `network/${encodeURIComponent(b.dataset.q)}`;
   else if (act === "cat") {
@@ -325,7 +371,7 @@ $sheet.addEventListener("input", (e) => {
   document.getElementById("move-o").textContent = `±${state.settings.price_move_pct}%`;
   saveSettings();
 });
-document.addEventListener("keydown", (e) => { if (e.key === "Escape") $sheet.hidden = true; });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSettings(); });
 window.addEventListener("scroll", () => document.getElementById("top")?.classList.toggle("scrolled", scrollY > 4), { passive: true });
 window.addEventListener("hashchange", route);
 

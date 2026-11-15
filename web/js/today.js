@@ -79,6 +79,24 @@ export function priceAlerts(prices, asOf, hours, rules) {
   return out;
 }
 
+// The price card's chart shows the last 40 sessions, often longer than the window. A bigger unusual day outside
+// the window is named and marked: a 19% fall last week shouldn't sit grey behind a 1% day. Only that one is marked;
+// after a shock most days clear the volume rule, and an all-amber chart says nothing.
+export const CHART_SESSIONS = 40;
+const unusualness = (d) => Math.abs(d.move) * 1.5 + d.volMult;
+export function earlierInChart(symbol, days, big, feed, rules) {
+  const rows = feed.prices[symbol] || [];
+  const shown = new Set(rows.slice(-CHART_SESSIONS).map((r) => r[0]));
+  const inWin = new Set(days.map((d) => d.date));
+  const earlier = priceSignals(rows, rules.volume_lookback)
+    .filter((d) => shown.has(d.date) && !inWin.has(d.date))
+    .filter((d) => Math.abs(d.move) >= rules.price_move_pct || d.volMult >= rules.volume_multiple);
+  const top = earlier.reduce((p, q) => (!p || unusualness(q) > unusualness(p) ? q : p), null);
+  const bigger = top && unusualness(top) > unusualness(big)
+    ? { ...top, time: `${top.date}T15:30:00`, why: likelyWhy({ symbol, date: top.date }, feed.filings) } : null;
+  return { marked: bigger ? [bigger.date] : [], earlier: bigger };
+}
+
 // The filing most likely behind a move: the most important one from two days
 // before to the morning after (results often land after the close). Results
 // move stocks more than anything filed the same day, so they win ties.
@@ -218,7 +236,8 @@ export function buildToday(feed, settings, ctx, done = new Set()) {
     const big = days.reduce((p, q) => (Math.abs(q.move) * 1.5 + q.volMult > Math.abs(p.move) * 1.5 + p.volMult ? q : p));
     const size = Math.min(20, 2 * Math.max(0, big.volMult - settings.volume_multiple) + 2 * Math.abs(big.move));
     return { id: `${symbol}|price|${days[0].date}`, kind: "price", symbol, category: "price",
-             priority: Math.round(66 + size), time: days[0].time, move: big, days, why: big.why };
+             priority: Math.round(66 + size), time: days[0].time, move: big, days, why: big.why,
+             ...earlierInChart(symbol, days, big, feed, settings) };
   });
 
   const needs = [], glance = [], routine = [];

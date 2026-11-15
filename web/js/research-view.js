@@ -10,11 +10,14 @@ export const VERDICT = {
 const SETTLED = new Set(["delivered", "partly", "missed", "dropped"]);
 // One vocabulary for the pill, the legend and the bar: a changed target says which way it moved.
 const BUCKETS = ["missed", "cut", "partly", "changed", "dropped", "unclear", "raised", "delivered", "pending"];
-const LABEL = { missed: "Missed", cut: "Cut", partly: "Partly", changed: "Target changed", dropped: "Went quiet",
-                unclear: "Can't tell", raised: "Raised", delivered: "Delivered", pending: "Pending" };
+const LABEL = { missed: "Missed", cut: "Target cut", partly: "Partly", changed: "Target changed", dropped: "Went quiet",
+                unclear: "Can't tell", raised: "Target raised", delivered: "Delivered", pending: "Pending" };
 export const bucket = (p) => (p.verdict === "revised" ? (p.direction === "raised" ? "raised" : p.direction === "cut" ? "cut" : "changed") : p.verdict);
-// "INR7,500 crores" -> "₹7,500 crore": transcripts' wording, read at a glance.
-const money = (t) => String(t || "").replace(/\bINR\s?/gi, "₹").replace(/\bRs\.?\s?/g, "₹").replace(/\bcrores\b/gi, "crore");
+// "INR7,500 crores to INR8,000 crores" -> "₹7,500–8,000 crore": transcripts' wording, read at a glance.
+const money = (t) => String(t || "").replace(/\bINR\s?/gi, "₹").replace(/\bRs\.?\s?/g, "₹").replace(/\bcrores\b/gi, "crore")
+  .replace(/₹([\d,.]+) crore,? (?:to )?₹([\d,.]+) crore/g, "₹$1–$2 crore")
+  .replace(/(\d[\d.]*)% to (\d[\d.]*)%/g, "$1–$2%")
+  .replace(/(\d)-(\d)/g, "$1–$2");
 const shortName = (n) => String(n || "").replace(/\s*\((India|I)\)\s*/g, " ").replace(/\s+(Ltd|Limited)\.?$/i, "").trim();
 const monthLabel = (m) => ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][Number(m.slice(5, 7)) - 1];
 
@@ -27,17 +30,16 @@ export function summary(r) {
   return { counts, buckets, settled, delivered: counts.delivered };
 }
 
-// "2 of 2 settled promises delivered" only means something with two or more settled;
-// otherwise lead with what changed: "1 target cut · 2 changed · 5 still open".
+// The legend's words, so the headline and the bar read the same: "1 target cut · 2 target changed · 1 went quiet · 5 pending".
+const count = (s, k) => `${s.buckets[k]} ${LABEL[k].toLowerCase()}`;
+// "2 of 2 settled promises delivered" only means something with two or more settled, and a
+// changed target is news either way, so it follows: "2 of 2 settled promises delivered · 1 target cut".
 export function headline(s) {
-  if (s.settled >= 2) return `${s.delivered} of ${s.settled} settled promises delivered`;
-  const b = s.buckets, n = (k) => b[k];
-  const parts = [
-    n("cut") && `${n("cut")} target${n("cut") > 1 ? "s" : ""} cut`, n("raised") && `${n("raised")} raised`,
-    n("changed") && `${n("changed")} changed`, n("missed") && `${n("missed")} missed`, n("delivered") && `${n("delivered")} delivered`,
-    n("partly") && `${n("partly")} partly met`, n("dropped") && `${n("dropped")} went quiet`,
-    n("pending") && `${n("pending")} still open`, n("unclear") && `${n("unclear")} can't tell`,
-  ].filter(Boolean);
+  const has = (k) => s.buckets[k] > 0;
+  if (s.settled >= 2) {
+    return [`${s.delivered} of ${s.settled} settled promises delivered`, ...["cut", "raised", "changed"].filter(has).map((k) => count(s, k))].join(" · ");
+  }
+  const parts = ["cut", "missed", "partly", "changed", "raised", "dropped", "delivered", "pending", "unclear"].filter(has).map((k) => count(s, k));
   return parts.slice(0, 4).join(" · ") || "No promises found";
 }
 
@@ -48,20 +50,26 @@ function question(r) {
   if (!miss) return "";
   const t = money(miss.mentions.at(-1).target);
   if (miss.verdict === "revised") return `Why was the ${miss.segment && miss.segment !== "company" ? `${miss.segment} ` : ""}${miss.metric} target for ${miss.horizon} ${miss.direction === "raised" ? "raised" : "cut"} from ${money(miss.mentions[0].target)} to ${t}?`;
-  return `What held ${miss.metric} back against the ${t} target for ${miss.horizon}${miss.actual ? ` (${miss.actual.replace(/\.$/, "")})` : ""}?`;
+  return `What held ${miss.metric} back against the ${t} target for ${miss.horizon}${miss.actual ? ` (${money(miss.actual).replace(/\.$/, "")})` : ""}?`;
 }
 
-// Track a promise across the calls: said, repeated, changed, or not mentioned.
+// Track a promise across the calls: said, repeated, changed, or not mentioned. The ledger's key explains the marks.
 function strip(p, calls) {
   let prev = null;
-  return `<span class="strip" aria-hidden="true">${calls.map((c) => {
+  const marks = calls.map((c) => {
     const m = p.mentions.find((x) => x.call === c.label);
-    if (!m) return `<i class="s-none" title="${esc(c.label)}: not mentioned"></i>`;
+    if (!m) return { cls: "s-none", say: `${monthLabel(c.month)}: not mentioned` };
     const moved = prev && (prev.low !== m.low || prev.high !== m.high);
     prev = m;
-    return `<i class="${moved ? "s-moved" : "s-said"}" title="${esc(c.label)}: ${esc(m.target)}"></i>`;
-  }).join("")}</span>`;
+    return { cls: moved ? "s-moved" : "s-said", say: `${monthLabel(c.month)}: ${moved ? "changed" : "said"} ${money(m.target)}` };
+  });
+  return `<span class="strip" role="img" aria-label="${esc(marks.map((x) => x.say).join("; "))}">${marks.map((x) => `<i class="${x.cls}" title="${esc(x.say)}"></i>`).join("")}</span>`;
 }
+const stripKey = (calls) => {
+  const mark = (cls, word) => `<span class="k"><span class="strip" aria-hidden="true"><i class="${cls}"></i></span>${word}</span>`;
+  return `<p class="ledger-key"><span>One mark per call, ${esc(monthLabel(calls[0].month))} to ${esc(monthLabel(calls.at(-1).month))}:</span>
+    ${mark("s-said", "said")}${mark("s-moved", "changed")}${mark("s-none", "not mentioned")}</p>`;
+};
 
 // A changed target says which way it moved, as the investor reads it.
 const tag = (p) => LABEL[bucket(p)];
@@ -78,7 +86,7 @@ function promiseRow(p, r, open) {
       <span class="p-what">${p.segment && p.segment !== "company" ? `<span class="p-h">${esc(p.segment)} · </span>` : ""}<b>${esc(metricName(p))}</b> ${esc(target)} <span class="p-h">for ${esc(p.horizon)}</span></span>
       ${strip(p, r.calls)}
     </button>
-    ${p.actual ? `<p class="p-actual">${esc(p.actual)}</p>` : ""}
+    ${p.actual ? `<p class="p-actual">${esc(money(p.actual))}</p>` : ""}
     ${open ? `<div class="p-body">
       ${p.mentions.map((m, i) => {
         const prev = p.mentions[i - 1];
@@ -88,7 +96,7 @@ function promiseRow(p, r, open) {
       }).join("")}
       ${p.evidence && !p.mentions.some((m) => m.quote === p.evidence.quote) ? `<blockquote class="outcome"><p>“${esc(p.evidence.quote)}”</p>
         <cite>${reported ? "What they reported" : "Said later"}, <a href="${esc(p.evidence.url)}" target="_blank" rel="noopener">${esc(p.evidence.call)} call ↗</a></cite></blockquote>` : ""}
-      ${p.note && !p.actual ? `<p class="detail">${esc(p.note)}</p>` : ""}
+      ${p.note && !p.actual ? `<p class="detail">${esc(money(p.note))}</p>` : ""}
       ${p.model_verdict ? `<p class="override">The model said “${esc(VERDICT[p.model_verdict] || p.model_verdict)}”. ${
         p.settled_by === "date" ? "The deadline hasn't passed, so it stays pending."
         : p.settled_by === "check" ? "The number it compared looks like a different business or scale, so FINN won't call it."
@@ -163,6 +171,7 @@ function resultHTML(r, st, ctx) {
     ${who.length ? `<div class="ask"><p class="ask-h">Who to call about it</p>${q ? `<p class="question">${esc(q)}</p>` : ""}${who.map(whoRow).join("")}</div>`
       : `<p class="nobody">No one in your network has a known link to ${esc(shortName(r.name))}.</p>`}
   </article>
+  ${stripKey(r.calls)}
   <div class="ledger">${order.map((p) => promiseRow(p, r, st.open.has(`p:${r.symbol}:${p.id}`))).join("")}</div>
   <p class="foot">Read by ${esc(r.models.extract)}, ${r.models.judge ? `judged by ${esc(r.models.judge)}` : "not judged (the first read ran out of time; code's checks still apply)"} · ${r.usage.calls} model calls, ${(r.usage.tokens_in + r.usage.tokens_out).toLocaleString("en-IN")} tokens, free tier ·
     ${r.checks.quotes_dropped} quote${r.checks.quotes_dropped === 1 ? "" : "s"} dropped for not being in the transcript · ${r.checks.overrides} verdict${r.checks.overrides === 1 ? "" : "s"} overruled by numbers or dates.</p>`;
