@@ -36,6 +36,9 @@ class handler(BaseHTTPRequestHandler):
         data = json.dumps(body, ensure_ascii=False).encode()
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
+        # A fixed length, not chunked transfer: browsers speak HTTP/2, which has no chunked
+        # encoding, and a chunked reply broke there ("framing layer" errors) while curl over 1.1 worked.
+        self.send_header("Content-Length", str(len(data)))
         self.send_header("Cache-Control", "public, s-maxage=86400, stale-while-revalidate=604800" if cache else "no-store")
         self.end_headers()
         self.wfile.write(data)

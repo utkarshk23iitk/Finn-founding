@@ -6,7 +6,9 @@ Code decides whether a promise's deadline has passed, and settles any
 promise with a number against the number management later reported.
 """
 import json
+import os
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
@@ -139,7 +141,8 @@ def metric_from_quote(metric: str, quote: str) -> str:
 
 def extract(name: str, call: dict) -> tuple[dict, dict, int]:
     """One call's reported results and guidance, keeping only quotes found verbatim in the transcript."""
-    prompt = f"Company: {name}\nCall: {call['label']}\n\nTranscript sentences with numbers or forward-looking words:\n{T.trim(call['text'])}"
+    limit = 22000 if ON_DEMAND else 42000   # a visitor waiting gets a tighter excerpt
+    prompt = f"Company: {name}\nCall: {call['label']}\n\nTranscript sentences with numbers or forward-looking words:\n{T.trim(call['text'], limit)}"
     data, usage = llm.generate(prompt, system=EXTRACT_SYSTEM, schema=EXTRACT_SCHEMA, role="extract", tag=f"extract {call['label']}")
     full = T.squash(call["text"])
     dropped = 0
@@ -326,13 +329,28 @@ def settle(p: dict, v: dict, latest_end: tuple[int, int]) -> dict:
     return out
 
 
+ON_DEMAND = os.environ.get("FINN_ON_DEMAND") == "1"
+JUDGE_BY = 40   # seconds: on demand, skip the judge after this; browsers give up around 75
+
+
 def research(sym: str) -> dict:
+    started = time.monotonic()
     sym = sym.upper().strip()
     name, calls = T.last_four(sym)
     if len(calls) < 2:
         raise LookupError(f"{sym}: fewer than two earnings-call transcripts could be read")
+    def safe(c):
+        try:
+            return extract(name, c)
+        except Exception as e:   # one unreadable call shouldn't sink the other three
+            return e
     with ThreadPoolExecutor(max_workers=4) as pool:
-        results = list(pool.map(lambda c: extract(name, c), calls))
+        got = list(pool.map(safe, calls))
+    failed = [g for g in got if isinstance(g, Exception)]
+    calls = [c for c, g in zip(calls, got) if not isinstance(g, Exception)]
+    results = [g for g in got if not isinstance(g, Exception)]
+    if len(results) < 2:
+        raise RuntimeError(str(failed[0]) if failed else "fewer than two calls could be read")
     extracted = [r[0] for r in results]
     usage = [r[1] for r in results]
     dropped = sum(r[2] for r in results)
@@ -345,7 +363,8 @@ def research(sym: str) -> dict:
     older = [p for p in promises if p["mentions"][0]["call"] != latest["label"]]
 
     verdicts, judge_model = {}, llm.models()["judge"]
-    if older:
+    skipped_judge = bool(older) and ON_DEMAND and time.monotonic() - started > JUDGE_BY
+    if older and not skipped_judge:
         prompt = _judge_input(name, latest, older, calls, extracted)
         try:
             data, u = llm.generate(prompt, system=JUDGE_SYSTEM, schema=JUDGE_SCHEMA, role="judge", tag="judge")
@@ -364,7 +383,8 @@ def research(sym: str) -> dict:
         if p not in older:
             p.update(verdict="pending", note="First stated in the latest call.", settled_by="date")
             continue
-        v = verdicts.get(p["id"], {"verdict": "pending", "note": "Not judged."})
+        v = verdicts.get(p["id"], {"verdict": "pending", "note": "Not judged in time on this first read; code's checks on dates and changed targets still apply."
+                                   if skipped_judge else "Not judged."})
         q, call = v.get("evidence_quote"), by_label.get(v.get("evidence_call") or "")
         if q:
             pool = [call] if call else calls
@@ -374,6 +394,9 @@ def research(sym: str) -> dict:
             else:
                 dropped += 1
         s = settle(p, v, latest_end)
+        end = period_end(p["horizon_key"]) or period_end(p["horizon"])
+        if skipped_judge and end and end <= latest_end and s["verdict"] == "pending":
+            s.update(verdict="unclear", settled_by="date")   # the deadline has passed, but no one judged it
         # A target management changed is a fact in the quotes, not a judgment: code says so
         # even when a weaker judge calls it pending.
         if p.get("moved") and s["verdict"] == "pending":
@@ -389,7 +412,8 @@ def research(sym: str) -> dict:
         "promises": promises,
         "reported": [{**r, "call": c["label"], "url": c["url"]} for c, ex in zip(calls, extracted) for r in ex["reported"]],
         "checks": {"quotes_dropped": dropped, "overrides": overrides},
-        "models": {"extract": llm.models()["extract"], "judge": judge_model},
+        "models": {"extract": llm.models()["extract"], "judge": None if skipped_judge else judge_model},
+        "seconds": round(time.monotonic() - started, 1),
         "usage": {"calls": len(usage), "cached": sum(1 for u in usage if u.get("cached")),
                   "tokens_in": sum(u["in"] for u in usage), "tokens_out": sum(u["out"] for u in usage)},
     }

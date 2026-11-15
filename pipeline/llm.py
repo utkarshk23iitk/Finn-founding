@@ -58,19 +58,33 @@ def models() -> dict:
 
     lite = newest(lambda n: "flash-lite" in n)
     flash = newest(lambda n: "flash" in n and "lite" not in n)
+    # Older fast models, newest first: where to go when the newest is overloaded.
+    spares = sorted((n for n in usable if "flash-lite" in n and n != lite and re.search(r"\d", n)), key=_version, reverse=True)
     # On demand (a visitor waiting on a phone), speed matters more than the stronger judge:
     # the fast model judges too, and code's checks on quotes, dates and numbers still apply.
     fast = os.environ.get("FINN_ON_DEMAND") == "1"
     _models = {"extract": os.environ.get("GEMINI_EXTRACT_MODEL") or lite or flash,
                "judge": os.environ.get("GEMINI_JUDGE_MODEL") or ((lite or flash) if fast else (flash or lite)),
-               "available": sorted(usable)}
+               "spares": spares[:2], "available": sorted(usable)}
     return _models
 
 
 def generate(prompt: str, *, system: str, schema: dict, role: str = "extract", model: str | None = None,
              tag: str = "") -> tuple[dict, dict]:
-    """JSON matching `schema`, and a record of which model answered and the tokens used."""
-    model = model or models()[role]
+    """JSON matching `schema`, and a record of which model answered and the tokens used.
+    On demand, an overloaded model hands over to an older fast one before giving up."""
+    chain = [model or models()[role]]
+    if os.environ.get("FINN_ON_DEMAND") == "1" and model is None:
+        chain += [m for m in models().get("spares", []) if m not in chain]
+    for i, m in enumerate(chain):
+        try:
+            return _generate_once(prompt, system=system, schema=schema, role=role, model=m, tag=tag)
+        except RuntimeError:
+            if i == len(chain) - 1:
+                raise
+
+
+def _generate_once(prompt: str, *, system: str, schema: dict, role: str, model: str, tag: str) -> tuple[dict, dict]:
     body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -86,13 +100,19 @@ def generate(prompt: str, *, system: str, schema: dict, role: str = "extract", m
         try:
             r = requests.post(f"{API}/models/{model}:generateContent", json=body,
                               headers={"x-goog-api-key": api_key()},
-                              timeout=75 if os.environ.get("FINN_ON_DEMAND") == "1" else 240 if role == "judge" else 120)
+                              timeout=35 if os.environ.get("FINN_ON_DEMAND") == "1" else 240 if role == "judge" else 120)
         except (requests.Timeout, requests.ConnectionError):
             if attempt >= (2 if role == "judge" else 5):
                 raise   # the caller may fall back to another model
             time.sleep(5 * (attempt + 1))   # slow or dropped answers are retried; finished calls are cached
             continue
         if r.status_code in (429, 500, 503):
+            if os.environ.get("FINN_ON_DEMAND") == "1":
+                # A visitor is waiting: an overloaded model (5xx) gets quick retries, a quota answer (429) one.
+                if attempt >= (1 if r.status_code == 429 else 3):
+                    raise RuntimeError(f"Gemini answered {r.status_code} ({'free-tier limit' if r.status_code == 429 else 'overloaded'}); try again in a minute")
+                time.sleep(2 * (attempt + 1))
+                continue
             if role == "judge" and attempt >= 1:
                 raise RuntimeError(f"{model}: busy or out of free-tier quota ({r.status_code})")   # caller falls back
             wait = 8 * (attempt + 1)

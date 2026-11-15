@@ -137,6 +137,6 @@ function resultHTML(r, st, ctx) {
       : `<p class="nobody">No one in your network has a known link to ${esc(r.name)}.</p>`}
   </article>
   <div class="ledger">${order.map((p) => promiseRow(p, r, st.open.has(`p:${r.symbol}:${p.id}`))).join("")}</div>
-  <p class="foot">Read by ${esc(r.models.extract)}, judged by ${esc(r.models.judge)} · ${r.usage.calls} model calls, ${(r.usage.tokens_in + r.usage.tokens_out).toLocaleString("en-IN")} tokens, free tier ·
+  <p class="foot">Read by ${esc(r.models.extract)}, ${r.models.judge ? `judged by ${esc(r.models.judge)}` : "not judged (the first read ran out of time; code's checks still apply)"} · ${r.usage.calls} model calls, ${(r.usage.tokens_in + r.usage.tokens_out).toLocaleString("en-IN")} tokens, free tier ·
     ${r.checks.quotes_dropped} quote${r.checks.quotes_dropped === 1 ? "" : "s"} dropped for not being in the transcript · ${r.checks.overrides} verdict${r.checks.overrides === 1 ? "" : "s"} overruled by numbers or dates.</p>`;
 }
