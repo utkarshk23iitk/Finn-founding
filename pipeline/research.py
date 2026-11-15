@@ -121,6 +121,20 @@ def norm_unit(u: str | None) -> str:
     return u
 
 
+# Management's own words settle the metric when the model labels the same thing
+# two ways across calls ("operating margin" in one, "EBITDA margin" in the next).
+MARGIN_WORDS = [(r"\bnet interest margin\b|\bnims?\b", "NIM"), (r"\boperating margin\b|\bebit margin\b", "operating margin"),
+                (r"\bebitda margin\b", "EBITDA margin")]
+
+
+def metric_from_quote(metric: str, quote: str) -> str:
+    if metric not in ("EBITDA margin", "operating margin", "NIM", "gross margin", "other"):
+        return metric
+    q = quote.lower()
+    hits = [name for pat, name in MARGIN_WORDS if re.search(pat, q)]
+    return hits[0] if len(hits) == 1 else metric
+
+
 # ---------- steps ----------
 
 def extract(name: str, call: dict) -> tuple[dict, dict, int]:
@@ -134,6 +148,7 @@ def extract(name: str, call: dict) -> tuple[dict, dict, int]:
         for item in data.get(key, []):
             q = (item.get("quote") or "").strip()
             if len(T.squash(q)) >= 12 and T.squash(q) in full:
+                item["metric"] = metric_from_quote(item["metric"], q)
                 kept.append(item)
             else:
                 dropped += 1

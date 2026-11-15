@@ -86,3 +86,9 @@ def test_direction_reads_as_the_investor_would():
     assert cut["direction"] == "cut"
     better = R.group_promises(calls, [g("credit cost", 4, 4.5, "a"), g("credit cost", 3, 4, "b")])[0]
     assert better["direction"] == "raised", "a lower credit-cost target is better news"
+
+
+def test_the_quote_settles_the_metric_name():
+    assert R.metric_from_quote("EBITDA margin", "Our operating margin guidance remains at 20% to 22%") == "operating margin"
+    assert R.metric_from_quote("EBITDA margin", "We expect a NIM of 14.4% to 14.7%") == "NIM"
+    assert R.metric_from_quote("revenue growth", "operating margin of 21%") == "revenue growth", "only margin labels are corrected"

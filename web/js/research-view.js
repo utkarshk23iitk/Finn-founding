@@ -54,9 +54,13 @@ function promiseRow(p, r, open) {
     </button>
     ${p.actual ? `<p class="p-actual">${esc(p.actual)}</p>` : ""}
     ${open ? `<div class="p-body">
-      ${p.mentions.map((m, i) => `<blockquote><p>“${esc(m.quote)}”</p>
-        <cite>${i === 0 ? "Said" : last === m && p.moved ? "Changed" : "Repeated"} in the <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.call)} call ↗</a></cite></blockquote>`).join("")}
-      ${p.evidence ? `<blockquote class="outcome"><p>“${esc(p.evidence.quote)}”</p>
+      ${p.mentions.map((m, i) => {
+        const prev = p.mentions[i - 1];
+        const verb = !prev ? "Said" : prev.low !== m.low || prev.high !== m.high ? "Changed" : "Repeated";
+        return `<blockquote><p>“${esc(m.quote)}”</p>
+        <cite>${verb} in the <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.call)} call ↗</a></cite></blockquote>`;
+      }).join("")}
+      ${p.evidence && !p.mentions.some((m) => m.quote === p.evidence.quote) ? `<blockquote class="outcome"><p>“${esc(p.evidence.quote)}”</p>
         <cite>What they reported, <a href="${esc(p.evidence.url)}" target="_blank" rel="noopener">${esc(p.evidence.call)} call ↗</a></cite></blockquote>` : ""}
       ${p.note ? `<p class="detail">${esc(p.note)}</p>` : ""}
       ${p.model_verdict ? `<p class="override">The model said “${esc(VERDICT[p.model_verdict] || p.model_verdict)}”. ${
