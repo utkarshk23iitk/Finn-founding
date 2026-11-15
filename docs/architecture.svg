@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .box { fill: #ffffff; stroke: #c9c5bc; stroke-width: 1.2; rx: 10; }
+    .pub { fill: #eef2f7; stroke: #9db0c8; }
+    .priv { fill: #fbf1e3; stroke: #e0b36e; }
+    .model { fill: #f1eefa; stroke: #b3a6dc; }
+    .h { font-weight: 700; font-size: 13.5px; fill: #16181c; }
+    .t { fill: #4a4f57; font-size: 12px; }
+    .zone { font-size: 11px; letter-spacing: .08em; fill: #80858d; font-weight: 700; }
+    .arr { stroke: #80858d; stroke-width: 1.4; fill: none; marker-end: url(#a); }
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#80858d"/></marker></defs>
+  <rect width="860" height="470" fill="#f6f5f2"/>
+
+  <text x="20" y="28" class="zone">PUBLIC SOURCES</text>
+  <rect x="20" y="40" width="190" height="62" class="box pub"/><text x="32" y="62" class="h">NSE</text><text x="32" y="80" class="t">filings + PDFs, XBRL results,</text><text x="32" y="95" class="t">end-of-day bhavcopy</text>
+  <rect x="20" y="112" width="190" height="46" class="box pub"/><text x="32" y="133" class="h">Yahoo Finance</text><text x="32" y="150" class="t">a year of daily prices</text>
+  <rect x="20" y="168" width="190" height="46" class="box pub"/><text x="32" y="189" class="h">screener.in → BSE PDFs</text><text x="32" y="206" class="t">earnings-call transcripts</text>
+
+  <text x="250" y="28" class="zone">PIPELINE (PYTHON, RUN FROM A LAPTOP)</text>
+  <rect x="250" y="40" width="250" height="174" class="box"/>
+  <text x="264" y="62" class="h">fetch → classify → export</text>
+  <text x="264" y="82" class="t">• rules rank filings; letters' Sub: lines</text>
+  <text x="264" y="98" class="t">  become headlines (no model)</text>
+  <text x="264" y="116" class="t">• XBRL → Revenue, EBITDA, PBT, PAT,</text>
+  <text x="264" y="132" class="t">  QoQ and YoY (no model)</text>
+  <text x="264" y="150" class="t">• filed profiles of new executives,</text>
+  <text x="264" y="166" class="t">  every fact tied to a quoted line</text>
+  <text x="264" y="186" class="t">• cache: data/ (JSON, text)</text>
+  <text x="264" y="202" class="t">• tests: 62 Python, 27 JavaScript</text>
+
+  <text x="540" y="28" class="zone">VERCEL</text>
+  <rect x="540" y="40" width="300" height="76" class="box pub"/>
+  <text x="554" y="62" class="h">Static site (web/)</text>
+  <text x="554" y="80" class="t">feed.json, people.json, orgs.json,</text>
+  <text x="554" y="96" class="t">research/*.json · CSP: connect-src 'self'</text>
+  <rect x="540" y="128" width="300" height="86" class="box model"/>
+  <text x="554" y="150" class="h">/api/research?symbol=ANY (Python)</text>
+  <text x="554" y="168" class="t">4 transcripts → cheap model extracts →</text>
+  <text x="554" y="184" class="t">code checks quotes, dates, numbers →</text>
+  <text x="554" y="200" class="t">one stronger call judges · CDN caches 1 day</text>
+
+  <rect x="320" y="250" width="220" height="56" class="box model"/>
+  <text x="334" y="272" class="h">Gemini (free tier)</text>
+  <text x="334" y="290" class="t">Flash-Lite reads · Flash judges</text>
+
+  <text x="20" y="342" class="zone">THE INVESTOR'S PHONE</text>
+  <rect x="20" y="354" width="820" height="98" class="box priv"/>
+  <text x="36" y="378" class="h">Browser app: Today · Research · Network</text>
+  <text x="36" y="398" class="t">Network engine (network.js) runs here: matches contacts to executives and companies by employer, overlapping years,</text>
+  <text x="36" y="414" class="t">intake, school; ranks who to ask. Contacts, thresholds and Done marks stay in local storage. The page may only talk to its own</text>
+  <text x="36" y="430" class="t">origin, so no contact can leave the phone. Real deployment: contacts imported on device, encrypted at rest, never uploaded.</text>
+
+  <path class="arr" d="M210 71 H250"/><path class="arr" d="M210 135 H250"/><path class="arr" d="M210 191 H250"/>
+  <path class="arr" d="M500 78 H540"/>
+  <path class="arr" d="M210 205 C 300 248, 480 248, 548 214"/>
+  <path class="arr" d="M600 214 C 590 245, 560 268, 540 274"/>
+  <path class="arr" d="M840 70 H852 V403 H842"/>
+  <text x="640" y="280" class="t">static JSON and research</text><text x="640" y="295" class="t">answers, to the phone →</text>
+</svg>

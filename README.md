@@ -20,20 +20,24 @@ Work in progress. Decisions are recorded in `docs/DECISIONS.md`.
 Python 3.11 or later.
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-pipeline.txt
 python run.py prices            # a year of daily prices; the last week from NSE
 python run.py filings --days 30 # NSE filings for the portfolio
+python run.py results           # Revenue, EBITDA, PBT, PAT from each filing's XBRL
 python run.py export            # rank filings and write web/data/ for the app
+python run.py research INFY     # promised vs delivered (needs GEMINI_API_KEY in .env)
 ```
 
 Data is cached in `data/`; the app reads only from the cache. `web/` is a
-static site with no build step; `vercel deploy --prod` publishes it.
+static site with no build step, and `api/research.py` researches any ticker
+on demand. `vercel deploy --prod` publishes both. The architecture is in
+`docs/architecture.svg`; the writeup in `docs/WRITEUP.md`.
 
 ## Tests
 
 ```bash
-python -m pytest -q   # every fact about a real person is in their filing
-npm test              # the network engine (Node 22)
+python -m pytest -q   # quotes in filings, ranking rules, research checks
+npm test              # network engine, Today logic, views (Node 22)
 ```
 
 ## The demo network is synthetic
