@@ -27,7 +27,7 @@
   <text x="264" y="150" class="t">• filed profiles of new executives,</text>
   <text x="264" y="166" class="t">  every fact tied to a quoted line</text>
   <text x="264" y="186" class="t">• cache: data/ (JSON, text)</text>
-  <text x="264" y="202" class="t">• tests: 68 Python, 27 JavaScript</text>
+  <text x="264" y="202" class="t">• tests: 68 Python, 31 JavaScript</text>
 
   <text x="540" y="28" class="zone">VERCEL</text>
   <rect x="540" y="40" width="300" height="76" class="box pub"/>
