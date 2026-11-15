@@ -231,6 +231,14 @@ export function buildToday(feed, settings, ctx, done = new Set()) {
   needs.push(...priceCards);
   const order = (a, b) => b.priority - a.priority || parseLocal(b.time) - parseLocal(a.time);
   needs.sort(order); glance.sort(order);
+  // One company's cards sit together (Alkem's new CFO next to its results), placed where its top card ranks.
+  const together = (list) => {
+    const first = new Map();
+    list.forEach((c, i) => { if (!first.has(c.symbol)) first.set(c.symbol, i); });
+    return list.map((c, i) => [first.get(c.symbol), i, c]).sort((x, y) => x[0] - y[0] || x[1] - y[1]).map((x) => x[2]);
+  };
+  needs.splice(0, needs.length, ...together(needs));
+  glance.splice(0, glance.length, ...together(glance));
 
   for (const c of [...needs, ...glance]) {
     c.company = feed.companies[c.symbol];

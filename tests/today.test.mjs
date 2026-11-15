@@ -107,3 +107,28 @@ test("research summary counts settled promises only", async () => {
   assert.equal(s.settled, 2);
   assert.equal(s.delivered, 1);
 });
+
+test("research headline leads with changes until enough promises are settled", async () => {
+  const { summary, headline, bucket } = await import("../web/js/research-view.js");
+  const dixon = { promises: [{ verdict: "revised", direction: "cut" }, { verdict: "revised" }, { verdict: "revised" },
+    { verdict: "dropped" }, { verdict: "pending" }, { verdict: "pending" }] };
+  assert.equal(headline(summary(dixon)), "1 target cut · 2 changed · 1 went quiet · 2 still open");
+  const infy = { promises: [{ verdict: "delivered" }, { verdict: "delivered" }, { verdict: "revised", direction: "cut" }] };
+  assert.equal(headline(summary(infy)), "2 of 2 settled promises delivered");
+  assert.equal(bucket({ verdict: "revised", direction: "raised" }), "raised");
+});
+
+test("a flat day is 0.0% with no colour", async () => {
+  const { pct, sign } = await import("../web/js/ui.js");
+  assert.equal(pct(-0.02), "0.0%");
+  assert.equal(sign(-0.02), "");
+  assert.equal(pct(-2.7), "−2.7%");
+});
+
+test("a company's cards sit together", () => {
+  const t = today({ window: "24h" });
+  const syms = t.needs.map((c) => c.symbol);
+  const firstSeen = syms.filter((s, i) => syms.indexOf(s) === i);
+  const runs = syms.filter((s, i) => i === 0 || s !== syms[i - 1]);
+  assert.deepEqual(runs, firstSeen, "no company appears in two separate runs");
+});

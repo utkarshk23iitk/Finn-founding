@@ -186,3 +186,17 @@ Short record of the choices that shape FINN, and why. Newest last.
 36. **The Push tab is "Updates", not "Today".** "Today" next to window
     chips for 3 days, a week and a month read as a contradiction, and more so
     with a snapshot two days old. Time words now live only in the chips.
+37. **A measured UI review, then fixes.** Every screen was checked at 375px
+    in light and dark, with contrast, tap-target and text-size measurements.
+    Light mode failed WCAG AA contrast in about 130 places (grey at 3.2–3.7:1,
+    amber at 3.5–4.0:1), 55 texts were under 12px, 39 tap targets were under
+    24px, and there was no main heading. After the fixes: 0 contrast failures
+    in light and dark, nothing under 12px, a main heading on every view, and
+    every control at least 32px tall except month links inside a sentence
+    (exempt). Clarity fixes from the same review: "As of" moved off the
+    window chips so "Month" shows; Dixon's headline no longer says "0 of 1
+    settled promises delivered" but "1 target cut · 2 changed · 1 went quiet
+    · 5 still open"; promise rows read full width; a cut shows its size; the
+    pill, legend and bar share one vocabulary (Cut, Raised, Target changed);
+    a company's cards sit together; a flat day reads 0.0%, not a red −0.0%;
+    the sparkline is captioned.

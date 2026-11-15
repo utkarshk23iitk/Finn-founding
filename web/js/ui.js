@@ -11,7 +11,9 @@ export function when(iso, withTime = true) {
   const h = d.getHours(), m = String(d.getMinutes()).padStart(2, "0");
   return `${day}, ${(h % 12) || 12}:${m} ${h < 12 ? "am" : "pm"}`;
 }
-export const pct = (x) => `${x >= 0 ? "+" : "−"}${Math.abs(x).toFixed(1)}%`;
+// A flat day is "0.0%", not "−0.0%" in red.
+export const pct = (x) => (Math.abs(x) < 0.05 ? "0.0%" : `${x > 0 ? "+" : "−"}${Math.abs(x).toFixed(1)}%`);
+export const sign = (x) => (Math.abs(x) < 0.05 ? "" : x > 0 ? "up" : "down");
 export const mult = (x) => `${x.toFixed(1)}×`;
 export const initials = (name) => name.replace(/^dr\.?\s+/i, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
 export const store = {

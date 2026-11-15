@@ -62,7 +62,7 @@ export function networkHTML(st, ctx, orgs) {
     for (const c of res.contacts) parts.push(`<h2 class="section">In your network</h2>${contactCard(c, ctx)}`);
     body = parts.join("") || `<p class="nobody">Nothing in your network matches “${esc(st.netQuery)}”.</p>`;
   }
-  return `<p class="lede">Who can help me understand this?</p>
+  return `<h1 class="lede">Who can help me understand this?</h1>
     <form class="tickerform" data-form="network">
       <input name="q" autocomplete="off" spellcheck="false" placeholder="A company, a theme or a person" value="${esc(st.netQuery || "")}" aria-label="Search your network">
       <button class="primary" type="submit">Ask</button>

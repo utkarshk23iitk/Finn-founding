@@ -1,7 +1,7 @@
 // FINN. Three views over one local state: Updates (push), Research (pull), Network (ask directly).
 import { makeResolver } from "./network.js";
 import { buildToday, WINDOWS, CATEGORY_LABEL, shortPeopleLine, fromTheVerb } from "./today.js";
-import { esc, when, pct, mult, store, whoRow, routeRow } from "./ui.js";
+import { esc, when, pct, sign, mult, store, whoRow, routeRow } from "./ui.js";
 import { researchHTML } from "./research-view.js";
 import { networkHTML } from "./network-view.js";
 
@@ -79,7 +79,7 @@ function render() {
       </div>
       ${today ? `<div class="subrow"><nav class="windows" aria-label="Time window">
         ${WINDOWS.map((w) => `<button class="chip" data-act="window" data-w="${w.key}" aria-pressed="${w.key === today.window.key}" aria-label="Last ${esc(w.label)}">${esc(w.label[0].toUpperCase() + w.label.slice(1))}</button>`).join("")}
-      </nav><span class="asof">As of ${esc(when(today.asOf))}</span></div>` : ""}
+      </nav></div>` : ""}
     </header>
     ${today ? todayHTML(today) : state.view === "research" ? researchHTML(state, ctx) : networkHTML(state, ctx, orgsDoc)}
     <footer class="foot">
@@ -95,9 +95,9 @@ function todayHTML(t) {
     ? `Nothing needs you in the last ${t.window.label}.`
     : `<span class="n">${n}</span> thing${n === 1 ? "" : "s"} need${n === 1 ? "s" : ""} you`;
   return `
-    <p class="lede">${lede}</p>
-    <p class="sub">${[t.glance.length && `${t.glance.length} worth a glance`, t.routineCount && `${t.routineCount} routine filings folded`,
-                      t.cleared.length && `${t.cleared.length} done`].filter(Boolean).join(" · ") || `Last ${esc(t.window.label)}`}</p>
+    <h1 class="lede">${lede}</h1>
+    <p class="sub">${[`As of ${esc(when(t.asOf))}`, t.glance.length && `${t.glance.length} worth a glance`, t.routineCount && `${t.routineCount} routine filings folded`,
+                      t.cleared.length && `${t.cleared.length} done`].filter(Boolean).join(" · ")}</p>
 
     ${t.needs.map(card).join("") || `<div class="card clear"><b>All clear</b>Widen the window or loosen the rules to see more.</div>`}
     ${n ? `<div class="clear"><b>That's everything that needs you.</b>Below: one-liners and the folded paperwork.</div>` : ""}
@@ -150,7 +150,7 @@ function label(f) {
 }
 
 function filingBody(c) {
-  const moves = (c.moves || []).map((a) => `<span class="move">${esc(when(a.time, false))}: <span class="${a.move >= 0 ? "up" : "down"}">${pct(a.move)}</span> · ${mult(a.volMult)} usual volume</span>`).join("");
+  const moves = (c.moves || []).map((a) => `<span class="move">${esc(when(a.time, false))}: <span class="${sign(a.move)}">${pct(a.move)}</span> · ${mult(a.volMult)} usual volume</span>`).join("");
   const people = (c.network?.persons || []).map(personBlock).join("");
   const res = c.category === "results" ? feed.results?.[c.symbol] : null;
   if (res && res.lines && !res.error) {
@@ -203,6 +203,7 @@ function priceBody(c) {
   return `<h3>${esc(priceHeadline(c))}</h3>
     <svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="Volume over the last ${n} sessions, unusual days highlighted">
       ${barsSvg}<polyline class="px" points="${line}"/></svg>
+    <p class="spark-cap">Daily volume (bars) and price (line), last ${n} sessions · unusual days in amber</p>
     ${why}
     ${others.length ? `<p class="detail">Also unusual: ${others.map((d) => `${when(d.time, false)} ${pct(d.move)}, ${mult(d.volMult)}`).join(" · ")}</p>` : ""}`;
 }
@@ -256,7 +257,7 @@ function warmRow(r) {
   return `<div class="row"><div class="contact padded"><span class="avatar" aria-hidden="true">${esc(c.name.replace(/^dr\.?\s+/i, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join(""))}</span>
     <div class="c-body"><div class="c-name">${esc(c.name)} <span class="c-why">· ${esc(c.headline)}</span></div>
       <div class="c-why">${esc(r.why)}.</div>
-      <div class="c-meta">Reason to call: ${esc(feed.companies[r.event.symbol]?.name || r.event.symbol)}, ${esc(r.event.title)}</div></div></div></div>`;
+      <div class="c-meta">Reason to call: ${esc(feed.companies[r.event.symbol]?.name || r.event.symbol)}, ${esc(r.event.title.replace(/^Results for .*\((Q\d FY\d\d)\)$/, "$1 results"))}</div></div></div></div>`;
 }
 
 // ---------- settings sheet ----------
