@@ -5,9 +5,11 @@ Hello ENAM team,
 
 Here is my submission for the FINN challenge.
 
-- **Prototype (open on a phone):** https://finn-founding.vercel.app
-- **Repository:** https://github.com/utkarshk23iitk/Finn-founding
-- **AI build history:** [Claude Code session export, attached]
+- **Prototype (open on a phone):** https://finn-agent.vercel.app
+- **Repository:** https://github.com/ayushr858/Finn-agent
+- **AI build history:** Claude Code session export, attached. I built this on
+  a friend's Mac using that friend's Claude account, so the file paths and
+  the commit author in the history show their name.
 
 ## What I built
 
@@ -124,7 +126,7 @@ Flash-Lite judges throughout so a visitor gets an answer in seconds. There are n
 a fixed sequence where code plans and checks, and the model only reads.
 
 **Cloud.** Vercel serves the static app and one Python function,
-`/api/research`, which researches any ticker on demand (about a minute the
+`/api/research`, which researches any ticker on demand (9 to 50 seconds the
 first time) and is cached at the edge for a day. No database: the data is
 public and the private part lives on the phone.
 
@@ -147,4 +149,4 @@ public and the private part lives on the phone.
 All decisions, and the real cases behind them, are in `docs/DECISIONS.md`.
 
 Thank you,
-[Your name]
+Ayush Raj

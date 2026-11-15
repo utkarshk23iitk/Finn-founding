@@ -11,7 +11,7 @@ FINN has three layers:
 - **Network:** who in the investor's own network can help explain it,
   shown inside Push and Pull.
 
-**Try it on a phone:** https://finn-founding.vercel.app
+**Try it on a phone:** https://finn-agent.vercel.app
 
 **Writeup:** [docs/WRITEUP.md](docs/WRITEUP.md) · **Decisions:** [docs/DECISIONS.md](docs/DECISIONS.md) · **Architecture:** [docs/architecture.svg](docs/architecture.svg)
 
