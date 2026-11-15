@@ -1,1 +1,22 @@
-{}
+{
+ "DIXON": {
+  "name": "Dixon Technologies (India) Ltd",
+  "built": "2026-11-15T09:40",
+  "latest": "Q2 FY27"
+ },
+ "INFY": {
+  "name": "Infosys Ltd",
+  "built": "2026-11-15T09:35",
+  "latest": "Q2 FY27"
+ },
+ "SRF": {
+  "name": "SRF Ltd",
+  "built": "2026-11-15T09:41",
+  "latest": "Q2 FY27"
+ },
+ "CREDITACC": {
+  "name": "CreditAccess Grameen Ltd",
+  "built": "2026-11-15T09:30",
+  "latest": "Q2 FY27"
+ }
+}

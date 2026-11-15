@@ -203,7 +203,8 @@ details.fold[open] > summary::after { content: "Hide"; }
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
 .v-delivered { --v: var(--up); } .v-partly { --v: #c99a2e; } .v-missed { --v: var(--down); }
 .v-revised { --v: var(--warm); } .v-dropped { --v: var(--ink-3); } .v-pending { --v: var(--line); }
-.dot.v-delivered, .dot.v-partly, .dot.v-missed, .dot.v-revised, .dot.v-dropped, .dot.v-pending { background: var(--v); }
+.v-unclear { --v: var(--ink-3); }
+.dot.v-delivered, .dot.v-partly, .dot.v-missed, .dot.v-revised, .dot.v-dropped, .dot.v-unclear, .dot.v-pending { background: var(--v); }
 .scorebar-svg rect { fill: var(--v); }
 .dot.v-pending, .scorebar-svg rect.v-pending { background: var(--ink-3); fill: var(--ink-3); opacity: .45; }
 .question { font-size: 14px; font-style: italic; color: var(--ink); margin: 4px 0 6px; }

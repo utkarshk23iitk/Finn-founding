@@ -63,3 +63,26 @@ def test_special_calls_are_not_earnings_calls():
     earnings = ("Q2 FY27 earnings call. Results for the quarter ended September 30, 2026. "
                 "During the quarter, revenue grew. We will give an update on each of our businesses. ") * 3
     assert T.is_earnings_call(earnings, "https://x/transcript.pdf")
+
+
+def test_loosely_named_segments_merge_and_show_a_cut():
+    calls = [{"label": "May 2026", "month": "2026-05", "url": "a"}, {"label": "Aug 2026", "month": "2026-08", "url": "b"}]
+    ex = [{"guidance": [{"segment": "telecom network business", "metric": "revenue", "target": "7,500", "low": 7500, "high": 8000, "unit": "crore", "horizon": "FY27", "quote": "q1"}]},
+          {"guidance": [{"segment": "telecom", "metric": "revenue", "target": "6,700-7,000", "low": 6700, "high": 7000, "unit": "crore", "horizon": "FY27", "quote": "q2"}]}]
+    ps = R.group_promises(calls, ex)
+    assert len(ps) == 1 and ps[0]["moved"] and len(ps[0]["mentions"]) == 2
+
+
+def test_a_segment_target_is_not_settled_by_a_company_number():
+    p = promise(5500, 6000, unit="crore", metric="revenue")
+    s = R.settle(p, {"verdict": "delivered", "actual_value": 48893, "actual_unit": "crore", "note": ""}, (2026, 3))
+    assert s["verdict"] == "unclear" and s["model_verdict"] == "delivered"
+
+
+def test_direction_reads_as_the_investor_would():
+    calls = [{"label": "Apr 2026", "month": "2026-04", "url": "a"}, {"label": "Oct 2026", "month": "2026-10", "url": "b"}]
+    g = lambda metric, lo, hi, q: {"guidance": [{"segment": "company", "metric": metric, "target": "", "low": lo, "high": hi, "unit": "%", "horizon": "FY27", "quote": q}]}
+    cut = R.group_promises(calls, [g("revenue growth", 1.5, 3.5, "a"), g("revenue growth", 1, 2, "b")])[0]
+    assert cut["direction"] == "cut"
+    better = R.group_promises(calls, [g("credit cost", 4, 4.5, "a"), g("credit cost", 3, 4, "b")])[0]
+    assert better["direction"] == "raised", "a lower credit-cost target is better news"

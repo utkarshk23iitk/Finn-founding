@@ -80,8 +80,14 @@ def generate(prompt: str, *, system: str, schema: dict, role: str = "extract", m
         return hit["data"], {**hit["usage"], "cached": True}
 
     for attempt in range(6):
-        r = requests.post(f"{API}/models/{model}:generateContent", json=body,
-                          headers={"x-goog-api-key": api_key()}, timeout=180)
+        try:
+            r = requests.post(f"{API}/models/{model}:generateContent", json=body,
+                              headers={"x-goog-api-key": api_key()}, timeout=120)
+        except (requests.Timeout, requests.ConnectionError):
+            if attempt == 5:
+                raise
+            time.sleep(5 * (attempt + 1))   # slow or dropped answers are retried; finished calls are cached
+            continue
         if r.status_code in (429, 500, 503):
             wait = 8 * (attempt + 1)
             m = re.search(r'"retryDelay":\s*"(\d+)s"', r.text)

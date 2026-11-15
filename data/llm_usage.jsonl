@@ -1,0 +1,45 @@
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 7871, "out": 1109, "at": "2026-11-15T09:18:22"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Feb 2026", "in": 7956, "out": 1351, "at": "2026-11-15T09:18:22"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Nov 2026", "in": 9848, "out": 1401, "at": "2026-11-15T09:18:23"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Aug 2026", "in": 7446, "out": 1018, "at": "2026-11-15T09:18:25"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 2864, "out": 7876, "at": "2026-11-15T09:19:30"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Aug 2026", "in": 7494, "out": 872, "at": "2026-11-15T09:20:47"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Nov 2026", "in": 9896, "out": 910, "at": "2026-11-15T09:20:47"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 7919, "out": 1150, "at": "2026-11-15T09:20:48"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Feb 2026", "in": 8004, "out": 1157, "at": "2026-11-15T09:20:48"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 4462, "out": 6936, "at": "2026-11-15T09:23:42"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 4053, "out": 4151, "at": "2026-11-15T09:26:36"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 10013, "out": 560, "at": "2026-11-15T09:26:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 9960, "out": 714, "at": "2026-11-15T09:26:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 10047, "out": 793, "at": "2026-11-15T09:26:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Apr 2026", "in": 10141, "out": 929, "at": "2026-11-15T09:26:40"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 4015, "out": 1584, "at": "2026-11-15T09:28:00"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 7068, "out": 886, "at": "2026-11-15T09:28:03"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 7611, "out": 957, "at": "2026-11-15T09:28:03"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 7317, "out": 1108, "at": "2026-11-15T09:28:03"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 5883, "out": 1052, "at": "2026-11-15T09:28:04"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 3645, "out": 3410, "at": "2026-11-15T09:29:10"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 7518, "out": 752, "at": "2026-11-15T09:29:13"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 6653, "out": 1187, "at": "2026-11-15T09:29:14"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 8162, "out": 1752, "at": "2026-11-15T09:29:15"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 6931, "out": 2187, "at": "2026-11-15T09:29:15"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 7551, "out": 1251, "at": "2026-11-15T09:30:49"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 10013, "out": 830, "at": "2026-11-15T09:31:34"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 10047, "out": 788, "at": "2026-11-15T09:31:34"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 9960, "out": 894, "at": "2026-11-15T09:31:34"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Apr 2026", "in": 10141, "out": 829, "at": "2026-11-15T09:31:35"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 4108, "out": 1474, "at": "2026-11-15T09:35:14"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Aug 2026", "in": 7494, "out": 957, "at": "2026-11-15T09:35:18"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Feb 2026", "in": 8004, "out": 1225, "at": "2026-11-15T09:35:18"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Nov 2026", "in": 9896, "out": 1096, "at": "2026-11-15T09:35:19"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 7919, "out": 1188, "at": "2026-11-15T09:35:19"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 5293, "out": 5417, "at": "2026-11-15T09:40:35"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 7611, "out": 926, "at": "2026-11-15T09:40:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 7317, "out": 1127, "at": "2026-11-15T09:40:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 5883, "out": 948, "at": "2026-11-15T09:40:39"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 7068, "out": 1137, "at": "2026-11-15T09:40:39"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 3398, "out": 3439, "at": "2026-11-15T09:41:47"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jul 2026", "in": 6653, "out": 1265, "at": "2026-11-15T09:41:52"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 7518, "out": 1273, "at": "2026-11-15T09:41:52"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 8162, "out": 1715, "at": "2026-11-15T09:41:52"}
+{"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 6931, "out": 2074, "at": "2026-11-15T09:41:53"}

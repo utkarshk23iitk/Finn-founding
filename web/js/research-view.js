@@ -2,10 +2,10 @@
 import { whoKnows, experts } from "./network.js";
 import { esc, whoRow } from "./ui.js";
 
-const ORDER = ["missed", "partly", "revised", "dropped", "delivered", "pending"];
+const ORDER = ["missed", "partly", "revised", "dropped", "unclear", "delivered", "pending"];
 export const VERDICT = {
-  missed: "Missed", partly: "Partly", revised: "Goalposts moved", dropped: "Went quiet",
-  delivered: "Delivered", pending: "Pending",
+  missed: "Missed", partly: "Partly", revised: "Target changed", dropped: "Went quiet",
+  unclear: "Can't tell", delivered: "Delivered", pending: "Pending",
 };
 const SETTLED = new Set(["delivered", "partly", "missed", "dropped"]);
 const monthLabel = (m) => ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][Number(m.slice(5, 7)) - 1];
@@ -20,10 +20,10 @@ export function summary(r) {
 // The biggest miss, as a question to ask someone who knows.
 function question(r) {
   const miss = r.promises.find((p) => p.verdict === "missed") || r.promises.find((p) => p.verdict === "partly")
-    || r.promises.find((p) => p.verdict === "revised");
+    || r.promises.find((p) => p.verdict === "revised" && p.direction === "cut") || r.promises.find((p) => p.verdict === "revised");
   if (!miss) return "";
   const t = miss.mentions.at(-1).target;
-  if (miss.verdict === "revised") return `Why did the ${miss.metric} target for ${miss.horizon} move from ${miss.mentions[0].target} to ${t}?`;
+  if (miss.verdict === "revised") return `Why was the ${miss.segment && miss.segment !== "company" ? `${miss.segment} ` : ""}${miss.metric} target for ${miss.horizon} ${miss.direction === "raised" ? "raised" : "cut"} from ${miss.mentions[0].target} to ${t}?`;
   return `What held ${miss.metric} back against the ${t} target for ${miss.horizon}${miss.actual ? ` (${miss.actual.replace(/\.$/, "")})` : ""}?`;
 }
 
@@ -39,12 +39,17 @@ function strip(p, calls) {
   }).join("")}</span>`;
 }
 
+// A changed target says which way it moved, as the investor reads it.
+const tag = (p) => (p.verdict === "revised" && p.direction ? (p.direction === "raised" ? "Raised" : "Cut") : VERDICT[p.verdict]);
+const tone = (p) => (p.verdict === "revised" && p.direction ? (p.direction === "raised" ? "v-delivered" : "v-missed") : `v-${p.verdict}`);
+const metricName = (p) => (p.metric === "other" ? "" : p.metric);
+
 function promiseRow(p, r, open) {
   const last = p.mentions.at(-1);
   return `<div class="promise v-${p.verdict}">
     <button class="p-sum" data-act="toggle" data-id="p:${esc(r.symbol)}:${esc(p.id)}" aria-expanded="${open}">
-      <span class="pill v-${p.verdict}">${esc(VERDICT[p.verdict])}</span>
-      <span class="p-what"><b>${esc(p.metric)}</b> ${esc(last.target)} <span class="p-h">for ${esc(p.horizon)}</span></span>
+      <span class="pill ${tone(p)}">${esc(tag(p))}</span>
+      <span class="p-what">${p.segment && p.segment !== "company" ? `<span class="p-h">${esc(p.segment)} · </span>` : ""}<b>${esc(metricName(p))}</b> ${esc(last.target)} <span class="p-h">for ${esc(p.horizon)}</span></span>
       ${strip(p, r.calls)}
     </button>
     ${p.actual ? `<p class="p-actual">${esc(p.actual)}</p>` : ""}
@@ -54,7 +59,10 @@ function promiseRow(p, r, open) {
       ${p.evidence ? `<blockquote class="outcome"><p>“${esc(p.evidence.quote)}”</p>
         <cite>What they reported, <a href="${esc(p.evidence.url)}" target="_blank" rel="noopener">${esc(p.evidence.call)} call ↗</a></cite></blockquote>` : ""}
       ${p.note ? `<p class="detail">${esc(p.note)}</p>` : ""}
-      ${p.model_verdict ? `<p class="override">The model said “${esc(VERDICT[p.model_verdict] || p.model_verdict)}”. ${p.settled_by === "date" ? "The deadline hasn't passed, so it stays pending." : "The reported number says otherwise, and the number wins."}</p>` : ""}
+      ${p.model_verdict ? `<p class="override">The model said “${esc(VERDICT[p.model_verdict] || p.model_verdict)}”. ${
+        p.settled_by === "date" ? "The deadline hasn't passed, so it stays pending."
+        : p.settled_by === "check" ? "The number it compared looks like a different business or scale, so FINN won't call it."
+        : "The reported number says otherwise, and the number wins."}</p>` : ""}
     </div>` : ""}
   </div>`;
 }

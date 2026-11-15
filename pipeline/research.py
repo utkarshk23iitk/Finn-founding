@@ -16,7 +16,7 @@ from .config import DATA, ROOT
 
 METRICS = ["revenue growth", "revenue", "volume growth", "EBITDA margin", "operating margin", "gross margin",
            "PAT", "PAT growth", "EBITDA", "AUM growth", "loan growth", "disbursement growth", "credit cost",
-           "GNPA", "ROA", "ROE", "cost to income", "capex", "capacity", "order book", "deal wins",
+           "GNPA", "NIM", "ROA", "ROE", "cost to income", "capex", "capacity", "order book", "deal wins", "headcount",
            "market share", "milestone", "other"]
 LOWER_IS_BETTER = {"credit cost", "GNPA", "cost to income"}
 
@@ -26,6 +26,7 @@ Extract two lists.
 2. guidance: explicit forward statements by management on those headline numbers or dated milestones (a plant start, a target year). Skip analysts' words, and vague hopes with no number or date.
 Rules:
 - quote: copy management's exact words from the text, verbatim, at most 40 words, no ellipses.
+- segment: "company" for the whole company, otherwise the business or segment exactly as management names it (e.g. "mobile phones", "lighting", "refrigerators"). Never label a segment figure as "company".
 - metric: choose the closest from the allowed list; "other" only if none fits.
 - unit: "%" for percentages and growth rates, "crore" for rupees crore, "bps", "x", "USD mn", "units", or "" for dates.
 - Indian fiscal year: FY27 = April 2026 to March 2027. Write periods and horizons like "Q2 FY27", "H2 FY27", "FY27", "FY28".
@@ -40,6 +41,8 @@ For each promise id, return a verdict:
 - revised: a later call changed the target (say how in the note).
 - pending: the horizon has not ended by the latest reported period, and the target still stands.
 - dropped: the horizon passed and later calls never mention it again. Use rarely.
+Compare like with like: the same segment (or the whole company) and the same period. A company-wide number never settles a segment promise, or the reverse; if the material has no matching number, say pending (horizon not ended) or dropped (ended and never mentioned), or partly with a note.
+Each promise lists sentences from later calls that may mention it; use them, not only the reported list.
 Repeating a target in a later call is not delivering it. A full-year target is judged on full-year numbers, not one strong quarter.
 evidence_quote: copy the exact words from a reported line or later-call guidance below, verbatim, or null.
 actual_value and actual_unit: the reported number you compared against, or null. note: at most 20 words."""
@@ -49,14 +52,14 @@ EXTRACT_SCHEMA = {
     "properties": {
         "period": {"type": "STRING", "description": "the quarter this call reports, e.g. Q2 FY27"},
         "reported": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
-            "metric": {"type": "STRING", "enum": METRICS}, "value": {"type": "NUMBER", "nullable": True},
+            "segment": {"type": "STRING"}, "metric": {"type": "STRING", "enum": METRICS}, "value": {"type": "NUMBER", "nullable": True},
             "unit": {"type": "STRING"}, "period": {"type": "STRING"}, "quote": {"type": "STRING"}},
-            "required": ["metric", "period", "quote"]}},
+            "required": ["segment", "metric", "period", "quote"]}},
         "guidance": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
-            "metric": {"type": "STRING", "enum": METRICS}, "target": {"type": "STRING"},
+            "segment": {"type": "STRING"}, "metric": {"type": "STRING", "enum": METRICS}, "target": {"type": "STRING"},
             "low": {"type": "NUMBER", "nullable": True}, "high": {"type": "NUMBER", "nullable": True},
             "unit": {"type": "STRING"}, "horizon": {"type": "STRING"}, "quote": {"type": "STRING"}},
-            "required": ["metric", "target", "horizon", "quote"]}},
+            "required": ["segment", "metric", "target", "horizon", "quote"]}},
     },
     "required": ["period", "reported", "guidance"],
 }
@@ -66,6 +69,7 @@ JUDGE_SCHEMA = {
     "properties": {"verdicts": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
         "id": {"type": "STRING"},
         "verdict": {"type": "STRING", "enum": ["delivered", "partly", "missed", "revised", "pending", "dropped"]},
+        "actual_segment": {"type": "STRING", "nullable": True},
         "actual": {"type": "STRING", "nullable": True, "description": "what happened, at most 15 words"},
         "actual_value": {"type": "NUMBER", "nullable": True}, "actual_unit": {"type": "STRING", "nullable": True},
         "evidence_quote": {"type": "STRING", "nullable": True}, "evidence_call": {"type": "STRING", "nullable": True},
@@ -137,12 +141,17 @@ def extract(name: str, call: dict) -> tuple[dict, dict, int]:
     return data, usage, dropped
 
 
+def seg_key(seg: str | None) -> str:
+    s = re.sub(r"\b(segment|business|division|vertical)s?\b", "", (seg or "company").lower())
+    return re.sub(r"[^a-z0-9]+", " ", s).strip() or "company"
+
+
 def group_promises(calls: list[dict], extracted: list[dict]) -> list[dict]:
     """The same metric and horizon across calls is one promise with a history."""
     promises, index = [], {}
     for call, ex in sorted(zip(calls, extracted), key=lambda p: p[0]["month"]):
         for g in ex["guidance"]:
-            key = (g["metric"], horizon_key(g["horizon"]))
+            key = (seg_key(g.get("segment")), g["metric"], horizon_key(g["horizon"]))
             mention = {"call": call["label"], "month": call["month"], "url": call["url"], "target": g["target"],
                        "low": g.get("low"), "high": g.get("high"), "unit": norm_unit(g.get("unit")), "quote": g["quote"]}
             if key in index:
@@ -151,26 +160,96 @@ def group_promises(calls: list[dict], extracted: list[dict]) -> list[dict]:
                     p["mentions"].append(mention)
             else:
                 index[key] = len(promises)
-                promises.append({"id": f"p{len(promises) + 1}", "metric": g["metric"], "horizon": g["horizon"],
-                                 "horizon_key": key[1], "mentions": [mention]})
-    for p in promises:
+                promises.append({"id": f"p{len(promises) + 1}", "segment": g.get("segment") or "company",
+                                 "metric": g["metric"], "horizon": g["horizon"], "horizon_key": key[2], "mentions": [mention]})
+    promises = merge_segment_variants(promises)
+    for i, p in enumerate(promises, 1):
+        p["id"] = f"p{i}"
         first, last = p["mentions"][0], p["mentions"][-1]
         p["moved"] = len(p["mentions"]) > 1 and (first["low"], first["high"]) != (last["low"], last["high"])
+        p["direction"] = direction(p) if p["moved"] else None
     return promises
+
+
+def _mid(m: dict) -> float | None:
+    xs = [x for x in (m.get("low"), m.get("high")) if x is not None]
+    return sum(xs) / len(xs) if xs else None
+
+
+def direction(p: dict) -> str | None:
+    """'raised' or 'cut' as the investor reads it: a lower credit cost target is a raise in ambition."""
+    a, b = _mid(p["mentions"][0]), _mid(p["mentions"][-1])
+    if a is None or b is None or a == b:
+        return None
+    up = b > a
+    if p["metric"] in LOWER_IS_BETTER:
+        up = not up
+    return "raised" if up else "cut"
+
+
+def merge_segment_variants(promises: list[dict]) -> list[dict]:
+    """'telecom network business' and 'telecom' with the same metric and horizon are one
+    promise: management names a segment loosely from call to call."""
+    out = []
+    for p in promises:
+        words = set(seg_key(p["segment"]).split())
+        twin = next((q for q in out if q["metric"] == p["metric"] and q["horizon_key"] == p["horizon_key"]
+                     and (words <= set(seg_key(q["segment"]).split()) or set(seg_key(q["segment"]).split()) <= words)
+                     and "company" not in words | set(seg_key(q["segment"]).split())), None)
+        if twin:
+            seen = {m["call"] for m in twin["mentions"]}
+            twin["mentions"] = sorted(twin["mentions"] + [m for m in p["mentions"] if m["call"] not in seen], key=lambda m: m["month"])
+            if len(seg_key(p["segment"])) < len(seg_key(twin["segment"])):
+                twin["segment"] = p["segment"]
+        else:
+            out.append(p)
+    return out
+
+
+STOP = set("the a an and or of to in for on at by with we our is are be will should would that this from as it its "
+           "about around almost somewhere between next year quarter fiscal current crores crore inr rs".split())
+
+
+def later_mentions(p: dict, calls: list[dict], per_call: int = 4) -> list[tuple[str, str]]:
+    """Sentences from calls after the promise that share its key words and carry a number:
+    the material a fair 'delivered or not' needs, beyond the handful of extracted results."""
+    words = {w for w in re.findall(r"[a-z]{3,}", (p["mentions"][0]["quote"] + " " + p["segment"] + " " + p["metric"]).lower())
+             if w not in STOP}
+    seg_words = set(seg_key(p["segment"]).split()) - {"company"}
+    stems = {w[:5] for w in seg_words}   # "phones" ~ "phone", "smartphones" keeps its own stem
+    first = p["mentions"][0]["month"]
+    out = []
+    for c in sorted(calls, key=lambda c: c["month"]):
+        if c["month"] <= first:
+            continue
+        scored = []
+        for s in T.sentences(c["text"]):
+            if not re.search(r"\d", s) or len(s) > 400:
+                continue
+            toks = set(re.findall(r"[a-z]{3,}", s.lower()))
+            if stems and not any(t[:5] in stems for t in toks):
+                continue   # a segment promise needs a sentence about that segment
+            hits = len(words & toks)
+            if hits >= 2:
+                scored.append((hits, s))
+        out += [(c["label"], s) for _, s in sorted(scored, key=lambda x: -x[0])[:per_call]]
+    return out
 
 
 def _judge_input(name: str, latest: dict, promises: list[dict], calls: list[dict], extracted: list[dict]) -> str:
     lines = [f"Company: {name}", f"Latest results reported: {latest['period']}, in the {latest['label']} call.",
              "Fiscal year: FY27 = April 2026 to March 2027.", "", "PROMISES (each time management stated them):"]
     for p in promises:
-        lines.append(f"{p['id']} | {p['metric']} | horizon {p['horizon']}")
+        lines.append(f"{p['id']} | segment: {p['segment']} | {p['metric']} | horizon {p['horizon']}")
         for m in p["mentions"]:
             lines.append(f"   {m['call']} call: target {m['target']} — \"{m['quote']}\"")
+        for label, sent in later_mentions(p, calls):
+            lines.append(f"   later, {label} call: \"{sent}\"")
     lines += ["", "REPORTED RESULTS (by call):"]
     for call, ex in sorted(zip(calls, extracted), key=lambda p: p[0]["month"]):
         for r in ex["reported"]:
             v = "" if r.get("value") is None else f"{r['value']} {r.get('unit', '')}"
-            lines.append(f"[{call['label']}] {r['metric']} {r['period']}: {v} — \"{r['quote']}\"")
+            lines.append(f"[{call['label']}] segment: {r.get('segment', 'company')} | {r['metric']} {r['period']}: {v} — \"{r['quote']}\"")
     return "\n".join(lines)
 
 
@@ -188,6 +267,12 @@ def settle(p: dict, v: dict, latest_end: tuple[int, int]) -> dict:
             and v["verdict"] not in ("revised", "dropped"):
         lower_better = p["metric"] in LOWER_IS_BETTER
         bar = (hi if hi is not None else lo) if lower_better else (lo if lo is not None else hi)
+        # A rupee target set against a number three times bigger or smaller is almost
+        # always a different business (a segment against the company). Don't pretend.
+        if unit not in ("%", "bps") and bar and not (1 / 3 <= abs(val / bar) <= 3):
+            out.update(verdict="unclear", settled_by="check", model_verdict=v["verdict"],
+                       note=f"The number compared ({val:,.0f} {unit}) looks like a different business or scale from the target.")
+            return out
         band = 1.0 if unit == "%" else 10.0 if unit == "bps" else abs(bar) * 0.10   # "close": 1 pt, 10 bps or 10%
         good = val <= bar if lower_better else val >= bar
         close = abs(val - bar) <= band
