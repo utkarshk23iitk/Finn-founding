@@ -38,8 +38,12 @@ portfolio are ranked by rules, not a model.
   that explains them. A move nothing explains says so.
 
 **Research (Pull).** Promised vs delivered for any NSE ticker, from its last
-four earnings calls only. [After the research run: what the four prepared
-companies show, in one or two lines.] The page leads with how many settled
+four earnings calls only. Infosys delivered both FY26 promises (3.1% growth
+against 3–3.5%, a 21% margin against 20–22%) but cut its FY27 growth guidance
+twice, from 1.5–3.5% to 1–2%. Dixon cut its telecom target from ₹7,500–8,000
+crore to ₹6,700–7,000 crore. CreditAccess Grameen raised its FY27 profitability
+guidance across the board. Any other ticker is read on demand: Asian Paints,
+which I never prepared, took 14 seconds. The page leads with how many settled
 promises were delivered, shows misses first, and tracks each promise across
 the four calls, so a quietly changed target is visible. Every quote opens to
 the transcript.
@@ -58,8 +62,10 @@ just had news.
    used only to read transcripts, where reading is the job.
 2. **Checks decide trust, not the model.** Every quote from a transcript or
    filing must appear word for word; facts about real people carry the
-   filing line they rest on (43 checks). [After the run: N quotes dropped,
-   N verdicts overruled by numbers or dates.]
+   filing line they rest on (43 checks). In the final research, 3 quotes
+   the model returned were not in the transcripts and were dropped, and code
+   overruled 2 verdicts: one compared a target with a different business's
+   number, one missed a target that management's own words show had changed.
 3. **Facts about real people come only from their filings.** Some filed
    profiles are rich, some name no past employer (Alkem's new CEO and CFO).
    When a profile is thin, FINN says so and points to who knows the company,
@@ -67,6 +73,12 @@ just had news.
 4. **Built for a morning scan.** One card per company and category, one
    contact per card with the rest a tap away, leadership filings as one
    line each ("Jayant Balan named MD"), routine filings as counts.
+5. **The first research run was plausible and wrong.** Dixon guides per
+   business; the model judged a segment's ₹5,500–6,000 crore target
+   "delivered" against company revenue of ₹48,893 crore, and merged three
+   businesses' targets into one fake revision. Reading every verdict against
+   the transcript found it; the fix was a segment field, sentences from later
+   calls for the judge, and a code check that won't compare numbers 3x apart.
 
 ## Architecture
 
@@ -102,8 +114,11 @@ keeps their own network; nothing is pooled on a server.
 Flash-Lite extracts guidance and reported numbers from each transcript
 (sentences without numbers or forward-looking words are trimmed first),
 then one Flash call judges each company's promises. Answers are cached by
-their full input, so a second look is free. [After the run: N calls, N
-tokens for four companies.] There are no autonomous agents: the pipeline is
+their full input, so a second look is free. The four prepared companies took
+20 calls and about 181,000 tokens; one more company on demand is 5 calls and
+about 38,000 tokens. When the stronger model ran out of free quota, the judge
+fell back to Flash-Lite and the page names the model that answered; on demand,
+Flash-Lite judges throughout so a visitor gets an answer in seconds. There are no autonomous agents: the pipeline is
 a fixed sequence where code plans and checks, and the model only reads.
 
 **Cloud.** Vercel serves the static app and one Python function,
