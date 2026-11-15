@@ -6,16 +6,14 @@ Holdings Founding AI Engineer Build Challenge.
 FINN has three layers:
 
 - **Push:** what changed across the portfolio, and why it matters.
-- **Pull:** research on any NSE ticker, from annual reports and call
-  transcripts only.
+- **Pull:** promised vs delivered for any NSE ticker, from the company's
+  own earnings-call transcripts only.
 - **Network:** who in the investor's own network can help explain it,
   shown inside Push and Pull.
 
 **Try it on a phone:** https://finn-founding.vercel.app
 
 **Writeup:** [docs/WRITEUP.md](docs/WRITEUP.md) · **Decisions:** [docs/DECISIONS.md](docs/DECISIONS.md) · **Architecture:** [docs/architecture.svg](docs/architecture.svg)
-
-Work in progress. Decisions are recorded in `docs/DECISIONS.md`.
 
 ## Run the pipeline
 
