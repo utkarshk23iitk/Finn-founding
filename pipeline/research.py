@@ -161,29 +161,56 @@ def seg_key(seg: str | None) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s).strip() or "company"
 
 
+GENERIC = STOP_GROUP = set("""guidance guided guiding expect expected expecting year years target targeting planned plan around
+approximately range between somewhere stands stand going should would will could the a an and or of to in for on at by with
+we our is are be that this from as it its about almost next current fiscal financial crore crores inr rs company""".split())
+
+
+def _content(m: dict, segment: str) -> set[str]:
+    words = re.findall(r"[a-z]{3,}", (m["quote"] + " " + (segment or "")).lower())
+    return {w for w in words if w not in GENERIC}
+
+
+def _same_thing(a: dict, b: dict, seg_a: str, seg_b: str) -> bool:
+    """Two statements are the same promise only if they share a content word
+    ('Odisha site first stage' and 'planned capex for FY27' do not)."""
+    return bool(_content(a, seg_a) & _content(b, seg_b))
+
+
 def group_promises(calls: list[dict], extracted: list[dict]) -> list[dict]:
-    """The same metric and horizon across calls is one promise with a history."""
+    """The same segment, metric and horizon across calls is one promise with a history,
+    if the statements are about the same thing."""
     promises, index = [], {}
     for call, ex in sorted(zip(calls, extracted), key=lambda p: p[0]["month"]):
         for g in ex["guidance"]:
             key = (seg_key(g.get("segment")), g["metric"], horizon_key(g["horizon"]))
             mention = {"call": call["label"], "month": call["month"], "url": call["url"], "target": g["target"],
                        "low": g.get("low"), "high": g.get("high"), "unit": norm_unit(g.get("unit")), "quote": g["quote"]}
-            if key in index:
-                p = promises[index[key]]
-                if p["mentions"][-1]["call"] != call["label"]:
-                    p["mentions"].append(mention)
+            match = next((promises[i] for i in index.get(key, [])
+                          if _same_thing(promises[i]["mentions"][0], mention, promises[i]["segment"], g.get("segment"))), None)
+            if match:
+                if match["mentions"][-1]["call"] != call["label"]:
+                    match["mentions"].append(mention)
             else:
-                index[key] = len(promises)
-                promises.append({"id": f"p{len(promises) + 1}", "segment": g.get("segment") or "company",
+                index.setdefault(key, []).append(len(promises))
+                promises.append({"id": "", "segment": g.get("segment") or "company",
                                  "metric": g["metric"], "horizon": g["horizon"], "horizon_key": key[2], "mentions": [mention]})
     promises = merge_segment_variants(promises)
     for i, p in enumerate(promises, 1):
         p["id"] = f"p{i}"
-        first, last = p["mentions"][0], p["mentions"][-1]
-        p["moved"] = len(p["mentions"]) > 1 and (first["low"], first["high"]) != (last["low"], last["high"])
+        p["moved"] = moved(p["mentions"])
         p["direction"] = direction(p) if p["moved"] else None
     return promises
+
+
+def moved(mentions: list[dict]) -> bool:
+    """A target moved only if two statements give the same kind of range with different
+    numbers. 15-20% then 'at least 15%' is a different shape, not a cut."""
+    for a, b in zip(mentions, mentions[1:]):
+        shape = lambda m: (m.get("low") is None, m.get("high") is None)
+        if shape(a) == shape(b) and shape(a) != (True, True) and (a.get("low"), a.get("high")) != (b.get("low"), b.get("high")):
+            return True
+    return False
 
 
 def _mid(m: dict) -> float | None:
@@ -347,6 +374,10 @@ def research(sym: str) -> dict:
             else:
                 dropped += 1
         s = settle(p, v, latest_end)
+        # A target management changed is a fact in the quotes, not a judgment: code says so
+        # even when a weaker judge calls it pending.
+        if p.get("moved") and s["verdict"] == "pending":
+            s.update(verdict="revised", settled_by="quotes", model_verdict=v["verdict"])
         overrides += "model_verdict" in s
         p.update({k: s.get(k) for k in ("verdict", "actual", "actual_value", "actual_unit", "note", "evidence",
                                         "settled_by", "model_verdict") if s.get(k) is not None})

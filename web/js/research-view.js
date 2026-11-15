@@ -66,6 +66,7 @@ function promiseRow(p, r, open) {
       ${p.model_verdict ? `<p class="override">The model said “${esc(VERDICT[p.model_verdict] || p.model_verdict)}”. ${
         p.settled_by === "date" ? "The deadline hasn't passed, so it stays pending."
         : p.settled_by === "check" ? "The number it compared looks like a different business or scale, so FINN won't call it."
+        : p.settled_by === "quotes" ? "Management's own words show the target changed between calls, so FINN says so."
         : "The reported number says otherwise, and the number wins."}</p>` : ""}
     </div>` : ""}
   </div>`;

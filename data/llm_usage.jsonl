@@ -43,3 +43,5 @@
 {"model": "gemini-3.5-flash-lite", "tag": "extract Jan 2026", "in": 7518, "out": 1273, "at": "2026-11-15T09:41:52"}
 {"model": "gemini-3.5-flash-lite", "tag": "extract Oct 2026", "in": 8162, "out": 1715, "at": "2026-11-15T09:41:52"}
 {"model": "gemini-3.5-flash-lite", "tag": "extract May 2026", "in": 6931, "out": 2074, "at": "2026-11-15T09:41:53"}
+{"model": "gemini-3.5-flash-lite", "tag": "judge (fallback)", "in": 4152, "out": 651, "at": "2026-11-15T09:59:04"}
+{"model": "gemini-3.8-flash", "tag": "judge", "in": 8132, "out": 1294, "at": "2026-11-15T10:01:02"}

@@ -1,0 +1,4 @@
+INFY: 5 promises {'delivered': 2, 'pending': 3} · 5 model calls (4 cached), 48,305 tokens · 1 quotes dropped, 0 overrides
+DIXON: 10 promises {'revised': 3, 'unclear': 1, 'pending': 5, 'dropped': 1} · 5 model calls (5 cached), 48,489 tokens · 1 quotes dropped, 1 overrides
+SRF: 2 promises {'revised': 1, 'pending': 1} · 5 model calls (5 cached), 38,854 tokens · 1 quotes dropped, 0 overrides
+CREDITACC: 8 promises {'revised': 5, 'pending': 3} · 5 model calls (4 cached), 45,017 tokens · 0 quotes dropped, 0 overrides
