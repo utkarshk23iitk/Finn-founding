@@ -94,7 +94,21 @@ export function researchHTML(st, ctx) {
     ${body}`;
 }
 
+// No explicit targets is a finding, not an empty page: say so, and show what they did report.
+function noTargetsHTML(r) {
+  const seen = new Set();
+  const rep = (r.reported || []).filter((x) => x.value != null && !seen.has(x.metric + x.period) && seen.add(x.metric + x.period)).slice(0, 6);
+  return `<article class="card research">
+    <div class="card-top"><span class="co">${esc(r.name)}</span><span class="tag">${esc(r.symbol)}</span><time>results to ${esc(r.latest_period)}</time></div>
+    <h3>No explicit targets in the last four calls</h3>
+    <p class="detail">FINN found no forward number or date from management in the ${r.calls.map((c) => `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(monthLabel(c.month))}</a>`).join(", ")} ${esc(r.calls.at(-1).month.slice(0, 4))} calls, so there is nothing to hold them to. That is worth knowing in itself.</p>
+    ${rep.length ? `<p class="ask-h">What they reported</p><ul class="facts">${rep.map((x) => `<li>${esc(x.segment && x.segment !== "company" ? `${x.segment}: ` : "")}${esc(x.metric)} ${esc(x.period)}: <b>${esc(String(x.value))}${esc(x.unit === "%" ? "%" : ` ${x.unit || ""}`)}</b> <span class="yrs">${esc(x.call)} call</span></li>`).join("")}</ul>` : ""}
+  </article>
+  <p class="foot">Read by ${esc(r.models.extract)} · ${r.usage.calls} model calls, ${(r.usage.tokens_in + r.usage.tokens_out).toLocaleString("en-IN")} tokens · ${r.checks.quotes_dropped} quote${r.checks.quotes_dropped === 1 ? "" : "s"} dropped for not being in the transcript.</p>`;
+}
+
 function resultHTML(r, st, ctx) {
+  if (!r.promises.length) return noTargetsHTML(r);
   const s = summary(r);
   const order = [...r.promises].sort((a, b) => ORDER.indexOf(a.verdict) - ORDER.indexOf(b.verdict));
   const org = ctx.R.bySymbol(r.symbol);
