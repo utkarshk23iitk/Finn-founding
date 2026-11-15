@@ -54,7 +54,11 @@ async function openResearch(sym) {
     if (!r.ok || body.error) throw new Error(body.error || `The research service answered ${r.status}.`);
     if (state.ticker === sym) Object.assign(state, { research: body, researchState: "ready" });
   } catch (e) {
-    if (state.ticker === sym) Object.assign(state, { researchState: "error", researchError: e.message });
+    // A dropped connection usually means the first read is still finishing on the server.
+    const msg = e instanceof TypeError
+      ? "The first read of a new company can take a couple of minutes, and the connection dropped before it finished. Try again shortly; once done, it's cached for a day."
+      : e.message;
+    if (state.ticker === sym) Object.assign(state, { researchState: "error", researchError: msg });
   }
   render();
 }

@@ -13,6 +13,7 @@ from urllib.parse import parse_qs, urlparse
 
 os.environ.setdefault("FINN_DATA_DIR", "/tmp/finn")
 os.environ.setdefault("FINN_LLM_CACHE", "/tmp/finn/llm_cache")
+os.environ.setdefault("FINN_ON_DEMAND", "1")   # a visitor is waiting: fast model, short timeouts
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from pipeline import research  # noqa: E402

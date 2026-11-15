@@ -58,8 +58,11 @@ def models() -> dict:
 
     lite = newest(lambda n: "flash-lite" in n)
     flash = newest(lambda n: "flash" in n and "lite" not in n)
+    # On demand (a visitor waiting on a phone), speed matters more than the stronger judge:
+    # the fast model judges too, and code's checks on quotes, dates and numbers still apply.
+    fast = os.environ.get("FINN_ON_DEMAND") == "1"
     _models = {"extract": os.environ.get("GEMINI_EXTRACT_MODEL") or lite or flash,
-               "judge": os.environ.get("GEMINI_JUDGE_MODEL") or flash or lite,
+               "judge": os.environ.get("GEMINI_JUDGE_MODEL") or ((lite or flash) if fast else (flash or lite)),
                "available": sorted(usable)}
     return _models
 
@@ -82,7 +85,8 @@ def generate(prompt: str, *, system: str, schema: dict, role: str = "extract", m
     for attempt in range(6):
         try:
             r = requests.post(f"{API}/models/{model}:generateContent", json=body,
-                              headers={"x-goog-api-key": api_key()}, timeout=240 if role == "judge" else 120)
+                              headers={"x-goog-api-key": api_key()},
+                              timeout=75 if os.environ.get("FINN_ON_DEMAND") == "1" else 240 if role == "judge" else 120)
         except (requests.Timeout, requests.ConnectionError):
             if attempt >= (2 if role == "judge" else 5):
                 raise   # the caller may fall back to another model
