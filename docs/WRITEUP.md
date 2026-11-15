@@ -42,8 +42,10 @@ four earnings calls only. Infosys delivered both FY26 promises (3.1% growth
 against 3–3.5%, a 21% margin against 20–22%) but cut its FY27 growth guidance
 twice, from 1.5–3.5% to 1–2%. Dixon cut its telecom target from ₹7,500–8,000
 crore to ₹6,700–7,000 crore. CreditAccess Grameen raised its FY27 profitability
-guidance across the board. Any other ticker is read on demand: Asian Paints,
-which I never prepared, took 14 seconds. The page leads with how many settled
+guidance across the board. Any other ticker is read on demand, in 9 to 50
+seconds depending on how busy Gemini's free tier is (Britannia 9s, Asian
+Paints 14s, L&T 51s); a company that sets no explicit targets (TCS, Britannia)
+is told so, which is a finding in itself. The page leads with how many settled
 promises were delivered, shows misses first, and tracks each promise across
 the four calls, so a quietly changed target is visible. Every quote opens to
 the transcript.

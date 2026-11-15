@@ -171,3 +171,15 @@ Short record of the choices that shape FINN, and why. Newest last.
 33. **The Network can be asked directly.** Type a company, a theme or a
     person: who worked there, at a competitor, supplier or customer; the
     go-to people on a theme; who can reach a named executive.
+34. **A visitor waiting gets a time budget.** The first on-demand test (TCS)
+    hit Vercel's 5-minute limit while waiting on the slow stronger model, and
+    browsers, which speak HTTP/2, dropped replies that took more than about
+    75 seconds. On demand now: the fast model judges too, calls time out at
+    35s, a busy model hands over to an older fast one, an unreadable call is
+    skipped if two others are readable, and the judge is skipped after 40s
+    (code's checks still apply; unjudged promises past their deadline say
+    "can't tell"). Replies carry a fixed length. Fresh tickers answered in
+    9–51 seconds.
+35. **No targets is a finding.** TCS's and Britannia's last four calls gave no
+    forward number or date. The page says so and shows what they reported,
+    instead of an empty ledger.
