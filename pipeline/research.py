@@ -317,10 +317,17 @@ def research(sym: str) -> dict:
     promises = group_promises(calls, extracted)
     older = [p for p in promises if p["mentions"][0]["call"] != latest["label"]]
 
-    verdicts = {}
+    verdicts, judge_model = {}, llm.models()["judge"]
     if older:
-        data, u = llm.generate(_judge_input(name, latest, older, calls, extracted), system=JUDGE_SYSTEM,
-                               schema=JUDGE_SCHEMA, role="judge", tag="judge")
+        prompt = _judge_input(name, latest, older, calls, extracted)
+        try:
+            data, u = llm.generate(prompt, system=JUDGE_SYSTEM, schema=JUDGE_SCHEMA, role="judge", tag="judge")
+        except Exception:
+            # The stronger model is slow or busy on the free tier: let the cheaper one judge,
+            # and say so on the page. Code's checks on dates and numbers apply either way.
+            judge_model = llm.models()["extract"]
+            data, u = llm.generate(prompt, system=JUDGE_SYSTEM, schema=JUDGE_SCHEMA, role="extract",
+                                   model=judge_model, tag="judge (fallback)")
         usage.append(u)
         verdicts = {v["id"]: v for v in data.get("verdicts", [])}
 
@@ -351,7 +358,7 @@ def research(sym: str) -> dict:
         "promises": promises,
         "reported": [{**r, "call": c["label"], "url": c["url"]} for c, ex in zip(calls, extracted) for r in ex["reported"]],
         "checks": {"quotes_dropped": dropped, "overrides": overrides},
-        "models": {"extract": llm.models()["extract"], "judge": llm.models()["judge"]},
+        "models": {"extract": llm.models()["extract"], "judge": judge_model},
         "usage": {"calls": len(usage), "cached": sum(1 for u in usage if u.get("cached")),
                   "tokens_in": sum(u["in"] for u in usage), "tokens_out": sum(u["out"] for u in usage)},
     }

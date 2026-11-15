@@ -38,7 +38,11 @@ def main():
     elif args.step == "research":
         from pipeline import research
         for sym in args.symbols or list(RESEARCH):
-            r = research.research(sym)
+            try:
+                r = research.research(sym)
+            except Exception as e:   # one company's failure shouldn't stop the rest
+                print(f"{sym}: failed ({type(e).__name__}: {str(e)[:160]})")
+                continue
             research.save(r)
             counts = {}
             for p_ in r["promises"]:

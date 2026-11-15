@@ -82,13 +82,15 @@ def generate(prompt: str, *, system: str, schema: dict, role: str = "extract", m
     for attempt in range(6):
         try:
             r = requests.post(f"{API}/models/{model}:generateContent", json=body,
-                              headers={"x-goog-api-key": api_key()}, timeout=120)
+                              headers={"x-goog-api-key": api_key()}, timeout=240 if role == "judge" else 120)
         except (requests.Timeout, requests.ConnectionError):
-            if attempt == 5:
-                raise
+            if attempt >= (2 if role == "judge" else 5):
+                raise   # the caller may fall back to another model
             time.sleep(5 * (attempt + 1))   # slow or dropped answers are retried; finished calls are cached
             continue
         if r.status_code in (429, 500, 503):
+            if role == "judge" and attempt >= 1:
+                raise RuntimeError(f"{model}: busy or out of free-tier quota ({r.status_code})")   # caller falls back
             wait = 8 * (attempt + 1)
             m = re.search(r'"retryDelay":\s*"(\d+)s"', r.text)
             if m:
